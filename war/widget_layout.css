@@ -1,0 +1,17 @@
+
+.profileImageBig {
+ padding: 1px;
+ border: 1px solid #000000;
+}
+
+.thumbNailOfSelector {
+ padding: 1px;
+ border: 1px solid #767676;
+ cursor: Pointer;
+}
+
+.selectedThumbNailOfSelector {
+ padding: 1px;
+ border: 2px solid #4E4E4E;
+ cursor: Pointer;
+}

@@ -1,3 +1,6 @@
+/* Make sure the menu can be clicked */
+#menu	{pointer-events: auto; }
+
 .menubar {
 	background-repeat: repeat-x;
 	background-image: url("../images/main_menu.png");
@@ -23,4 +26,21 @@
 /* The buttons when hovered */
 .menubutton-container a:HOVER {
 	background: none;
+}
+
+.memberdetail {
+	width: 700px !important;
+	height: 300px !important;
+	padding: 20px !important;
+	line-height: 0.8 !important;
+}
+
+.membername {
+	font-weight: bolder;
+	font-size: 40pt;
+}
+
+.memberquestions {
+	font-size: 14pt;
+	
 }

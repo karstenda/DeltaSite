@@ -56,3 +56,9 @@
 	z-index: -1;
 	padding: 0;
 }
+
+/* Give opacity 1 to all of the member details when on the overview */
+.impress-on-memberoverview .memberdetail {
+    opacity: 1 !important;
+    cursor: pointer;
+}

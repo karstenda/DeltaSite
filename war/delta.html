@@ -47,12 +47,108 @@
 </div>
 
 
-<div id="menu" class="menubar"><a href="http://www.google.be">Testing</a></div>
+<div id="menu" class="menubar">
+
+	<div class="menubutton-container">
+	
+			<a href="#/intro2" class="menubutton">
+				<img src="../images/button_overzicht.png" 
+				onmouseover="this.src='../images/button_overzicht_hover.png'" 
+				onmouseout="this.src='../images/button_overzicht.png'">
+			</a>
+			
+			<a href="#/intro1" class="menubutton">
+				<img src="../images/button_activiteiten.png" 
+				onmouseover="this.src='../images/button_activiteiten_hover.png'" 
+				onmouseout="this.src='../images/button_activiteiten.png'">
+			</a>
+			
+			<a href="#/intro1" class="menubutton">
+				<img src="../images/button_overzicht.png" 
+				onmouseover="this.src='../images/button_overzicht_hover.png'" 
+				onmouseout="this.src='../images/button_overzicht.png'">
+			</a>
+			
+			<a href="#/intro1" class="menubutton">
+				<img src="../images/button_overzicht.png" 
+				onmouseover="this.src='../images/button_overzicht_hover.png'" 
+				onmouseout="this.src='../images/button_overzicht.png'">
+			</a>
+			
+			<a href="#/intro1" class="menubutton">
+				<img src="../images/button_overzicht.png" 
+				onmouseover="this.src='../images/button_overzicht_hover.png'" 
+				onmouseout="this.src='../images/button_overzicht.png'">
+			</a>
+	
+	</div>
+	
+
+</div>
 
 
 <div id="impress">
 
+<<<<<<< HEAD
     <div id="intro" class="step slide" data-x="0" data-y="0" data-z="12000" data-rotate="400">
+=======
+
+    <div id="intro1" data-x="0" class="step" data-y="-1500">
+
+    </div>
+
+
+
+    <!--
+        
+        The `id` attribute of the step element is used to identify it in the URL, but it's optional.
+        If it is not defined, it will get a default value of `step-N` where N is a number of slide.
+        
+        So in the example below it'll be `step-2`.
+        
+        The hash part of the url when this step is active will be `#/step-2`.
+        
+        You can also use `#step-2` in a link, to point directly to this particular step.
+        
+        Please note, that while `#/step-2` (with slash) would also work in a link it's not recommended.
+        Using classic `id`-based links like `#step-2` makes these links usable also in fallback mode.
+        
+    -->
+
+
+    <div id="intro2" class="step slide" data-x="1000" data-y="-1500">
+		
+    </div>
+
+    <!--
+        
+        This is an example of step element being scaled.
+        
+        Again, we use a `data-` attribute, this time it's `data-scale="4"`, so it means that this
+        element will be 4 times larger than the others.
+        From presentation and transitions point of view it means, that it will have to be scaled
+        down (4 times) to make it back to it's correct size.
+        
+    -->
+    <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
+        <span class="try">then you should try</span>
+        <h1>Delta</h1>
+        <span class="footnote">making the difference</span>
+    </div>
+
+    <!--
+        
+        This element introduces rotation.
+        
+        Notation shouldn't be a surprise. We use `data-rotate="90"` attribute, meaning that this
+        element should be rotated by 90 degrees clockwise.
+        
+    -->
+    <div id="its" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
+        <p>It's a <strong>presentation tool</strong> <br/>
+        inspired by the idea behind <a href="./index.html#/overview">prezi.com</a> <br/>
+        and based on the <strong>power of CSS3 transforms and transitions</strong> in modern browsers.</p>
+>>>>>>> bbe7aeb32a9286b2496724ac0bcad2a66f74a265
     </div>
     
     <div id="overview" class="step" data-x="0" data-y="0" data-z="0">

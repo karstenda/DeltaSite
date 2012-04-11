@@ -36,8 +36,6 @@ public class DeltaSite implements EntryPoint {
 		TestPage t = new TestPage();
 		RootPanel.get("intro2").add(t);
 		
-		RootPanel.get("topbar").add(new Topbar());
-		
 		
 		
 	}

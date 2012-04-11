@@ -1,10 +1,19 @@
 .menubar {
-    color: yellow;
-    font-weight: bold;
-    font-size: 20px;
+	background-repeat: repeat-x;
+	background-image: url("../images/main_menu.png");
+    position: relative;
     z-index: 1000;
+/*     width: 100%; */
+    text-align: center;
 }
 
+/* The button container */
+.menubutton-container {
+	display: inline-block;
+	margin:auto;
+}
+
+<<<<<<< HEAD
 .clusterTitle {
     font-weight: bold;
     text-align: center;
@@ -12,3 +21,16 @@
     line-height: 1;
 }
 
+=======
+/* The buttons themselves */
+.menubutton-container a {
+	float: left;
+	background: none;
+	padding: 0px;
+}
+
+/* The buttons when hovered */
+.menubutton-container a:HOVER {
+	background: none;
+}
+>>>>>>> bbe7aeb32a9286b2496724ac0bcad2a66f74a265

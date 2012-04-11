@@ -98,7 +98,7 @@ a:hover {
 }
 
 /* enable clicking on elements 'hiding' behind body in 3D */
-body     { pointer-events: none; }
+body     { pointer-events: auto; }
 #impress { pointer-events: auto; }
 
 /* COMMON STEP STYLES */

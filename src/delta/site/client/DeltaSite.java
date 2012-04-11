@@ -33,7 +33,10 @@ public class DeltaSite implements EntryPoint {
 		
 		RootPanel.get("intro1").add(new HTML("<q><span class=\"introLogo\" >Delta <a href=\"http://www.google.be\">test</a></span></q>"));
 		
+		TestPage t = new TestPage();
+		RootPanel.get("intro2").add(t);
 		
+		RootPanel.get("topbar").add(new Topbar());
 		
 		
 		

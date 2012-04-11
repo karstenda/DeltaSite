@@ -49,6 +49,7 @@
 }
 
 .memberleft {
+	width: 480px;
 	margin-right: 20px;
 }
 
@@ -58,7 +59,23 @@
 }
 
 /* Give opacity 1 to all of the member details when on the overview */
-.impress-on-memberoverview .memberdetail {
-    opacity: 1 !important;
-    cursor: pointer;
+.impress-on-memberoverview .step {
+	cursor: pointer;
+	opacity:1 !important;
+}
+
+.impress-on-memberoverview .memberinfo {
+    display:none;
+}
+
+.impress-on-memberoverview .memberquestions {
+    display:none;
+}
+
+.impress-on-memberoverview .membername {
+    font-size: 80pt;
+}
+
+.impress-on-memberoverview .memberinfo {
+    display:none;
 }

@@ -55,6 +55,7 @@ public class MemberDetailPage extends Composite {
 		Image image = new Image(
 				"http://www.pmradio.com.au/images/mainsite/profile_m.gif");
 		image.setSize("150px", "150px");
+		image.setStylePrimaryName("memberimage");
 		rightpanel.add(image);
 
 		HTML html = new HTML("<span class=\"memberinfo\">" + "Jaar: " + year

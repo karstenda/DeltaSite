@@ -31,7 +31,7 @@ public class DeltaSite implements EntryPoint {
 		
 		image.setStyleName("introLogo");
 		
-		RootPanel.get("intro1").add(image);
+		RootPanel.get("intro1").add(new HTML("<span class=\"introLogo\">LOL</span>"));
 		
 		
 		

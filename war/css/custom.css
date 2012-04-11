@@ -42,7 +42,14 @@
 
 .memberquestions {
 	font-size: 14pt;
-	
+}
+
+.memberinfo {
+	font-size: 12pt;
+}
+
+.memberleft {
+	margin-right: 20px;
 }
 
 #memberoverview {

@@ -1,5 +1,5 @@
 /* Make sure the menu can be clicked */
-#menu	{pointer-events: auto; }
+/* #menu	{pointer-events: auto; } */
 
 .menubar {
 	background-repeat: repeat-x;
@@ -43,4 +43,9 @@
 .memberquestions {
 	font-size: 14pt;
 	
+}
+
+#memberoverview {
+	z-index: -1;
+	padding: 0;
 }

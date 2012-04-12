@@ -189,6 +189,16 @@ h1 {
 	width: 900px !important;
 }
 
+.standpuntoverzichtslide a {
+	pointer-events: none;
+	cursor: default;
+}
+
+.impress-on-standpuntenoverzicht .standpuntoverzichtslide a {
+	pointer-events: auto;
+	cursor: auto;
+}
+
 .standpuntslide {
 	height: 600px !important;
 	width: 900px !important;

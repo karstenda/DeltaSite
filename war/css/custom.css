@@ -175,13 +175,14 @@ h1 {
 	display: none;
 }
 
-.standpunten {
-	margin-top: 100px;
+.standpuntslide {
+	height: 600px !important;
+	width: 900px !important;
 }
 
 .slidefooter {
 	position: absolute;
-	bottom: 40px;
+	bottom: 20px;
 	left: 60px;
 	text-align: right;
 }
@@ -189,6 +190,8 @@ h1 {
 .standpuntlinknumber {
 	font-size: 80pt;
 	margin-left: 0px;
+	padding-top: -80px;
+	line-height: .5;
 }
 
 .standpuntlink {

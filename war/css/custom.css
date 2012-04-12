@@ -145,13 +145,13 @@ h1 {
 }
 
 #movie {
-	width: 980px;
-	height: 740px;
+	width: 660px;
+	height: 500px;
 }
 
 .movieslide {
-	width: 980px !important;
-	height: 740px !important;
+	width: 660px !important;
+	height: 500px !important;
     position: relative !important;
 	padding: 0px !important;
 	text-align: center;

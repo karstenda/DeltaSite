@@ -98,3 +98,36 @@
 	width: 250px;
 	height: 250px;
 }
+
+.h1 {
+	font-size: 40pt;
+	font-weight: bolder;
+}
+
+#movie {
+	width: 700px;
+	height: 580px;
+    position: relative;
+    text-align: center;
+	padding: 20px !important;
+}
+
+#moviecontainer {
+	display: none;
+	margin:auto;
+	margin-top: 20px;
+}
+
+#moviespoofer {
+	display: inline-block;
+	margin: auto;
+	margin-top: 20px;
+}
+
+.present #moviecontainer {
+	display: inline-block;
+}
+
+.present #moviespoofer {
+	display: none;
+}

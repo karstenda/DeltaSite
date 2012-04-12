@@ -195,11 +195,16 @@ h1 {
 	padding: 10px !important;
 }
 
-.slidefooter {
+.slideleftfooter {
 	position: absolute;
 	bottom: 20px;
 	left: 60px;
-	text-align: right;
+}
+
+.sliderightfooter {
+	position: absolute;
+	bottom: 20px;
+	right: 60px;
 }
 
 .standpuntlinknumber {
@@ -218,22 +223,43 @@ h1 {
 }
 
 .standpunttop {
-/* 	margin-top: 50px; */
-	height: auto;
+	margin-top: -5px;
+	height: 133px;
 	width: 900px;
 	
 }
 
 .standpuntnumber {
 	float:left;
-/* 	margin-top: 40px; */
-	font-size: 100pt;
+	margin-top: 5px;
+	margin-left: 0px;
+	font-size: 200pt;
 	line-height: 1;
+	padding: 0px;
+	width: 50px;
+	height: 133px;
 }
 
 .standpunttitle {
-	margin-left: 10px;
+	line-height: 1;
+	margin-top: 40px;
+	margin-left: 110px;
+	margin-right: 50px;
 	text-align: left;
-/* 	float:right; */
-/* 	vertical-align: bottom; */
+	width: 690px;
+	height: 133px;
+	float:right;
+	vertical-align: top;
+}
+
+.standpunttext {
+	line-height: 1.1;
+	margin-left: 110px;
+	margin-right: 50px;
+	text-align: left;
+	width: 690px;
+	height: 133px;
+	float:right;
+	vertical-align: top;
+	font-size: 18pt;
 }

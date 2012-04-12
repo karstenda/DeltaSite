@@ -29,7 +29,7 @@
     <!-- This script loads your compiled module.   -->
     <!-- If you add any GWT meta tags, they must   -->
     <!-- be added before this line.                -->
-    <!--                                           -->
+		                                   
     <script type="text/javascript" language="javascript" src="deltasite/deltasite.nocache.js"></script>
 
 </head>
@@ -51,37 +51,37 @@
 
 	<div class="menubutton-container">
 	
-			<a href="#/overview" class="menubutton">
+			<a href="#overview" class="menubutton">
 				<img src="../images/button_overzicht.png" 
 				onmouseover="this.src='../images/button_overzicht_hover.png'" 
 				onmouseout="this.src='../images/button_overzicht.png'">
 			</a>
 			
-			<a href="#/activiOverview" class="menubutton">
+			<a href="#activiOverview" class="menubutton">
 				<img src="../images/button_activiteiten.png" 
 				onmouseover="this.src='../images/button_activiteiten_hover.png'" 
 				onmouseout="this.src='../images/button_activiteiten.png'">
 			</a>
 			
-			<a href="#/memberoverview" class="menubutton">
+			<a href="#memberoverview" class="menubutton">
 				<img src="../images/button_ploeg.png" 
 				onmouseover="this.src='../images/button_ploeg_hover.png'" 
 				onmouseout="this.src='../images/button_ploeg.png'">
 			</a>
 			
-			<a href="#/standpuntenoverzicht" class="menubutton">
+			<a href="#standpuntentCentral" class="menubutton">
 				<img src="../images/button_standpunten.png" 
 				onmouseover="this.src='../images/button_standpunten_hover.png'" 
 				onmouseout="this.src='../images/button_standpunten.png'">
 			</a>
 			
-			<a href="#/movie" class="menubutton">
+			<a href="#movie" class="menubutton">
 				<img src="../images/button_promo.png" 
 				onmouseover="this.src='../images/button_promo_hover.png'" 
 				onmouseout="this.src='../images/button_promo.png'">
 			</a>
 			
-			<a href="#/intro1" class="menubutton">
+			<a href="#intro1" class="menubutton">
 				<img src="../images/button_sponsor.png" 
 				onmouseover="this.src='../images/button_sponsor_hover.png'" 
 				onmouseout="this.src='../images/button_sponsor.png'">
@@ -101,26 +101,33 @@
     <div id="overview" class="step" data-x="0" data-y="0" data-z="0">
     </div>
 
-    <div id="deltaCentral" class="step" data-x="0" data-y="0" data-z="-6000" data-scale="5">
+    <div id="deltaCentral" class="step" data-x="-600" data-y="600" data-z="-6000" data-scale="5">
     <img src="images/delta_white.png"></img>
     </div>
 
-    <div id="activiteitenCentral" class="step" data-x="-3600" data-y="-1400" data-z="-6000" data-rotate="-20" data-scale="1.5">
-    <span class="clusterTitle">ACTIVITEITEN</span></h1>
+
+
+
+
+    <div id="activiteitenCentral" class="step" data-x="-2800" data-y="-900" data-z="-6000" data-rotate="68" data-scale="2">
+    <span class="clusterTitle">Activiteiten</span>
     </div>
-
-		<div id="activiOverview" class="step cubeFace fontclass" data-x="-3600" data-y="-1000" data-z="-6000" data-rotate-x="45" data-rotate-z="45">
-    		<h1>
-    			Maandag
-    		</h1>
-    	</div>
-
-		<div id="activi1" class="step cubeFace2 fontclass" data-x="-3352" data-y="-1000" data-z="-5752" data-rotate-x="-45" data-rotate-y="45">
-    	</div>
+		<div id="activiOverview" class="step cubeFace" data-x="-3600" data-y="-1000" data-z="-6000" data-rotate-x="45"><h1>Overview</h1></div>
+		<div id="activi1" class="step cubeFace" data-x="-3250" data-y="-753" data-z="-6247" data-rotate-x="45" data-rotate-y="90"><h1>1</h1></div>
+		<div id="activi2" class="step cubeFace" data-x="-3600" data-y="-505" data-z="-6000" data-rotate-x="-45"><h1>2</h1></div>
+		<div id="activi3" class="step cubeFace" data-x="-3600" data-y="-505" data-z="-6495" data-rotate-z="180" data-rotate-x="-135"><h1>3</h1></div>
+		<div id="activi4" class="step cubeFace" data-x="-3600" data-y="-1000" data-z="-6495" data-rotate-z="180" data-rotate-x="135"><h1>4</h1></div>
+		<div id="activi5" class="step cubeFace" data-x="-3950" data-y="-753" data-z="-6247" data-rotate-x="45" data-rotate-y="-90"><h1>5</h1></div>		
+    	
 
 
 
-		<div id="standpuntenoverzicht" class="step slide standpuntoverzichtslide" data-x="0" data-y="-10000" data-z="0">
+    	
+    <div id="standpuntentCentral" class="step" data-x="2800" data-y="-900" data-z="-6000" data-rotate="90" data-scale="2">
+    <span class="clusterTitle">Standpunten</span>
+    </div>	
+
+		<div id="standpuntenoverzicht" class="step slide standpuntoverzichtslide" data-x="2300" data-y="-1400" data-z="-6000" data-scale="0.7">
     		<h1>
     			Standpunten
     		</h1>
@@ -166,27 +173,25 @@
 				
 			</div>
 		</div>
-
-
+    	
+    	
+    	
+    	
+    	
 
     <div id="memberdetail11" class="memberdetail step slide" data-x="9200" data-y="-400">
-
     </div>
     
     <div id="memberdetail12" class="memberdetail step slide" data-x="10000" data-y="-400">
-		
     </div>
     
     <div id="memberdetail13" class="memberdetail step slide" data-x="10800" data-y="-400">
-		
     </div>
     
     <div id="memberdetail21" class="memberdetail step slide" data-x="9200" data-y="0">
-		
     </div>
     
     <div id="memberdetail22" class="memberdetail step slide" data-x="10000" data-y="0">
-		
     </div>
     
     <div id="memberdetail23" class="memberdetail step slide" data-x="10800" data-y="0">

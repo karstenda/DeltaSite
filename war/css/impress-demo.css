@@ -89,7 +89,7 @@ a:hover {
 body     { pointer-events: none; }
 #impress { pointer-events: auto; }
 
-/* COMMON STEP STYLES */
+
 
 .step {
     width: 900px;

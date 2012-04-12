@@ -19,13 +19,14 @@
 .clusterTitle {
     font-weight: bold;
     text-align: center;
-    font-size: 4em;
+    font-size: 3em;
     line-height: 1;
     color: white;
 }
 
 
 .cubeFace {
+        margin-top: 98px !important;
         display: block;
         background-color: white;
         width: 700px !important;
@@ -34,11 +35,13 @@
 
 
 .cubeFace2 {
+        margin-bottom: 98px !important;
         display: block;
-        background-color: yellow;
+        background-color: white;
         width: 700px !important;
         height: 700px !important;
 }
+
 
 .fontclass {
 	    font-family: 'Open Sans', Arial, sans-serif;

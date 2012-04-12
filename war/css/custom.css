@@ -19,7 +19,7 @@
 .clusterTitle {
     font-weight: bold;
     text-align: center;
-    font-size: 4em;
+    font-size: 3em;
     line-height: 1;
     color: white;
 }
@@ -35,20 +35,24 @@
 
 
 .cubeFace2 {
-        margin-top: 98px !important;
+        margin-bottom: 98px !important;
         display: block;
-        background-color: yellow;
+        background-color: white;
         width: 700px !important;
         height: 700px !important;
 }
 
 
-.cubeFace3 {
-        margin-top: 98px !important;
-        display: block;
-        background-color: green;
-        width: 700px !important;
-        height: 700px !important;
+.fontclass {
+	    font-family: 'Open Sans', Arial, sans-serif;
+	
+	    color: rgb(102, 102, 102);
+	    text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+	
+	    font-size: 30px;
+	    line-height: 36px;
+	
+	    letter-spacing: -1px;
 }
 
 /* The buttons themselves */

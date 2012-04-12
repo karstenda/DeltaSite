@@ -13,7 +13,7 @@
 	margin:auto;
 }
 
-<<<<<<< HEAD
+
 .clusterTitle {
     font-weight: bold;
     text-align: center;
@@ -21,7 +21,6 @@
     line-height: 1;
 }
 
-=======
 /* The buttons themselves */
 .menubutton-container a {
 	float: left;
@@ -33,4 +32,4 @@
 .menubutton-container a:HOVER {
 	background: none;
 }
->>>>>>> bbe7aeb32a9286b2496724ac0bcad2a66f74a265
+

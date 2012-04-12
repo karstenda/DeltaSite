@@ -27,21 +27,12 @@
 
 .cubeFace {
         margin-top: 98px !important;
+        padding-top: 0px !important;
         display: block;
         background-color: white;
         width: 700px !important;
         height: 700px !important;
 }
-
-
-.cubeFace2 {
-        margin-bottom: 98px !important;
-        display: block;
-        background-color: white;
-        width: 700px !important;
-        height: 700px !important;
-}
-
 
 .fontclass {
 	    font-family: 'Open Sans', Arial, sans-serif;
@@ -189,12 +180,12 @@ h1 {
 	width: 900px !important;
 }
 
-.standpuntoverzichtslide a {
+#impress a {
 	pointer-events: none;
 	cursor: default;
 }
 
-.impress-on-standpuntenoverzicht .standpuntoverzichtslide a {
+#impress .present a {
 	pointer-events: auto;
 	cursor: auto;
 }

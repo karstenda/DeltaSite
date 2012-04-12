@@ -69,7 +69,7 @@
 				onmouseout="this.src='images/button_ploeg.png'">
 			</a>
 			
-			<a href="#standpuntenCentral" class="menubutton">
+			<a href="#standpuntenoverzicht" class="menubutton">
 				<img src="images/button_standpunten.png" 
 				onmouseover="this.src='images/button_standpunten_hover.png'" 
 				onmouseout="this.src='images/button_standpunten.png'">
@@ -102,18 +102,39 @@
     </div>
 
     <div id="deltaCentral" class="step" data-x="-600" data-y="600" data-z="0" data-scale="5">
-    <img src="images/delta_white.png"></img>
+    	<img src="images/delta_white.png"></img>
     </div>
 
-    <div id="activiteitenCentral" class="step" data-x="-2800" data-y="-900" data-z="0" data-rotate="68" data-scale="2">
-    <span class="clusterTitle">Activiteiten</span>
+    <div id="activiteitenCentral" class="step" data-x="-2700" data-y="-900" data-z="0" data-rotate="68" data-scale="2">
+    	<span class="clusterTitle">Activiteiten</span>
     </div>
-		<div id="activiOverview" class="step cubeFace" data-x="-3600" data-y="-1000" data-z="0" data-rotate-x="45"><h1>Overview</h1></div>
-		<div id="activi1" class="step cubeFace" data-x="-3250" data-y="-753" data-z="-247" data-rotate-x="45" data-rotate-y="90"><h1>1</h1></div>
-		<div id="activi2" class="step cubeFace" data-x="-3600" data-y="-505" data-z="0" data-rotate-x="-45"><h1>2</h1></div>
-		<div id="activi3" class="step cubeFace" data-x="-3600" data-y="-505" data-z="-495" data-rotate-z="180" data-rotate-x="-135"><h1>3</h1></div>
-		<div id="activi4" class="step cubeFace" data-x="-3600" data-y="-1000" data-z="-495" data-rotate-z="180" data-rotate-x="135"><h1>4</h1></div>
-		<div id="activi5" class="step cubeFace" data-x="-3950" data-y="-753" data-z="-247" data-rotate-x="45" data-rotate-y="-90"><h1>5</h1></div>		
+		
+	<div id="activiOverview" class="step cubeFace fontclass" data-x="-3600" data-y="-1000" data-z="0" data-rotate-x="45">
+		<h1>Overview</h1>
+		<div class="standpunten">
+			<a href="#activi1" class="standpuntlinkodd"><span class="standpuntlinknumber">Zo</span></a></br>
+			<a href="#activi2" class="standpuntlinkeven"><span class="standpuntlinknumber">Ma</span></a></br>
+			<a href="#activi3" class="standpuntlinkodd"><span class="standpuntlinknumber">Di</span></a></br>
+			<a href="#activi4" class="standpuntlinkeven"><span class="standpuntlinknumber">Wo</span></a></br>
+			<a href="#activi5" class="standpuntlinkodd"><span class="standpuntlinknumber">Do</span></a>
+		</div>
+	</div>
+	
+	<div id="activi1" class="step cubeFace fontclass" data-x="-3250" data-y="-753" data-z="-247" data-rotate-x="45" data-rotate-y="90">
+		<h1>1</h1>
+	</div>
+	<div id="activi2" class="step cubeFace fontclass" data-x="-3600" data-y="-505" data-z="0" data-rotate-x="-45">
+		<h1>2</h1>
+	</div>
+	<div id="activi3" class="step cubeFace fontclass" data-x="-3600" data-y="-505" data-z="-495" data-rotate-z="180" data-rotate-x="-135">
+		<h1>3</h1>
+	</div>
+	<div id="activi4" class="step cubeFace fontclass" data-x="-3600" data-y="-1000" data-z="-495" data-rotate-z="180" data-rotate-x="135">
+		<h1>4</h1>
+	</div>
+	<div id="activi5" class="step cubeFace fontclass" data-x="-3950" data-y="-753" data-z="-247" data-rotate-x="45" data-rotate-y="-90">
+		<h1>5</h1>
+	</div>		
     	
     <div id="standpuntenCentral" class="step" data-x="2800" data-y="-900" data-z="0" data-rotate="90" data-scale="2">
     <span class="clusterTitle">Standpunten</span>

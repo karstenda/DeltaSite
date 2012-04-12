@@ -34,7 +34,13 @@ public class DeltaSite implements EntryPoint {
 		for (int i = 1; i <= 3; i++)
 			for (int j = 1; j <=3; j++) {
 				if (i == 3 && j == 3) {
-					MemberDetailPage t = new MemberDetailPage("Karsten Daemen", "One does not simply walk in to Mordor", 4, "CW", "IT");
+					MemberDetailPage t = new MemberDetailPage("Maarten Vander Cruyssen", "One does not simply walk in to Mordor", 4, "CW", "IT");
+					RootPanel.get("memberdetail"+i+j).add(t);
+				} else if (i == 3 && j == 2) {
+					MemberDetailPage t = new MemberDetailPage("Heleen Van Den Noortgate", "One does not simply walk in to Mordor", 4, "CW", "IT");
+					RootPanel.get("memberdetail"+i+j).add(t);
+				} else if (i == 3 && j == 1) {
+					MemberDetailPage t = new MemberDetailPage("Julie De Keersmaeker", "One does not simply walk in to Mordor", 4, "CW", "IT");
 					RootPanel.get("memberdetail"+i+j).add(t);
 				} else {
 					MemberDetailPage t = new MemberDetailPage();

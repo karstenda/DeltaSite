@@ -6,7 +6,6 @@
 	background-image: url("../images/main_menu.png");
     position: relative;
     z-index: 1000;
-/*     width: 100%; */
     text-align: center;
 }
 
@@ -58,25 +57,36 @@
 	width: 700px !important;
 	height: 300px !important;
 	padding: 20px !important;
-	line-height: 0.8 !important;
+	line-height: 1.2 !important;
 }
 
 .membername {
 	font-weight: bolder;
-	font-size: 40pt;
+	font-size: 30pt;
 }
 
 .memberquestions {
 	font-size: 14pt;
+	margin-top: 15px;
+}
+
+.memberleft {
+	width: 500px;
+	float:left;
+}
+
+.memberright {
+	width: 150px;
+	float:right;
+}
+
+.memberimage {
+	width: 150px;
+	height: 150px;
 }
 
 .memberinfo {
 	font-size: 12pt;
-}
-
-.memberleft {
-	width: 480px;
-	margin-right: 20px;
 }
 
 #memberoverview {
@@ -99,9 +109,51 @@
 }
 
 .impress-on-memberoverview .membername {
-    font-size: 80pt;
+    font-size: 40pt;
 }
 
-.impress-on-memberoverview .memberinfo {
-    display:none;
+.impress-on-memberoverview .memberleft {
+	width: 400px;
+}
+
+.impress-on-memberoverview .memberright {
+	width: 250px;
+}
+
+.impress-on-memberoverview .memberimage {
+	width: 250px;
+	height: 250px;
+}
+
+.h1 {
+	font-size: 40pt;
+	font-weight: bolder;
+}
+
+#movie {
+	width: 700px;
+	height: 580px;
+    position: relative;
+    text-align: center;
+	padding: 20px !important;
+}
+
+#moviecontainer {
+	display: none;
+	margin:auto;
+	margin-top: 20px;
+}
+
+#moviespoofer {
+	display: inline-block;
+	margin: auto;
+	margin-top: 20px;
+}
+
+.present #moviecontainer {
+	display: inline-block;
+}
+
+.present #moviespoofer {
+	display: none;
 }

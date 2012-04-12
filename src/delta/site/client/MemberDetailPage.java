@@ -21,48 +21,28 @@ public class MemberDetailPage extends Composite {
 
 	public MemberDetailPage(String name, String quote, int year, String study,
 			String vtkpost) {
+		
+		HTML html = new HTML(
+					"<div class=\"memberleft\">" +
+						"<div class=\"membername\">" + 
+								name + 
+						"</div>" +
+						"<div class=\"memberquestions\">" +
+							"<b>Favoriete quote:</b><br/>" + quote + "<br/>" +
+							"<b>Nog een vraag:</b><br/>" + "Nog een antwoord" + "</br>" +
+						"</div>" +
+					"</div>" +
+					"<div class=\"memberright\">" +
+						"<img class=\"memberimage\" src=\"http://www.pmradio.com.au/images/mainsite/profile_m.gif\" alt=\"" + name + "\"/>" +
+						"<div class=\"memberinfo\">" +
+							"Jaar: " + year +
+							"e<br/>" + "Richting: " + study + "<br/>" +
+							"Favoriete post: " + vtkpost +
+						"</div>" +
+					"</div>"
+				);
+		
+		initWidget(html);
 
-		HorizontalPanel mainpanel = new HorizontalPanel();
-		mainpanel.setSize("660px", "260px");
-
-		Widget leftpanel = createLeftPanel(name, quote);
-		Widget rightpanel = createRightPanel(year, study, vtkpost);
-
-		mainpanel.add(leftpanel);
-		mainpanel.add(rightpanel);
-		initWidget(mainpanel);
-	}
-
-	private Widget createLeftPanel(String name, String quote) {
-		VerticalPanel leftpanel = new VerticalPanel();
-
-		HTML html = new HTML("<span class=\"membername\">" + name + "</span>");
-		leftpanel.add(html);
-
-		html = new HTML("<br/><span class=\"memberquestions\">"
-				+ "<b>Favoriete quote:</b><br/>" + quote + "<br/>"
-				+ "<b>Nog een vraag:</b><br/>" + "Nog een antwoord" + "</br>"
-				+ "</span>");
-		leftpanel.add(html);
-		leftpanel.setStylePrimaryName("memberleft");
-
-		return leftpanel;
-	}
-
-	private Widget createRightPanel(int year, String study, String vtkpost) {
-		VerticalPanel rightpanel = new VerticalPanel();
-
-		Image image = new Image(
-				"http://www.pmradio.com.au/images/mainsite/profile_m.gif");
-		image.setSize("150px", "150px");
-		image.setStylePrimaryName("memberimage");
-		rightpanel.add(image);
-
-		HTML html = new HTML("<span class=\"memberinfo\">" + "Jaar: " + year
-				+ "e<br/>" + "Richting: " + study + "<br/>"
-				+ "Favoriete post: " + vtkpost + "</span>");
-		rightpanel.add(html);
-
-		return rightpanel;
 	}
 }

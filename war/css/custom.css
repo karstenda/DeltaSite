@@ -140,29 +140,34 @@
 	height: 250px;
 }
 
-.h1 {
+h1 {
 	font-size: 40pt;
 	font-weight: bolder;
+	line-height: 1;
+    text-align: center;
 }
 
 #movie {
-	width: 700px;
-	height: 580px;
-    position: relative;
-    text-align: center;
-	padding: 20px !important;
+	width: 980px;
+	height: 740px;
+}
+
+.movieslide {
+	width: 980px !important;
+	height: 740px !important;
+    position: relative !important;
+	padding: 0px !important;
+	text-align: center;
 }
 
 #moviecontainer {
 	display: none;
-	margin:auto;
-	margin-top: 20px;
+	margin: 10px;
 }
 
 #moviespoofer {
 	display: inline-block;
-	margin: auto;
-	margin-top: 20px;
+	margin: 10px;
 }
 
 .present #moviecontainer {
@@ -171,4 +176,29 @@
 
 .present #moviespoofer {
 	display: none;
+}
+
+.standpunten {
+	margin-top: 100px;
+}
+
+.slidefooter {
+	position: absolute;
+	bottom: 40px;
+	left: 60px;
+	text-align: right;
+}
+
+.standpuntlinknumber {
+	font-size: 80pt;
+	margin-left: 0px;
+}
+
+.standpuntlink {
+	font-size: 20pt;
+	vertical-align: top;
+}
+
+.standpuntlinkeven {
+	margin-left: 65px;
 }

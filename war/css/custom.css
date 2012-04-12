@@ -26,6 +26,7 @@
 
 
 .cubeFace {
+        margin-top: 98px !important;
         display: block;
         background-color: white;
         width: 700px !important;
@@ -34,8 +35,18 @@
 
 
 .cubeFace2 {
+        margin-top: 98px !important;
         display: block;
         background-color: yellow;
+        width: 700px !important;
+        height: 700px !important;
+}
+
+
+.cubeFace3 {
+        margin-top: 98px !important;
+        display: block;
+        background-color: green;
         width: 700px !important;
         height: 700px !important;
 }

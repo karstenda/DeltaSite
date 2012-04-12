@@ -140,26 +140,31 @@
 h1 {
 	font-size: 40pt;
 	font-weight: bolder;
+	line-height: 1;
+    text-align: center;
 }
 
 #movie {
-	width: 700px;
-	height: 580px;
-    position: relative;
-    text-align: center;
-	padding: 20px !important;
+	width: 980px;
+	height: 740px;
+}
+
+.movieslide {
+	width: 980px !important;
+	height: 740px !important;
+    position: relative !important;
+	padding: 0px !important;
+	text-align: center;
 }
 
 #moviecontainer {
 	display: none;
-	margin:auto;
-	margin-top: 20px;
+	margin: 10px;
 }
 
 #moviespoofer {
 	display: inline-block;
-	margin: auto;
-	margin-top: 20px;
+	margin: 10px;
 }
 
 .present #moviecontainer {

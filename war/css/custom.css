@@ -1,3 +1,6 @@
+/* Make sure the menu can be clicked */
+#menu	{pointer-events: auto; }
+
 .menubar {
 	background-repeat: repeat-x;
 	background-image: url("../images/main_menu.png");
@@ -17,8 +20,25 @@
 .clusterTitle {
     font-weight: bold;
     text-align: center;
-    font-size: 6em;
+    font-size: 4em;
     line-height: 1;
+    color: white;
+}
+
+
+.cubeFace {
+        display: block;
+        background-color: white;
+        width: 700px !important;
+        height: 700px !important;
+}
+
+
+.cubeFace2 {
+        display: block;
+        background-color: yellow;
+        width: 700px !important;
+        height: 700px !important;
 }
 
 /* The buttons themselves */
@@ -33,3 +53,55 @@
 	background: none;
 }
 
+
+.memberdetail {
+	width: 700px !important;
+	height: 300px !important;
+	padding: 20px !important;
+	line-height: 0.8 !important;
+}
+
+.membername {
+	font-weight: bolder;
+	font-size: 40pt;
+}
+
+.memberquestions {
+	font-size: 14pt;
+}
+
+.memberinfo {
+	font-size: 12pt;
+}
+
+.memberleft {
+	width: 480px;
+	margin-right: 20px;
+}
+
+#memberoverview {
+	z-index: -1;
+	padding: 0;
+}
+
+/* Give opacity 1 to all of the member details when on the overview */
+.impress-on-memberoverview .step {
+	cursor: pointer;
+	opacity:1 !important;
+}
+
+.impress-on-memberoverview .memberinfo {
+    display:none;
+}
+
+.impress-on-memberoverview .memberquestions {
+    display:none;
+}
+
+.impress-on-memberoverview .membername {
+    font-size: 80pt;
+}
+
+.impress-on-memberoverview .memberinfo {
+    display:none;
+}

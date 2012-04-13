@@ -26,16 +26,7 @@
 
 
 .cubeFace {
-        margin-top: 98px !important;
-        display: block;
-        background-color: white;
-        width: 700px !important;
-        height: 700px !important;
-}
-
-
-.cubeFace2 {
-        margin-bottom: 98px !important;
+        margin-top: 60px !important;
         display: block;
         background-color: white;
         width: 700px !important;

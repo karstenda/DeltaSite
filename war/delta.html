@@ -52,39 +52,39 @@
 	<div class="menubutton-container">
 	
 			<a href="#overview" class="menubutton">
-				<img src="../images/button_overzicht.png" 
-				onmouseover="this.src='../images/button_overzicht_hover.png'" 
-				onmouseout="this.src='../images/button_overzicht.png'">
+				<img src="images/button_overzicht.png" 
+				onmouseover="this.src='images/button_overzicht_hover.png'" 
+				onmouseout="this.src='images/button_overzicht.png'">
 			</a>
 			
 			<a href="#activiOverview" class="menubutton">
-				<img src="../images/button_activiteiten.png" 
-				onmouseover="this.src='../images/button_activiteiten_hover.png'" 
-				onmouseout="this.src='../images/button_activiteiten.png'">
+				<img src="images/button_activiteiten.png" 
+				onmouseover="this.src='images/button_activiteiten_hover.png'" 
+				onmouseout="this.src='images/button_activiteiten.png'">
 			</a>
 			
 			<a href="#memberoverview" class="menubutton">
-				<img src="../images/button_ploeg.png" 
-				onmouseover="this.src='../images/button_ploeg_hover.png'" 
-				onmouseout="this.src='../images/button_ploeg.png'">
+				<img src="images/button_ploeg.png" 
+				onmouseover="this.src='images/button_ploeg_hover.png'" 
+				onmouseout="this.src='images/button_ploeg.png'">
 			</a>
 			
-			<a href="#standpuntentCentral" class="menubutton">
-				<img src="../images/button_standpunten.png" 
-				onmouseover="this.src='../images/button_standpunten_hover.png'" 
-				onmouseout="this.src='../images/button_standpunten.png'">
+			<a href="#standpuntenoverzicht" class="menubutton">
+				<img src="images/button_standpunten.png" 
+				onmouseover="this.src='images/button_standpunten_hover.png'" 
+				onmouseout="this.src='images/button_standpunten.png'">
 			</a>
 			
 			<a href="#movie" class="menubutton">
-				<img src="../images/button_promo.png" 
-				onmouseover="this.src='../images/button_promo_hover.png'" 
-				onmouseout="this.src='../images/button_promo.png'">
+				<img src="images/button_promo.png" 
+				onmouseover="this.src='images/button_promo_hover.png'" 
+				onmouseout="this.src='images/button_promo.png'">
 			</a>
 			
 			<a href="#intro1" class="menubutton">
-				<img src="../images/button_sponsor.png" 
-				onmouseover="this.src='../images/button_sponsor_hover.png'" 
-				onmouseout="this.src='../images/button_sponsor.png'">
+				<img src="images/button_sponsor.png" 
+				onmouseover="this.src='images/button_sponsor_hover.png'" 
+				onmouseout="this.src='images/button_sponsor.png'">
 			</a>
 	
 	</div>
@@ -95,62 +95,162 @@
 
 <div id="impress">
 
-    <div id="intro1" class="step" data-x="0" data-y="0" data-z="12000" data-rotate="400">
+    <div id="intro" class="step" data-x="0" data-y="0" data-z="18000" data-rotate="400">
     </div>
     
-    <div id="overview" class="step" data-x="0" data-y="0" data-z="0"></div>
-
-    <div id="deltaCentral" class="step" data-x="-600" data-y="600" data-z="-6000" data-scale="5">
-    <img src="images/delta_white.png"></img>
+    <div id="overview" class="step" data-x="0" data-y="0" data-z="6000">
     </div>
 
-
-
-
-
-    <div id="activiteitenCentral" class="step" data-x="-2800" data-y="-900" data-z="-6000" data-rotate="68" data-scale="2">
-    <span class="clusterTitle">Activiteiten</span>
+    <div id="deltaCentral" class="step" data-x="-600" data-y="600" data-z="0" data-scale="5">
+    	<img src="images/delta_white.png"></img>
     </div>
-		<div id="activiOverview" class="step cubeFace" data-x="-3600" data-y="-1000" data-z="-6000" data-rotate-x="45"><h1>Overview</h1></div>
-		<div id="activi1" class="step cubeFace" data-x="-3250" data-y="-753" data-z="-6247" data-rotate-x="45" data-rotate-y="90"><h1>1</h1></div>
-		<div id="activi2" class="step cubeFace" data-x="-3600" data-y="-505" data-z="-6000" data-rotate-x="-45"><h1>2</h1></div>
-		<div id="activi3" class="step cubeFace" data-x="-3600" data-y="-505" data-z="-6495" data-rotate-z="180" data-rotate-x="-135"><h1>3</h1></div>
-		<div id="activi4" class="step cubeFace" data-x="-3600" data-y="-1000" data-z="-6495" data-rotate-z="180" data-rotate-x="135"><h1>4</h1></div>
-		<div id="activi5" class="step cubeFace" data-x="-3950" data-y="-753" data-z="-6247" data-rotate-x="45" data-rotate-y="-90"><h1>5</h1></div>		
+
+    <div id="activiteitenCentral" class="step" data-x="-2700" data-y="-900" data-z="0" data-rotate="68" data-scale="2">
+    	<span class="clusterTitle">Activiteiten</span>
+    </div>
+		
+	<div id="activiOverview" class="step cubeFace fontclass" data-x="-3600" data-y="-1000" data-z="0" data-rotate-x="45">
+		<h1>Overview</h1>
+		<div class="standpunten">
+			<a href="#activi1" class="standpuntlinkodd"><span class="standpuntlinknumber">Zo</span></a></br>
+			<a href="#activi2" class="standpuntlinkeven"><span class="standpuntlinknumber">Ma</span></a></br>
+			<a href="#activi3" class="standpuntlinkodd"><span class="standpuntlinknumber">Di</span></a></br>
+			<a href="#activi4" class="standpuntlinkeven"><span class="standpuntlinknumber">Wo</span></a></br>
+			<a href="#activi5" class="standpuntlinkodd"><span class="standpuntlinknumber">Do</span></a>
+		</div>
+	</div>
+	
+	<div id="activi1" class="step cubeFace fontclass" data-x="-3250" data-y="-753" data-z="-247" data-rotate-x="45" data-rotate-y="90">
+		<h1>1</h1>
+	</div>
+	<div id="activi2" class="step cubeFace fontclass" data-x="-3600" data-y="-505" data-z="0" data-rotate-x="-45">
+		<h1>2</h1>
+	</div>
+	<div id="activi3" class="step cubeFace fontclass" data-x="-3600" data-y="-505" data-z="-495" data-rotate-z="180" data-rotate-x="-135">
+		<h1>3</h1>
+	</div>
+	<div id="activi4" class="step cubeFace fontclass" data-x="-3600" data-y="-1000" data-z="-495" data-rotate-z="180" data-rotate-x="135">
+		<h1>4</h1>
+	</div>
+	<div id="activi5" class="step cubeFace fontclass" data-x="-3950" data-y="-753" data-z="-247" data-rotate-x="45" data-rotate-y="-90">
+		<h1>5</h1>
+	</div>		
     	
-
-
-	<div id="overview" class="step" data-x="0" data-y="0" data-z="0"></div>
-
-    	
-    <div id="standpuntentCentral" class="step" data-x="2800" data-y="-900" data-z="-6000" data-rotate="90" data-scale="2">
+    <div id="standpuntenCentral" class="step" data-x="2800" data-y="-900" data-z="0" data-rotate="90" data-scale="2">
     <span class="clusterTitle">Standpunten</span>
     </div>	
 
-		<div id="standpuntenoverzicht" class="step slide" data-x="2300" data-y="-1400" data-z="-6000" data-scale="0.7">
+		<div id="standpuntenoverzicht" class="step slide standpuntoverzichtslide" data-x="2100" data-y="-1400" data-z="0">
     		<h1>
     			Standpunten
     		</h1>
     		<div class="standpunten">
-				<a href="#/standpunt1" class="standpuntlinkodd"><span class="standpuntlinknumber">1 </span><span class="standpuntlink">Delta verlaagt de drempel voor zijn leden</span></a></span></br>
-				<a href="#/standpunt2" class="standpuntlinkeven"><span class="standpuntlinknumber">2 </span><span class="standpuntlink">Delta verlaagt de drempel voor zijn leden</span></a></span></br>
-				<a href="#/standpunt3" class="standpuntlinkodd"><span class="standpuntlinknumber">3 </span><span class="standpuntlink">Delta verlaagt de drempel voor zijn leden</span></a></span></br>
-				<a href="#/standpunt4" class="standpuntlinkeven"><span class="standpuntlinknumber">4 </span><span class="standpuntlink">Delta verlaagt de drempel voor zijn leden</span></a></span></br>
-				<a href="#/standpunt5" class="standpuntlinkodd"><span class="standpuntlinknumber">5 </span><span class="standpuntlink">Delta verlaagt de drempel voor zijn leden</span></a></span>
+				<a href="#standpunt1" class="standpuntlinkodd"><span class="standpuntlinknumber">1 </span><span class="standpuntlink">Delta verlaagt de drempel voor zijn leden</span></a></br>
+				<a href="#standpunt2" class="standpuntlinkeven"><span class="standpuntlinknumber">2 </span><span class="standpuntlink">Delta verlaagt de drempel voor zijn leden</span></a></br>
+				<a href="#standpunt3" class="standpuntlinkodd"><span class="standpuntlinknumber">3 </span><span class="standpuntlink">Delta verlaagt de drempel voor zijn leden</span></a></br>
+				<a href="#standpunt4" class="standpuntlinkeven"><span class="standpuntlinknumber">4 </span><span class="standpuntlink">Delta verlaagt de drempel voor zijn leden</span></a></br>
+				<a href="#standpunt5" class="standpuntlinkodd"><span class="standpuntlinknumber">5 </span><span class="standpuntlink">Delta verlaagt de drempel voor zijn leden</span></a>
 			</div>
 			
-			<div class="slidefooter">
-				<a href="www.google.com">
+			<div class="slideleftfooter">
+				<a href="http://www.google.com">
 					<img src="http://www.adobe.com/images/pdficon_large.png"/>
 					Download visietekst
 				</a>
 			</div>
     	</div>
     	
-		<div id="standpunt1" class="step slide" data-x="3200" data-y="-1350" data-z="-6000" data-rotate-z="90" data-scale="0.7">
-			<h1>
-				Delta verlaagt de drempel voor zijn leden
-			</h1>
+		<div id="standpunt1" class="step slide standpuntslide" data-x="1000" data-y="-10000" data-z="0">
+			<div class="standpunttop">
+				
+				<div class="standpuntnumber">1</div>
+				<div class="standpunttitle slidetitle">Delta verlaagt de drempel naar andere kringen</div>
+				<div class="standpunttext">Met speciale aandacht voor de nieuwe eerstejaars zal Lux het academiejaar inzetten. Een herdacht schachtenweekend, gevolgd door een nooit eerder geziene welkomstweek doet hen meteen thuisvoelen in Leuven. Regelmatige updates in de les, een up-to-date kalender en een aantal open vergaderingen maken het plaatje compleet. Maar Lux staat niet enkel voor de nieuwelingen paraat. Een versterkte ondersteuning voor jaarwerkingen, een opwaarding van de vaste medewerkers en originele initiatieven met de bedrijfswereld staan op het programma. Ook de Engelstalige communicatie naar onze vele internationale studenten zal sterk uitgebreid worden.</div>
+			</div>
+			
+			
+			<div class="slideleftfooter">
+				<a href="#standpuntenoverzicht">Overzicht</a>
+			</div>
+			<div class="sliderightfooter">
+				<a href="#standpunt2">Volgende</a>
+			</div>
+		</div>
+		
+		<div id="standpunt2" class="step slide standpuntslide" data-x="2000" data-y="-10000" data-z="0">
+			<div class="standpunttop">
+				
+				<div class="standpuntnumber">2</div>
+				<div class="standpunttitle slidetitle">Delta verlaagt de drempel naar andere kringen</div>
+				<div class="standpunttext">Met speciale aandacht voor de nieuwe eerstejaars zal Lux het academiejaar inzetten. Een herdacht schachtenweekend, gevolgd door een nooit eerder geziene welkomstweek doet hen meteen thuisvoelen in Leuven. Regelmatige updates in de les, een up-to-date kalender en een aantal open vergaderingen maken het plaatje compleet. Maar Lux staat niet enkel voor de nieuwelingen paraat. Een versterkte ondersteuning voor jaarwerkingen, een opwaarding van de vaste medewerkers en originele initiatieven met de bedrijfswereld staan op het programma. Ook de Engelstalige communicatie naar onze vele internationale studenten zal sterk uitgebreid worden.</div>
+			</div>
+			
+
+			
+			<div class="slideleftfooter">
+				<a href="#standpunt1">Vorige</a>
+			</div>
+			
+			<div class="sliderightfooter">
+				<a href="#standpunt3">Volgende</a>
+			</div>
+		</div>
+		
+		<div id="standpunt3" class="step slide standpuntslide" data-x="3000" data-y="-10000" data-z="0">
+			<div class="standpunttop">
+				
+				<div class="standpuntnumber">3</div>
+				<div class="standpunttitle slidetitle">Delta verlaagt de drempel naar andere kringen</div>
+				<div class="standpunttext">Met speciale aandacht voor de nieuwe eerstejaars zal Lux het academiejaar inzetten. Een herdacht schachtenweekend, gevolgd door een nooit eerder geziene welkomstweek doet hen meteen thuisvoelen in Leuven. Regelmatige updates in de les, een up-to-date kalender en een aantal open vergaderingen maken het plaatje compleet. Maar Lux staat niet enkel voor de nieuwelingen paraat. Een versterkte ondersteuning voor jaarwerkingen, een opwaarding van de vaste medewerkers en originele initiatieven met de bedrijfswereld staan op het programma. Ook de Engelstalige communicatie naar onze vele internationale studenten zal sterk uitgebreid worden.</div>
+			</div>
+			
+
+			
+			<div class="slideleftfooter">
+				<a href="#standpunt2">Vorige</a>
+			</div>
+			
+			<div class="sliderightfooter">
+				<a href="#standpunt4">Volgende</a>
+			</div>
+		</div>
+		
+		<div id="standpunt4" class="step slide standpuntslide" data-x="4000" data-y="-10000" data-z="0">
+			<div class="standpunttop">
+				
+				<div class="standpuntnumber">4</div>
+				<div class="standpunttitle slidetitle">Delta verlaagt de drempel naar andere kringen</div>
+				<div class="standpunttext">Met speciale aandacht voor de nieuwe eerstejaars zal Lux het academiejaar inzetten. Een herdacht schachtenweekend, gevolgd door een nooit eerder geziene welkomstweek doet hen meteen thuisvoelen in Leuven. Regelmatige updates in de les, een up-to-date kalender en een aantal open vergaderingen maken het plaatje compleet. Maar Lux staat niet enkel voor de nieuwelingen paraat. Een versterkte ondersteuning voor jaarwerkingen, een opwaarding van de vaste medewerkers en originele initiatieven met de bedrijfswereld staan op het programma. Ook de Engelstalige communicatie naar onze vele internationale studenten zal sterk uitgebreid worden.</div>
+			</div>
+			
+
+			
+			<div class="slideleftfooter">
+				<a href="#standpunt3">Vorige</a>
+			</div>
+			
+			<div class="sliderightfooter">
+				<a href="#standpunt5">Volgende</a>
+			</div>
+		</div>
+		
+		<div id="standpunt5" class="step slide standpuntslide" data-x="5000" data-y="-10000" data-z="0">
+			<div class="standpunttop">
+				
+				<div class="standpuntnumber">5</div>
+				<div class="standpunttitle slidetitle">Delta verlaagt de drempel naar andere kringen</div>
+				<div class="standpunttext">Met speciale aandacht voor de nieuwe eerstejaars zal Lux het academiejaar inzetten. Een herdacht schachtenweekend, gevolgd door een nooit eerder geziene welkomstweek doet hen meteen thuisvoelen in Leuven. Regelmatige updates in de les, een up-to-date kalender en een aantal open vergaderingen maken het plaatje compleet. Maar Lux staat niet enkel voor de nieuwelingen paraat. Een versterkte ondersteuning voor jaarwerkingen, een opwaarding van de vaste medewerkers en originele initiatieven met de bedrijfswereld staan op het programma. Ook de Engelstalige communicatie naar onze vele internationale studenten zal sterk uitgebreid worden.</div>
+			</div>
+			
+
+			
+			<div class="slideleftfooter">
+				<a href="#standpunt4">Vorige</a>
+			</div>
+			
+			<div class="sliderightfooter">
+				<a href="#standpuntenoverzicht">Overzicht</a>
+			</div>
 		</div>
     	
    
@@ -193,25 +293,14 @@
     <div id="memberoverview" class="step" data-x="10000" data-y="0" data-z="2000">
     </div>
     
-    <div id="movie" class="step" data-x="20000" data-y="0">
-<!--     	<h1> -->
-<!--     		Promofilm -->
-<!--     	</h1> -->
-
-		<div class="movieslide slide">
-	    	
+    <div id="movie" class="step movieslide slide" data-x="20000" data-y="0">
 	    	<div id="moviecontainer">
-	    		<iframe width="960" height="720" src="http://www.youtube.com/embed/lQ3HV0lRMOo" frameborder="0" allowfullscreen></iframe>
+	    		<iframe width="640" height="480" src="http://www.youtube.com/embed/lQ3HV0lRMOo" frameborder="0" allowfullscreen></iframe>
 	    	</div>
 	    	<div id="moviespoofer">
-	    		<img width="640" height="480" src="../images/movie-screenshot.png" alt="Movie"/>
+	    		<img width="640" height="480" src="images/movie-screenshot.png" alt="Movie"/>
 	    	</div>
-	    	
-		</div>
     </div>
-
-
-
 
 </div>
 

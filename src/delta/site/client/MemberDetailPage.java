@@ -1,14 +1,7 @@
 package delta.site.client;
 
-import com.google.gwt.i18n.client.HasDirection.Direction;
 import com.google.gwt.user.client.ui.Composite;
-import com.google.gwt.user.client.ui.Grid;
 import com.google.gwt.user.client.ui.HTML;
-import com.google.gwt.user.client.ui.HasHorizontalAlignment.HorizontalAlignmentConstant;
-import com.google.gwt.user.client.ui.HorizontalPanel;
-import com.google.gwt.user.client.ui.Image;
-import com.google.gwt.user.client.ui.VerticalPanel;
-import com.google.gwt.user.client.ui.Widget;
 
 public class MemberDetailPage extends Composite {
 

@@ -27,12 +27,12 @@
 
 .cubeFace {
         margin-top: 60px !important;
+        padding-top: 0px !important;
         display: block;
         background-color: white;
         width: 700px !important;
         height: 700px !important;
 }
-
 
 .fontclass {
 	    font-family: 'Open Sans', Arial, sans-serif;
@@ -48,7 +48,6 @@
 
 /* The buttons themselves */
 .menubutton-container a {
-	float: left;
 	background: none;
 	padding: 0px;
 }
@@ -138,14 +137,21 @@ h1 {
     text-align: center;
 }
 
+.slidetitle {
+	font-size: 40pt;
+	font-weight: bolder;
+	line-height: 1;
+    text-align: center;
+}
+
 #movie {
-	width: 980px;
-	height: 740px;
+	width: 660px;
+	height: 500px;
 }
 
 .movieslide {
-	width: 980px !important;
-	height: 740px !important;
+	width: 660px !important;
+	height: 500px !important;
     position: relative !important;
 	padding: 0px !important;
 	text-align: center;
@@ -169,20 +175,43 @@ h1 {
 	display: none;
 }
 
-.standpunten {
-	margin-top: 100px;
+.standpuntoverzichtslide {
+	height: 600px !important;
+	width: 900px !important;
 }
 
-.slidefooter {
+#impress a {
+	pointer-events: none;
+	cursor: default;
+}
+
+#impress .present a {
+	pointer-events: auto;
+	cursor: auto;
+}
+
+.standpuntslide {
+	height: 600px !important;
+	width: 900px !important;
+	padding: 10px !important;
+}
+
+.slideleftfooter {
 	position: absolute;
-	bottom: 40px;
+	bottom: 20px;
 	left: 60px;
-	text-align: right;
+}
+
+.sliderightfooter {
+	position: absolute;
+	bottom: 20px;
+	right: 60px;
 }
 
 .standpuntlinknumber {
 	font-size: 80pt;
-	margin-left: 0px;
+	margin: 0px;
+	line-height: .5;
 }
 
 .standpuntlink {
@@ -192,4 +221,46 @@ h1 {
 
 .standpuntlinkeven {
 	margin-left: 65px;
+}
+
+.standpunttop {
+	margin-top: -5px;
+	height: 133px;
+	width: 900px;
+	
+}
+
+.standpuntnumber {
+	float:left;
+	margin-top: 5px;
+	margin-left: 0px;
+	font-size: 200pt;
+	line-height: 1;
+	padding: 0px;
+	width: 50px;
+	height: 133px;
+}
+
+.standpunttitle {
+	line-height: 1;
+	margin-top: 40px;
+	margin-left: 110px;
+	margin-right: 50px;
+	text-align: left;
+	width: 690px;
+	height: 133px;
+	float:right;
+	vertical-align: top;
+}
+
+.standpunttext {
+	line-height: 1.1;
+	margin-left: 110px;
+	margin-right: 50px;
+	text-align: left;
+	width: 690px;
+	height: 133px;
+	float:right;
+	vertical-align: top;
+	font-size: 18pt;
 }

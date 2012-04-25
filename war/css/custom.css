@@ -236,7 +236,6 @@ h1 {
 }
 .button:active {
     background: #5e5e5e;
-    margin: 1px 0px 0px 0px;
 }
 
 .standpuntlinknumber {
@@ -312,6 +311,14 @@ h1 {
 	margin-right: 30px;
 }
 
+.activi-content .slideleftfooter {
+	margin-left: 20px;
+}
+
+.activi-content .sliderightfooter {
+	margin-right: 20px;
+}
+
 .activi-bottom {
 	margin-top: 20px;
 	margin-left: 40px;
@@ -327,6 +334,14 @@ h1 {
 	text-align: left;
 }
 
+.activi-content a {
+	pointer-events: auto !important;
+	cursor: auto !important;
+}
+
+.impress-on-receptie #receptie-content {
+	display: inline;
+}
 .impress-on-fakfeestje #fakfeestje-content {
 	display: inline;
 }
@@ -334,6 +349,9 @@ h1 {
 	display: inline;
 }
 .impress-on-bbq #bbq-content {
+	display: inline;
+}
+.impress-on-bbq2 #bbq2-content {
 	display: inline;
 }
 .impress-on-randanimatie #randanimatie-content {
@@ -360,7 +378,22 @@ h1 {
 .impress-on-pannenkoek #pannenkoek-content {
 	display: inline;
 }
+.impress-on-quiz #quiz-content {
+	display: inline;
+}
+.impress-on-laser #laser-content {
+	display: inline;
+}
 
+.impress-on-quiz .step {
+	opacity:1 !important;
+}
+.impress-on-laser .step {
+	opacity:1 !important;
+}
+.impress-on-receptie .step {
+	opacity:1 !important;
+}
 .impress-on-fakfeestje .step {
 	opacity:1 !important;
 }
@@ -368,6 +401,9 @@ h1 {
 	opacity:1 !important;
 }
 .impress-on-bbq .step {
+	opacity:1 !important;
+}
+.impress-on-bbq2 .step {
 	opacity:1 !important;
 }
 .impress-on-randanimatie .step {
@@ -431,7 +467,7 @@ input {
 	text-align: left;
 }
 
-.reservationform button {
+.reservationform .button {
 	font-size: 20pt;
 	border: none;
 	margin-top: 10px;
@@ -449,6 +485,10 @@ input {
 	opacity:1 !important;
 }
 
+.impress-on-bbq2subscribe .step {
+	opacity:1 !important;
+}
+
 .impress-on-kebabsubscribe .step {
 	opacity:1 !important;
 }
@@ -457,10 +497,27 @@ input {
 	display: none;
 }
 
+.reservation-content a {
+	pointer-events: auto !important;
+	cursor: auto !important;
+}
+
 .impress-on-bbqsubscribe #bbqsubscribe-content {
+	display: block;
+}
+
+.impress-on-bbq2subscribe #bbq2subscribe-content {
 	display: block;
 }
 
 .impress-on-kebabsubscribe #kebabsubscribe-content {
 	display: block;
+}
+
+.activi-smaller .activi-bottom {
+	font-size: 12pt;
+}
+
+#concert-schedule {
+	margin-left: 200px;
 }

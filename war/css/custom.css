@@ -46,6 +46,14 @@
 	    letter-spacing: -1px;
 }
 
+
+
+/* */
+.ActiOverviewWrapper{
+
+
+}
+
 /* The buttons themselves */
 .menubutton-container a {
 	background: none;
@@ -262,5 +270,10 @@ h1 {
 	height: 133px;
 	float:right;
 	vertical-align: top;
+<<<<<<< HEAD
 	font-size: 18pt;
 }
+=======
+	font-size: 24pt;
+}
+>>>>>>> 4c41cf50f21f60dd2dc8a097d11897ed40e281c7

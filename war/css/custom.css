@@ -206,14 +206,37 @@ h1 {
 
 .slideleftfooter {
 	position: absolute;
-	bottom: 20px;
+	bottom: 30px;
 	left: 60px;
+	font-size: 20pt;
 }
 
 .sliderightfooter {
 	position: absolute;
-	bottom: 20px;
+	bottom: 30px;
 	right: 60px;
+	font-size: 20pt;
+}
+
+.button {
+    background: #8d5cad;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    padding: 0px 5px 2px 5px;
+    color: #fafafa;
+    -webkit-box-shadow: 0px 4px 10px 0px #6e366e;
+    -moz-box-shadow: 0px 4px 10px 0px #6e366e;
+    box-shadow: 0px 4px 10px 0px #6e366e;
+}
+.button:hover {
+    -webkit-box-shadow: 0px 4px 10px 0px #6e366e inset;
+    -moz-box-shadow: 0px 4px 10px 0px #6e366e inset;
+    box-shadow: 0px 4px 10px 0px #6e366e inset;
+}
+.button:active {
+    background: #5e5e5e;
+    margin: 1px 0px 0px 0px;
 }
 
 .standpuntlinknumber {
@@ -275,10 +298,33 @@ h1 {
 
 .activi-content {
 	display:none;
+	margin: 0 auto;
+	text-align: center;
 }
 
-.activi-content {
-	margin-top: 0px;
+.activi-content h1 {
+	text-align: left;
+	margin-left: 63px;
+}
+
+.activi-content img {
+	display:inline-block;
+	margin-right: 30px;
+}
+
+.activi-bottom {
+	margin-top: 20px;
+	margin-left: 40px;
+	margin-right: 40px;
+	font-size: 14pt;
+	text-align: justify;
+}
+
+.activi-summary {
+	font-size: 20pt;
+	display:inline-block;
+	vertical-align: top;
+	text-align: left;
 }
 
 .impress-on-fakfeestje #fakfeestje-content {
@@ -347,4 +393,74 @@ h1 {
 }
 .impress-on-pannenkoek .step {
 	opacity:1 !important;
+}
+
+input {
+	width: 390px;
+	display: block;
+	margin-top: 5px;
+	margin-bottom: 20px;
+	font-size: 12pt;
+	padding: 3px;
+	border: 1px solid #999;
+	height: 25px;
+	-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3) inset;
+	-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3) inset;
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3) inset;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.reservationform {
+	font-size: 20pt;
+	border-style: dashed;
+	border-width: 1px;
+	padding: 30px;
+	width: 400px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 80px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.reservationforminput {
+	text-align: left;
+}
+
+.reservationform button {
+	font-size: 20pt;
+	border: none;
+	margin-top: 10px;
+}
+
+.backbutton {
+	
+}
+
+.submitbutton {
+	margin-left: 180px;
+}
+
+.impress-on-bbqsubscribe .step {
+	opacity:1 !important;
+}
+
+.impress-on-kebabsubscribe .step {
+	opacity:1 !important;
+}
+
+.reservation-content {
+	display: none;
+}
+
+.impress-on-bbqsubscribe #bbqsubscribe-content {
+	display: block;
+}
+
+.impress-on-kebabsubscribe #kebabsubscribe-content {
+	display: block;
 }

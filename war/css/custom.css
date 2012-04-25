@@ -264,3 +264,79 @@ h1 {
 	vertical-align: top;
 	font-size: 24pt;
 }
+
+.activi-content {
+	display:none;
+}
+
+.activi-content {
+	margin-top: 0px;
+}
+
+.impress-on-fakfeestje #fakfeestje-content {
+	display: inline;
+}
+.impress-on-ontbijt #ontbijt-content {
+	display: inline;
+}
+.impress-on-bbq #bbq-content {
+	display: inline;
+}
+.impress-on-randanimatie #randanimatie-content {
+	display: inline;
+}
+.impress-on-kiestd #kiestd-content {
+	display: inline;
+}
+.impress-on-jamsessie #jamsessie-content {
+	display: inline;
+}
+.impress-on-optredens #optredens-content {
+	display: inline;
+}
+.impress-on-attracties #attracties-content {
+	display: inline;
+}
+.impress-on-chill #chill-content {
+	display: inline;
+}
+.impress-on-kebab #kebab-content {
+	display: inline;
+}
+.impress-on-pannenkoek #pannenkoek-content {
+	display: inline;
+}
+
+.impress-on-fakfeestje .step {
+	opacity:1 !important;
+}
+.impress-on-ontbijt .step {
+	opacity:1 !important;
+}
+.impress-on-bbq .step {
+	opacity:1 !important;
+}
+.impress-on-randanimatie .step {
+	opacity:1 !important;
+}
+.impress-on-kiestd .step {
+	opacity:1 !important;
+}
+.impress-on-jamsessie .step {
+	opacity:1 !important;
+}
+.impress-on-optredens .step {
+	opacity:1 !important;
+}
+.impress-on-attracties .step {
+	opacity:1 !important;
+}
+.impress-on-chill .step {
+	opacity:1 !important;
+}
+.impress-on-kebab .step {
+	opacity:1 !important;
+}
+.impress-on-pannenkoek .step {
+	opacity:1 !important;
+}

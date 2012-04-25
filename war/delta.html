@@ -111,13 +111,39 @@
 		
 	<div id="activiOverview" class="step cubeFace fontclass" data-x="-3600" data-y="-1000" data-z="0" data-rotate-x="45">
 		<h1>Overview</h1>
-		<div class="standpunten">
-			<a href="#activi1" class="standpuntlinkodd"><span class="standpuntlinknumber">Zo</span></a></br>
-			<a href="#activi2" class="standpuntlinkeven"><span class="standpuntlinknumber">Ma</span></a></br>
-			<a href="#activi3" class="standpuntlinkodd"><span class="standpuntlinknumber">Di</span></a></br>
-			<a href="#activi4" class="standpuntlinkeven"><span class="standpuntlinknumber">Wo</span></a></br>
-			<a href="#activi5" class="standpuntlinkodd"><span class="standpuntlinknumber">Do</span></a>
-		</div>
+		
+		<table>
+		<tr>
+			<td>Zondag</td>
+			<td>
+				<table id="ActiOverview">
+				<tr>
+					<td>19:00 - 23:00</td>
+					<td>OpeningsReceptie</td>
+				</tr>
+				<tr>
+					<td>Maandag</td>
+					<td>Griffin</td>
+				</tr>
+				<tr>
+					<td>Dinsdag</td>
+					<td>Griffin</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td>Maandag</td>
+			<td>Griffin</td>
+		</tr>
+		<tr>
+			<td>Dinsdag</td>
+			<td>Griffin</td>
+		</tr>
+		</table>
+
+		
+		
 	</div>
 	
 	<div id="activi1" class="step cubeFace fontclass" data-x="-3250" data-y="-753" data-z="-247" data-rotate-x="45" data-rotate-y="90">
@@ -238,7 +264,6 @@
 					Download visietekst
 				</a>
 			</div>
-			
     	</div>
     	
 		<div id="standpunt1" class="step slide standpuntslide" data-x="1000" data-y="-10000" data-z="0">
@@ -333,10 +358,8 @@
 				<a href="#standpuntenoverzicht">Overzicht</a>
 			</div>
 		</div>
-    	
-    	
-    	
-    	
+  
+   	
     	
 
     <div id="memberdetail11" class="memberdetail step slide" data-x="9200" data-y="-400">
@@ -384,17 +407,6 @@
 
 </div>
 
-<!-- Displaying the hint    -->
-
-<div class="hint">
-    <p>Use a spacebar or arrow keys to navigate</p>
-</div>
-
-<script>
-if ("ontouchstart" in document.documentElement) { 
-    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
-}
-</script>
 
 <!-- Embed the impress library -->
 <script src="js/impress.js"></script>

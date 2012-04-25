@@ -26,7 +26,7 @@
 
 
 .cubeFace {
-        margin-top: 98px !important;
+        margin-top: 60px !important;
         padding-top: 0px !important;
         display: block;
         background-color: white;
@@ -44,6 +44,14 @@
 	    line-height: 36px;
 	
 	    letter-spacing: -1px;
+}
+
+
+
+/* */
+.ActiOverviewWrapper{
+
+
 }
 
 /* The buttons themselves */
@@ -262,7 +270,7 @@ h1 {
 	height: 133px;
 	float:right;
 	vertical-align: top;
-	font-size: 24pt;
+	font-size: 18pt;
 }
 
 .activi-content {

@@ -479,6 +479,8 @@ input {
 
 .submitbutton {
 	margin-left: 180px;
+	padding-top: 5px;
+	height: 38px;
 }
 
 .impress-on-bbqsubscribe .step {
@@ -500,6 +502,11 @@ input {
 .reservation-content a {
 	pointer-events: auto !important;
 	cursor: auto !important;
+}
+
+.reservation-content button {
+	pointer-events: auto !important;
+	cursor: pointer !important;
 }
 
 .impress-on-bbqsubscribe #bbqsubscribe-content {

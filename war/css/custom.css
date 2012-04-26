@@ -16,19 +16,8 @@
 	margin:auto;
 }
 
-
-.clusterTitle {
-    font-weight: bold;
-    text-align: center;
-    font-size: 6em;
-    line-height: 1;
-    color: white;
-}
-
-
 .cubeFace {
-        margin-top: 60px !important;
-        padding-top: 0px !important;
+		padding-top: 0px !important;
         display: block;
         background-color: white;
         width: 700px !important;
@@ -50,8 +39,6 @@
 	
 	    letter-spacing: -1px;
 }
-
-
 
 /* Activiteiten Overzicht */
 
@@ -224,6 +211,10 @@ h1 {
 	text-align: center;
 }
 
+#moviecontainer {
+	margin: 10px;
+}
+
 .standpuntoverzichtslide {
 	height: 600px !important;
 	width: 900px !important;
@@ -262,6 +253,9 @@ h1 {
 	text-align: center;
 }
 
+.step {
+	position: relative;
+}
 
 .slideleftfooter {
 	position: absolute;
@@ -354,19 +348,14 @@ h1 {
 	font-size: 18pt;
 }
 
-.activi-content {
-	display:none;
-	margin: 0 auto;
-	text-align: center;
-}
-
 .activi-content h1 {
 	text-align: left;
-	margin-left: 63px;
+	margin-left: 38px;
 }
 
 .activi-content img {
 	display:inline-block;
+	margin-left: 20px;
 	margin-right: 30px;
 }
 
@@ -391,6 +380,7 @@ h1 {
 	display:inline-block;
 	vertical-align: top;
 	text-align: left;
+	width: 270px;
 }
 
 .activi-content a {

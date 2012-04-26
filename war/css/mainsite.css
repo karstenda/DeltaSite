@@ -29,7 +29,6 @@
 
 #moviecontainer {
 	display: none;
-	margin: 10px;
 }
 
 #moviespoofer {
@@ -139,3 +138,27 @@
 /* enable clicking on elements 'hiding' behind body in 3D */
 body     { pointer-events: none; }
 #impress { pointer-events: auto; }
+
+
+.activi-content {
+	display:none;
+	margin: 0 auto;
+	text-align: center;
+}
+
+/* fade out inactive slides */
+.step:not(.active) {
+    opacity: 0.3;
+}
+
+.clusterTitle {
+    font-weight: bold;
+    text-align: center;
+    font-size: 6em;
+    line-height: 1;
+    color: white;
+}
+
+.cubeFace {
+	margin-top: 60px !important;
+}

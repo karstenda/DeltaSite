@@ -4,6 +4,50 @@
 }
 
 .backupcontent .step {
-/* 	display: block; */
-	margin: 0px auto;
+	margin: 0px auto 0px auto;
+}
+
+.clusterTitle {
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 1;
+    color: white;
+}
+
+.activi-content img {
+	margin-left: 40px;
+}
+
+#activiOverviewDiv {
+	padding-top: 15px;
+}
+
+.lonelystep {
+	margin: 60px auto 30px auto !important;
+}
+
+.bottomstep {
+	margin-bottom: 30px;
+}
+
+#SponsorsCentral {
+	background-color: white;
+	border-radius: 10px;
+}
+
+#SponsorsCentral .clusterTitle {
+	margin-top: 0px;
+	color: rgb(102, 102, 102);
+	margin-bottom: 80px;
+}
+
+h1 {
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.cubeFace {
+	border-radius: 10px;
 }

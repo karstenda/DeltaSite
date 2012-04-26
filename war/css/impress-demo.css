@@ -110,11 +110,6 @@ a:hover {
     transition:         opacity 1s;
 }
 
-/* fade out inactive slides */
-.step:not(.active) {
-    opacity: 0.3;
-}
-
 /* STEP SPECIFIC STYLES */
 
 /* hint on the first slide */

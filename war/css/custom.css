@@ -16,19 +16,8 @@
 	margin:auto;
 }
 
-
-.clusterTitle {
-    font-weight: bold;
-    text-align: center;
-    font-size: 6em;
-    line-height: 1;
-    color: white;
-}
-
-
 .cubeFace {
-        margin-top: 60px !important;
-        padding-top: 0px !important;
+		padding-top: 0px !important;
         display: block;
         background-color: white;
         width: 700px !important;
@@ -50,8 +39,6 @@
 	
 	    letter-spacing: -1px;
 }
-
-
 
 /* Activiteiten Overzicht */
 
@@ -155,7 +142,6 @@ td.ActiOverviewInschr {
 	background: none;
 }
 
-
 .memberdetail {
 	width: 700px !important;
 	height: 300px !important;
@@ -197,36 +183,6 @@ td.ActiOverviewInschr {
 	padding: 0;
 }
 
-/* Give opacity 1 to all of the member details when on the overview */
-.impress-on-memberoverview .step {
-	cursor: pointer;
-	opacity:1 !important;
-}
-
-.impress-on-memberoverview .memberinfo {
-    display:none;
-}
-
-.impress-on-memberoverview .memberquestions {
-    display:none;
-}
-
-.impress-on-memberoverview .membername {
-    font-size: 40pt;
-}
-
-.impress-on-memberoverview .memberleft {
-	width: 400px;
-}
-
-.impress-on-memberoverview .memberright {
-	width: 250px;
-}
-
-.impress-on-memberoverview .memberimage {
-	width: 250px;
-	height: 250px;
-}
 
 h1 {
 	font-size: 40pt;
@@ -256,44 +212,12 @@ h1 {
 }
 
 #moviecontainer {
-	display: none;
 	margin: 10px;
-}
-
-#moviespoofer {
-	display: inline-block;
-	margin: 10px;
-}
-
-.present #moviecontainer {
-	display: inline-block;
-}
-
-.present #moviespoofer {
-	display: none;
 }
 
 .standpuntoverzichtslide {
 	height: 600px !important;
 	width: 900px !important;
-}
-
-#impress a {
-	pointer-events: none;
-	cursor: default;
-}
-
-#impress tr {
-	pointer-events: none;
-}
-
-#impress .present a {
-	pointer-events: auto;
-	cursor: auto;
-}
-
-#impress .present tr {
-	pointer-events: auto;
 }
 
 .standpuntslide {
@@ -329,6 +253,9 @@ h1 {
 	text-align: center;
 }
 
+.step {
+	position: relative;
+}
 
 .slideleftfooter {
 	position: absolute;
@@ -421,19 +348,14 @@ h1 {
 	font-size: 18pt;
 }
 
-.activi-content {
-	display:none;
-	margin: 0 auto;
-	text-align: center;
-}
-
 .activi-content h1 {
 	text-align: left;
-	margin-left: 63px;
+	margin-left: 38px;
 }
 
 .activi-content img {
 	display:inline-block;
+	margin-left: 20px;
 	margin-right: 30px;
 }
 
@@ -458,60 +380,12 @@ h1 {
 	display:inline-block;
 	vertical-align: top;
 	text-align: left;
+	width: 270px;
 }
 
 .activi-content a {
 	pointer-events: auto !important;
 	cursor: auto !important;
-}
-
-.impress-on-receptie #receptie-content {
-	display: inline;
-}
-.impress-on-fakfeestje #fakfeestje-content {
-	display: inline;
-}
-.impress-on-ontbijt #ontbijt-content {
-	display: inline;
-}
-.impress-on-bbq #bbq-content {
-	display: inline;
-}
-.impress-on-bbq2 #bbq2-content {
-	display: inline;
-}
-.impress-on-randanimatie #randanimatie-content {
-	display: inline;
-}
-.impress-on-kiestd #kiestd-content {
-	display: inline;
-}
-.impress-on-jamsessie #jamsessie-content {
-	display: inline;
-}
-.impress-on-optredens #optredens-content {
-	display: inline;
-}
-.impress-on-attracties #attracties-content {
-	display: inline;
-}
-.impress-on-chill #chill-content {
-	display: inline;
-}
-.impress-on-kebab #kebab-content {
-	display: inline;
-}
-.impress-on-kebab2 #kebab2-content {
-	display: inline;
-}
-.impress-on-pannenkoek #pannenkoek-content {
-	display: inline;
-}
-.impress-on-quiz #quiz-content {
-	display: inline;
-}
-.impress-on-laser #laser-content {
-	display: inline;
 }
 
 input {
@@ -580,21 +454,6 @@ input {
 	cursor: pointer !important;
 }
 
-.impress-on-bbqsubscribe #bbqsubscribe-content {
-	display: block;
-}
-
-.impress-on-bbq2subscribe #bbq2subscribe-content {
-	display: block;
-}
-
-.impress-on-kebabsubscribe #kebabsubscribe-content {
-	display: block;
-}
-
-.impress-on-kebab2subscribe #kebab2subscribe-content {
-	display: block;
-}
 
 .activi-smaller .activi-bottom {
 	font-size: 12pt;

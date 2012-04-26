@@ -431,13 +431,11 @@ input {
 }
 
 .backbutton {
-	
+	float:left;
 }
 
 .submitbutton {
 	margin-left: 180px;
-	padding-top: 5px;
-	height: 38px;
 }
 
 .activi-smaller .activi-bottom {

@@ -134,7 +134,7 @@ td.ActiOverviewLoc {
 }
 
 .memberquestions {
-	font-size: 14pt;
+	font-size: 13pt;
 	margin-top: 15px;
 }
 
@@ -154,7 +154,7 @@ td.ActiOverviewLoc {
 }
 
 .memberinfo {
-	font-size: 12pt;
+	font-size: 11.5pt;
 }
 
 #memberoverview {
@@ -261,14 +261,36 @@ h1 {
 
 .slideleftfooter {
 	position: absolute;
-	bottom: 20px;
+	bottom: 30px;
 	left: 60px;
+	font-size: 20pt;
 }
 
 .sliderightfooter {
 	position: absolute;
-	bottom: 20px;
+	bottom: 30px;
 	right: 60px;
+	font-size: 20pt;
+}
+
+.button {
+    background: #8d5cad;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    padding: 0px 5px 2px 5px;
+    color: #fafafa;
+    -webkit-box-shadow: 0px 4px 10px 0px #6e366e;
+    -moz-box-shadow: 0px 4px 10px 0px #6e366e;
+    box-shadow: 0px 4px 10px 0px #6e366e;
+}
+.button:hover {
+    -webkit-box-shadow: 0px 4px 10px 0px #6e366e inset;
+    -moz-box-shadow: 0px 4px 10px 0px #6e366e inset;
+    box-shadow: 0px 4px 10px 0px #6e366e inset;
+}
+.button:active {
+    background: #5e5e5e;
 }
 
 .standpuntlinknumber {
@@ -325,10 +347,239 @@ h1 {
 	height: 133px;
 	float:right;
 	vertical-align: top;
-<<<<<<< HEAD
 	font-size: 18pt;
 }
-=======
-	font-size: 24pt;
+
+.activi-content {
+	display:none;
+	margin: 0 auto;
+	text-align: center;
 }
->>>>>>> 4c41cf50f21f60dd2dc8a097d11897ed40e281c7
+
+.activi-content h1 {
+	text-align: left;
+	margin-left: 63px;
+}
+
+.activi-content img {
+	display:inline-block;
+	margin-right: 30px;
+}
+
+.activi-content .slideleftfooter {
+	margin-left: 20px;
+}
+
+.activi-content .sliderightfooter {
+	margin-right: 20px;
+}
+
+.activi-bottom {
+	margin-top: 20px;
+	margin-left: 40px;
+	margin-right: 40px;
+	font-size: 14pt;
+	text-align: justify;
+}
+
+.activi-summary {
+	font-size: 20pt;
+	display:inline-block;
+	vertical-align: top;
+	text-align: left;
+}
+
+.activi-content a {
+	pointer-events: auto !important;
+	cursor: auto !important;
+}
+
+.impress-on-receptie #receptie-content {
+	display: inline;
+}
+.impress-on-fakfeestje #fakfeestje-content {
+	display: inline;
+}
+.impress-on-ontbijt #ontbijt-content {
+	display: inline;
+}
+.impress-on-bbq #bbq-content {
+	display: inline;
+}
+.impress-on-bbq2 #bbq2-content {
+	display: inline;
+}
+.impress-on-randanimatie #randanimatie-content {
+	display: inline;
+}
+.impress-on-kiestd #kiestd-content {
+	display: inline;
+}
+.impress-on-jamsessie #jamsessie-content {
+	display: inline;
+}
+.impress-on-optredens #optredens-content {
+	display: inline;
+}
+.impress-on-attracties #attracties-content {
+	display: inline;
+}
+.impress-on-chill #chill-content {
+	display: inline;
+}
+.impress-on-kebab #kebab-content {
+	display: inline;
+}
+.impress-on-pannenkoek #pannenkoek-content {
+	display: inline;
+}
+.impress-on-quiz #quiz-content {
+	display: inline;
+}
+.impress-on-laser #laser-content {
+	display: inline;
+}
+
+.impress-on-quiz .step {
+	opacity:1 !important;
+}
+.impress-on-laser .step {
+	opacity:1 !important;
+}
+.impress-on-receptie .step {
+	opacity:1 !important;
+}
+.impress-on-fakfeestje .step {
+	opacity:1 !important;
+}
+.impress-on-ontbijt .step {
+	opacity:1 !important;
+}
+.impress-on-bbq .step {
+	opacity:1 !important;
+}
+.impress-on-bbq2 .step {
+	opacity:1 !important;
+}
+.impress-on-randanimatie .step {
+	opacity:1 !important;
+}
+.impress-on-kiestd .step {
+	opacity:1 !important;
+}
+.impress-on-jamsessie .step {
+	opacity:1 !important;
+}
+.impress-on-optredens .step {
+	opacity:1 !important;
+}
+.impress-on-attracties .step {
+	opacity:1 !important;
+}
+.impress-on-chill .step {
+	opacity:1 !important;
+}
+.impress-on-kebab .step {
+	opacity:1 !important;
+}
+.impress-on-pannenkoek .step {
+	opacity:1 !important;
+}
+
+input {
+	width: 390px;
+	display: block;
+	margin-top: 5px;
+	margin-bottom: 20px;
+	font-size: 12pt;
+	padding: 3px;
+	border: 1px solid #999;
+	height: 25px;
+	-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3) inset;
+	-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3) inset;
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3) inset;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.reservationform {
+	font-size: 20pt;
+	border-style: dashed;
+	border-width: 1px;
+	padding: 30px;
+	width: 400px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 80px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.reservationforminput {
+	text-align: left;
+}
+
+.reservationform .button {
+	font-size: 20pt;
+	border: none;
+	margin-top: 10px;
+}
+
+.backbutton {
+	
+}
+
+.submitbutton {
+	margin-left: 180px;
+	padding-top: 5px;
+	height: 38px;
+}
+
+.impress-on-bbqsubscribe .step {
+	opacity:1 !important;
+}
+
+.impress-on-bbq2subscribe .step {
+	opacity:1 !important;
+}
+
+.impress-on-kebabsubscribe .step {
+	opacity:1 !important;
+}
+
+.reservation-content {
+	display: none;
+}
+
+.reservation-content a {
+	pointer-events: auto !important;
+	cursor: auto !important;
+}
+
+.reservation-content button {
+	pointer-events: auto !important;
+	cursor: pointer !important;
+}
+
+.impress-on-bbqsubscribe #bbqsubscribe-content {
+	display: block;
+}
+
+.impress-on-bbq2subscribe #bbq2subscribe-content {
+	display: block;
+}
+
+.impress-on-kebabsubscribe #kebabsubscribe-content {
+	display: block;
+}
+
+.activi-smaller .activi-bottom {
+	font-size: 12pt;
+}
+
+#concert-schedule {
+	margin-left: 200px;
+}

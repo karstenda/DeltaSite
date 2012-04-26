@@ -240,8 +240,8 @@ public class Generator {
 		
 		int length = names.length;
 		
-		int xstart = 10000;
-		int ystart = 0;
+		int xstart = 8000;
+		int ystart = -1000;
 		int cols = 6;
 		
 		for (int i = 0; i < length; i++) {

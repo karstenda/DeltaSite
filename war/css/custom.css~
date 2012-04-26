@@ -290,6 +290,27 @@ h1 {
 	padding: 10px !important;
 }
 
+.sponsorslide1 {
+	width: 820px !important;
+	padding: 10px !important;
+	height: 560px !important;
+}
+
+
+.sponsorslide2 {
+	width: 820px !important;
+	padding: 10px !important;
+	height: 244px !important;
+}
+
+.ploegslide {
+	width: 820px !important;
+	height: 545px !important;
+	padding: 10px !important;
+	text-align: center;
+}
+
+
 .slideleftfooter {
 	position: absolute;
 	bottom: 30px;

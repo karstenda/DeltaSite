@@ -95,8 +95,6 @@
 
 <div id="impress">
 
-    <div id="intro" class="step" data-x="0" data-y="0" data-z="18000" data-rotate="400"></div>
-    
     <div id="overview" class="step" data-x="0" data-y="0" data-z="6000">
     <img src="images/delta_white.png"></img>
     </div>
@@ -302,10 +300,10 @@
 	</div>
 	
 	<div id="activi1" class="step cubeFace fontclass" data-x="-3250" data-y="-753" data-z="-247" data-rotate-x="45" data-rotate-y="90" >
-		<center><br><img src="images/delta_dark2.png"></img></center>
+		<center><br><br><img src="images/delta_dark2.png"></img></center>
 	</div>
 	<div id="activi2" class="step cubeFace fontclass" data-x="-3600" data-y="-505" data-z="0" data-rotate-x="-45" style="vertical-align:center;">
-		<center><br><img src="images/delta_dark2.png"></img></center>
+		<center><br><br><img src="images/delta_dark2.png"></img></center>
 	</div>
 	<div id="activi3" class="step cubeFace fontclass" data-x="-3600" data-y="-505" data-z="-495" data-rotate-z="180" data-rotate-x="-135">
 		
@@ -963,18 +961,47 @@
 				<a href="#standpuntenoverzicht">Overzicht</a>
 			</div>
 		</div>
-  
+
+
+
+    <div id="SponsorsCentral" class="step" data-x="3400" data-y="1210" data-z="0" data-rotate="50">
+    	<span class="clusterTitle">Sponsors</span>
+    </div>
+
+    <div id="sponsors2" class="step slide sponsorslide2" data-x="3100" data-y="1365" data-z="0" data-rotate="50">
+	<div><img src="./images/sponsors2.png"></img></div>
+    </div>
+
+    <div id="sponsors1" class="step slide sponsorslide1" data-x="3345" data-y="2090" data-z="0" data-rotate="-40">
+	<div><img src="./images/sponsors1.png"></img></div>
+    </div>    
+
+    <div id="sponsors3" class="step slide sponsorslide3" data-x="2890" data-y="1540" data-z="0" data-rotate="50">
+	<div><img src="./images/sponsors3.png"></img></div>
+    </div>        
    	
 <!--     START OF MEMBER SECTION	 -->
 
+    <div id="MemnberCentral" class="step" data-x="-3600" data-y="1300" data-z="0" data-rotate="-50">
+    	<span class="clusterTitle">Ploeg</span>
+    </div>
 
 
+    <div id="memberoverview" class="step slide ploegslide" data-x="-3200" data-y="1650" data-z="0" data-rotate="-50">
+	<div><img src="./images/ploeg2.png"></img></div>
+	
+	<!--  Pieter Willemsen - Nero Pieters - Pieter Maene - Katja Huis - Nils Charels - Jeroen Van Hemelen - Jorn Hendrickx - Dieter Maes - Jef Mannaerts - Manu something - Wout Van der Veken - Kristof Dens - Marvin Claes - Sam Verbueken (de persoon die er voor zit weet ik niet..) - Niels Avonds - Sven Dewilde - Karsten Daemen - Nicolas Butzen - Den Boets - Heleen Van Den Noortgate
+	?? - Lauren De Meyer
+	
+	Michelle Driesen - Luka - Emily - Kai - Tom Van der Voorde - Daan Wendelen - Maarten Vandercruyce
+	Slap
+	Niels Gevers - Sebastien Cantillon - Inge Gielis - Sophie Mariën - Stijn Meul - Thomas Bande
+	Ne rare kwiet die praeses wilt worden (wat een ego) -->
+	
+    </div>
 
 
 <!--     END OF MEMBER SECTION	 -->
-    
-    <div id="memberoverview" class="step" data-x="10000" data-y="0" data-z="3500">
-    </div>
     
     <div id="movie" class="step movieslide slide" data-x="20000" data-y="0">
 	    	<div id="moviecontainer">
@@ -985,8 +1012,9 @@
 	    	</div>
     </div>
 
-</div>
+<!-- SPONSORS -->
 
+</div>
 
 <!-- Embed the impress library -->
 <script src="js/impress.js"></script>

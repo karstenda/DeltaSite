@@ -48,11 +48,66 @@
 
 
 
-/* */
-.ActiOverviewWrapper{
+/* Activiteiten Overzicht */
 
 
+.activiOverviewTitle {
+	font-weight: bold;
+	font-size: 20pt;
+	margin-bottom: 10px;
+	margin-top: 0px;
 }
+
+tr.ActiDay {
+	spacing: 20px;
+}
+
+td.ActiWrapperDay {
+	vertical-align:top; 
+	font-size: 16pt;
+	width: 140px;
+}
+
+td.ActiWrapperSchedule {
+	padding-bottom: 20px;
+}
+
+
+tr.ActiOverviewAlt {
+	cursor: pointer;
+	background-color: #DDE9ED;
+}
+
+tr.ActiOverviewAlt:HOVER {
+	color: white;
+	background-color: #7BA7B5;
+}
+
+tr.ActiOverview {
+	cursor: pointer;
+}
+
+tr.ActiOverview:HOVER {
+	color: white;
+	background-color: #7BA7B5;
+}
+
+td.ActiOverviewAct {
+	font-size: 11pt;
+	width: 200px;
+}
+
+td.ActiOverviewHour {
+	font-size: 11pt;
+	width: 150px;
+}
+
+td.ActiOverviewLoc {
+	font-size: 11pt;
+	width: 120px;
+}
+
+
 
 /* The buttons themselves */
 .menubutton-container a {

@@ -1,0 +1,996 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+    <!-- Meta data.                     -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <!-- Meta info.                     -->
+    <title>Delta</title>
+    <meta name="description" content="Delta is a team coming up for election to run the VTK students association" />
+    <meta name="author" content="Karsten Daemen" />
+
+    <!-- Loading the stylesheets.       -->
+    <link type="text/css" rel="stylesheet" href="css/custom.css"/>
+    <link type="text/css" rel="stylesheet" href="css/impress-demo.css"/>   
+
+    <!-- Loading the font stylesheet.   -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+     
+    <!-- Icons ...                      -->
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+	
+    <!--                                           -->
+    <!-- This script loads your compiled module.   -->
+    <!-- If you add any GWT meta tags, they must   -->
+    <!-- be added before this line.                -->
+		                                   
+    <script type="text/javascript" language="javascript" src="deltasite/deltasite.nocache.js"></script>
+
+</head>
+
+<body class="impress-not-supported">
+
+
+    <!-- OPTIONAL: include this if you want history support -->
+    <iframe src="javascript:''" id="__gwt_historyFrame" tabIndex='-1' style="position:absolute;width:0;height:0;border:0"></iframe>
+
+
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+
+<div id="menu" class="menubar">
+
+	<div class="menubutton-container">
+	
+			<a href="#overview" class="menubutton">
+				<img src="images/button_overzicht.png" 
+				onmouseover="this.src='images/button_overzicht_hover.png'" 
+				onmouseout="this.src='images/button_overzicht.png'">
+			</a>
+			
+			<a href="#activiOverview" class="menubutton">
+				<img src="images/button_activiteiten.png" 
+				onmouseover="this.src='images/button_activiteiten_hover.png'" 
+				onmouseout="this.src='images/button_activiteiten.png'">
+			</a>
+			
+			<a href="#memberoverview" class="menubutton">
+				<img src="images/button_ploeg.png" 
+				onmouseover="this.src='images/button_ploeg_hover.png'" 
+				onmouseout="this.src='images/button_ploeg.png'">
+			</a>
+			
+			<a href="#standpuntenoverzicht" class="menubutton">
+				<img src="images/button_standpunten.png" 
+				onmouseover="this.src='images/button_standpunten_hover.png'" 
+				onmouseout="this.src='images/button_standpunten.png'">
+			</a>
+			
+			<a href="#movie" class="menubutton">
+				<img src="images/button_promo.png" 
+				onmouseover="this.src='images/button_promo_hover.png'" 
+				onmouseout="this.src='images/button_promo.png'">
+			</a>
+			
+			<a href="#intro1" class="menubutton">
+				<img src="images/button_sponsor.png" 
+				onmouseover="this.src='images/button_sponsor_hover.png'" 
+				onmouseout="this.src='images/button_sponsor.png'">
+			</a>
+	
+	</div>
+	
+
+</div>
+
+
+<div id="impress">
+
+    <div id="intro" class="step" data-x="0" data-y="0" data-z="18000" data-rotate="400"></div>
+    
+    <div id="overview" class="step" data-x="0" data-y="0" data-z="6000">
+    <img src="images/delta_white.png"></img>
+    </div>
+
+
+
+    <div id="activiteitenCentral" class="step" data-x="-3000" data-y="-1300" data-z="0" data-rotate="68">
+    	<span class="clusterTitle">Activiteiten</span>
+    </div>
+
+
+    <div id="activiteitenTitle" class="step" data-x="-4000" data-y="-1000" data-z="0" data-rotate-x="45" data-rotate-z="-90" >
+    	<span class="ActiviOverviewTitle">Overzicht</span>
+    </div>		
+		
+	<div id="activiOverview" class="step cubeFace fontclass" data-x="-3600" data-y="-1000" data-z="0" data-rotate-x="45">
+		<div style="overflow:auto; height:1000px; margin-top:20px">
+		<table>
+
+		<tr class="ActiDay">
+			<td class="ActiWrapperDay">Zondag</td>
+			<td class="ActiWrapperSchedule">
+				<table>
+				<tr class="ActiOverviewNoPointer">
+					<td class="ActiOverviewHour">19:00 - 23:00</td>
+					<td class="ActiOverviewAct">Frietkot</td>
+					<td class="ActiOverviewLoc">@Alma3</td>
+					<td class="ActiOverviewInschr">-</td>
+				
+				</tr>
+				<tr class="ActiOverviewAlt" onclick="document.location = '#/receptie'">
+					<td class="ActiOverviewHour">19:00 - 24:00</td>
+					<td class="ActiOverviewAct">OpeningsReceptie</td>
+					<td class="ActiOverviewLoc">@Alma3</td>
+					<td class="ActiOverviewInschr">-</td>
+				</tr>
+				<tr class="ActiOverview" onclick="document.location = '#/fakfeestje'">
+					<td class="ActiOverviewHour">21:00 - 5:00</td>
+					<td class="ActiOverviewAct">Fakfeestje</td>
+					<td class="ActiOverviewLoc">@Elixir</td>
+					<td class="ActiOverviewInschr">-</td>
+				</tr>
+				<tr class="ActiOverviewAlt" onclick="document.location = '#/quiz'">
+					<td class="ActiOverviewHour">00:00 - ... </td>
+					<td class="ActiOverviewAct">Start 24 Uren Quiz</td>
+					<td class="ActiOverviewLoc">@Facebook</td>
+					<td class="ActiOverviewInschr">-</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+		<tr class="ActiDay">
+			<td class="ActiWrapperDay">Maandag</td>
+			<td class="ActiWrapperSchedule">
+				<table>
+				<tr class="ActiOverview" onclick="document.location = '#/ontbijt'">
+					<td class="ActiOverviewHour">7:00 - 12:00</td>
+					<td class="ActiOverviewAct">Ontbijt</td>
+					<td class="ActiOverviewLoc">@Alma3</td>
+					<td class="ActiOverviewInschr">-</td>
+				</tr>
+				<tr class="ActiOverviewAlt" onclick="document.location = '#/randanimatie'">
+					<td class="ActiOverviewHour">11:00 - 21:00</td>
+					<td class="ActiOverviewAct">Randanimatie</td>
+					<td class="ActiOverviewLoc">@Alma3</td>
+					<td class="ActiOverviewInschr">inschrijven</td>
+				</tr>
+				<tr class="ActiOverviewNoPointer">
+					<td class="ActiOverviewHour">12:00 - 22:00</td>
+					<td class="ActiOverviewAct">Frietkot</td>
+					<td class="ActiOverviewLoc">@Alma3</td>
+					<td class="ActiOverviewInschr">-</td>
+				</tr>
+				<tr class="ActiOverviewAltNoPointer">
+					<td class="ActiOverviewHour">14:00 - 15:00</td>
+					<td class="ActiOverviewAct">Dr Oetker Snacks</td>
+					<td class="ActiOverviewLoc">@Alma3</td>
+					<td class="ActiOverviewInschr">-</td>
+				</tr>
+				<tr class="ActiOverviewNoPointer">
+					<td class="ActiOverviewHour">16:00 - 17:00</td>
+					<td class="ActiOverviewAct">Smoothies vs Soepjes</td>
+					<td class="ActiOverviewLoc">@Alma3</td>
+					<td class="ActiOverviewInschr">-</td>
+				</tr>
+				<tr class="ActiOverviewAlt" onclick="document.location = '#/bbq'">
+					<td class="ActiOverviewHour">18:00 - 19:30</td>
+					<td class="ActiOverviewAct">BBQ (shift 1)</td>
+					<td class="ActiOverviewLoc">@Alma3</td>
+					<td class="ActiOverviewInschr">inschrijven</td>
+				</tr>
+				<tr class="ActiOverview" onclick="document.location = '#/bbq2'">
+					<td class="ActiOverviewHour">19:00-20:30</td>
+					<td class="ActiOverviewAct">BBQ (shift 2)</td>
+					<td class="ActiOverviewLoc">@Alma3</td>
+					<td class="ActiOverviewInschr">inschrijven</td>
+				</tr>
+				<tr class="ActiOverviewAlt" onclick="document.location = '#/jamsessie'">
+					<td class="ActiOverviewHour">19:00 - 23:00</td>
+					<td class="ActiOverviewAct">Jam Sessie</td>
+					<td class="ActiOverviewLoc">@Alma3</td>
+					<td class="ActiOverviewInschr">-</td>
+				</tr>
+				<tr class="ActiOverview" onclick="document.location = '#/kiestd'">
+					<td class="ActiOverviewHour">22:00 - 5:00</td>
+					<td class="ActiOverviewAct">KiesTD (schuim)</td>
+					<td class="ActiOverviewLoc">@Waaiberg</td>
+					<td class="ActiOverviewInschr">-</td>
+				</tr>
+				<tr class="ActiOverviewAlt" onclick="document.location = '#/quiz'">
+					<td class="ActiOverviewHour">... - 0:00</td>
+					<td class="ActiOverviewAct">Einde 24 Uren Quiz</td>
+					<td class="ActiOverviewLoc">@Facebook</td>
+					<td class="ActiOverviewInschr">-</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+		<tr class="ActiDay">
+			<td class="ActiWrapperDay">Dinsdag</td>
+			<td class="ActiWrapperSchedule">
+				<table>
+				<tr class="ActiOverview" onclick="document.location = '#/randanimatie'">
+					<td class="ActiOverviewHour">10:00 - 19:00</td>
+					<td class="ActiOverviewAct">Randanimatie</td>
+					<td class="ActiOverviewLoc">@Alma3</td>
+					<td class="ActiOverviewInschr">inschrijven</td>
+				</tr>
+				<tr class="ActiOverviewAlt" onclick="document.location = '#/pannenkoek'">
+					<td class="ActiOverviewHour">11:00 - 12:00</td>
+					<td class="ActiOverviewAct">Pannenkoeken</td>
+					<td class="ActiOverviewLoc">@Alma3</td>
+					<td class="ActiOverviewInschr">-</td>
+				</tr>
+				<tr class="ActiOverviewNoPointer">
+					<td class="ActiOverviewHour">12:00 - 22:00</td>
+					<td class="ActiOverviewAct">Frietkot</td>
+					<td class="ActiOverviewLoc">@Alma3</td>
+					<td class="ActiOverviewInschr">-</td>			
+				</tr>
+				<tr class="ActiOverviewAltNoPointer">
+					<td class="ActiOverviewHour">13:30 - 15:00</td>
+					<td class="ActiOverviewAct">Monster Sampling</td>
+					<td class="ActiOverviewLoc">@Alma3</td>
+					<td class="ActiOverviewInschr">-</td>
+				</tr>
+				<tr class="ActiOverview" onclick="document.location = '#/optredens'">
+					<td class="ActiOverviewHour">16:00 - 23:00</td>
+					<td class="ActiOverviewAct">Optredens</td>
+					<td class="ActiOverviewLoc">@Alma3</td>
+					<td class="ActiOverviewInschr">-</td>					
+				</tr>
+				<tr class="ActiOverviewAlt" onclick="document.location = '#/kebab'">
+					<td class="ActiOverviewHour">18:00 - 19:30</td>
+					<td class="ActiOverviewAct">Kebab (shift 1)</td>
+					<td class="ActiOverviewLoc">@Alma3</td>
+					<td class="ActiOverviewInschr">inschrijven</td>
+				</tr>
+				<tr class="ActiOverview" onclick="document.location = '#/kebab2'">
+					<td class="ActiOverviewHour">19:00-20:30</td>
+					<td class="ActiOverviewAct">Kebab (shift 2)</td>
+					<td class="ActiOverviewLoc">@Alma3</td>
+					<td class="ActiOverviewInschr">inschrijven</td>
+				</tr>
+				<tr class="ActiOverviewAlt" onclick="document.location = '#/chill'">
+					<td class="ActiOverviewHour">19:00-23:00</td>
+					<td class="ActiOverviewAct">Lounge</td>
+					<td class="ActiOverviewLoc">@Alma3</td>
+					<td class="ActiOverviewInschr">-</td>
+				</tr>
+				</table>
+			</td>
+		<tr class="ActiDay">
+			<td class="ActiWrapperDay">Woensdag</td>
+			<td class="ActiWrapperSchedule">
+				<table>
+				<tr class="ActiOverviewAltNoPointer">
+					<td class="ActiOverviewHour">12:00 - 18:00</td>
+					<td class="ActiOverviewAct">Lol ploegen namidag</td>
+					<td class="ActiOverviewLoc">@Alma3</td>
+					<td class="ActiOverviewInschr">-</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+			<tr class="ActiDay">
+			<td class="ActiWrapperDay">Donderdag</td>
+			<td class="ActiWrapperSchedule">
+				<table>
+				<tr class="ActiOverviewAlt" onclick="document.location = 'http://www.vtk.be'">
+					<td class="ActiOverviewHour">0:00 - 24:00</td>
+					<td class="ActiOverviewAct">Delta stemmen!</td>
+					<td class="ActiOverviewLoc">@VTK site</td>
+					<td class="ActiOverviewInschr">-</td>
+				</tr>
+				</table>
+			</td>
+		</tr>
+		</table>
+		
+		
+		</div>
+	</div>
+	
+	<div id="activi1" class="step cubeFace fontclass" data-x="-3250" data-y="-753" data-z="-247" data-rotate-x="45" data-rotate-y="90" >
+		<center><br><img src="images/delta_dark2.png"></img></center>
+	</div>
+	<div id="activi2" class="step cubeFace fontclass" data-x="-3600" data-y="-505" data-z="0" data-rotate-x="-45" style="vertical-align:center;">
+		<center><br><img src="images/delta_dark2.png"></img></center>
+	</div>
+	<div id="activi3" class="step cubeFace fontclass" data-x="-3600" data-y="-505" data-z="-495" data-rotate-z="180" data-rotate-x="-135">
+		
+		<div id="receptie-content" class="activi-content">
+			<h1>
+				Openingsreceptie
+			</h1>
+			<div class="activi-top">
+				<img src="http://nssdc.gsfc.nasa.gov/image/planetary/venus/gal_venus_37218.jpg" width="250" height="250" />
+	
+				<div class="activi-summary">
+					<b>Wat?</b><br/>
+					Openingsrecepite<br/>
+					<b>Waar?</b><br/>
+					Tent voor Alma 3<br/>
+					<b>Wanneer?</b><br/>
+					Zondag, 19u<br/>
+				</div>
+			</div>
+			
+			<div class="activi-bottom">
+				Om de week goed in te zetten zijn jullie allemaal welkom op een gratis receptie waar je naast het proeven van Egyptische hapjes kunt kennismaken met je opkomende ploeg. Nog niet overtuigd? Kom dan zeker voor de special act van het improvisatiegezelschap Preparee! Onze tent voor Alma 3 is de place to be @ 19u! Tot dan!
+			</div>
+			<div class="slideleftfooter button">
+				<a href="#activiOverview">Overzicht</a>
+			</div>
+		</div>
+		
+		<div id="fakfeestje-content" class="activi-content">
+			<h1>
+				Fakfeestje
+			</h1>
+			<div class="activi-top">
+				<img src="http://nssdc.gsfc.nasa.gov/image/planetary/venus/gal_venus_37218.jpg" width="250" height="250" />
+	
+				<div class="activi-summary">
+					<b>Wat?</b><br/>
+					Feestje<br/>
+					<b>Waar?</b><br/>
+					De fak<br/>
+					<b>Wanneer?</b><br/>
+					Zondag, 21u<br/>
+				</div>
+			</div>
+			
+			<div class="activi-bottom">
+				Het weekend is alweer eens voorbij en de kiesweek gaat van start! Hoe anders dit inzetten dan met en zot fakfeestje. Daarom organiseert ploeg Delta een Fluorescent Party: cocktails die licht geven onder de blacklights, jello shots en vette partybeats!
+			</div>
+			<div class="slideleftfooter button">
+				<a href="#activiOverview">Overzicht</a>
+			</div>
+		</div>
+		
+		<div id="ontbijt-content" class="activi-content activi-smaller">
+			<h1>
+				Ontbijt
+			</h1>
+			<div class="activi-top">
+				<img src="http://nssdc.gsfc.nasa.gov/image/planetary/venus/gal_venus_37218.jpg" width="250" height="250" />
+	
+				<div class="activi-summary">
+					<b>Wat?</b><br/>
+					Ontbijt<br/>
+					<b>Waar?</b><br/>
+					Tent voor Alma 3<br/>
+					<b>Wanneer?</b><br/>
+					Maandag, 7u<br/>
+				</div>
+			</div>
+			
+			<div class="activi-bottom">
+				Maandagochtend: nog geen boodschappen kunnen doen? Geen zin in het banale boke met choco? Kom dan zeker  naar ons ontbijt. Voor maar 1.50 euro kan je je bij ons eens laten verwennen met echte croissants van de bakker, pannenkoeken en nog veel meer. Voor de liefhebbers van klassiekers zal er ook spek met eieren zijn. En voor zij die de dag niet kunnen beginnen zonder een goeie dosis cafeïne, zal er een echte koffiekar staan. Geen reden dus om daar niet te van komen profiteren!
+			</div>
+			<div class="slideleftfooter button">
+				<a href="#activiOverview">Overzicht</a>
+			</div>
+		</div>
+		
+		<div id="bbq-content" class="activi-content">
+			<h1>
+				BBQ (Shift 1)
+			</h1>
+			<div class="activi-top">
+				<img src="http://nssdc.gsfc.nasa.gov/image/planetary/venus/gal_venus_37218.jpg" width="250" height="250" />
+	
+				<div class="activi-summary">
+					<b>Wat?</b><br/>
+					Barbeque<br/>
+					<b>Waar?</b><br/>
+					Plein voor Alma 3<br/>
+					<b>Wanneer?</b><br/>
+					Maandag, 18u<br/>
+				</div>
+			</div>
+			
+			<div class="activi-bottom">
+				De zomer komt er aan en dan móét er natuurlijk gebarbecued worden. Wij snijden voor jullie de groentjes en leggen de vlezekes op de rooster, aan jullie om dit lekkers te verorberen. Ook voor veggies is er vegetarisch vlees voorzien. Inschrijven kan via de site. Wees snel want de plaatsen zijn beperkt! Prijzen: €2 voor 2 stukken vlees,  €3 voor 3 stukken/vegetariërs.
+			</div>
+			
+			<div class="slideleftfooter button">
+				<a href="#activiOverview">Overzicht</a>
+			</div>
+			<div class="sliderightfooter button">
+				<a href="#bbqsubscribe">Inschrijven</a>
+			</div>
+		</div>
+		
+		<div id="bbq2-content" class="activi-content">
+			<h1>
+				BBQ (Shift 2)
+			</h1>
+			<div class="activi-top">
+				<img src="http://nssdc.gsfc.nasa.gov/image/planetary/venus/gal_venus_37218.jpg" width="250" height="250" />
+	
+				<div class="activi-summary">
+					<b>Wat?</b><br/>
+					Barbeque<br/>
+					<b>Waar?</b><br/>
+					Plein voor Alma 3<br/>
+					<b>Wanneer?</b><br/>
+					Maandag, 19u<br/>
+				</div>
+			</div>
+			
+			<div class="activi-bottom">
+				De zomer komt er aan en dan móét er natuurlijk gebarbecued worden. Wij snijden voor jullie de groentjes en leggen de vlezekes op de rooster, aan jullie om dit lekkers te verorberen. Ook voor veggies is er vegetarisch vlees voorzien. Inschrijven kan via de site. Wees snel want de plaatsen zijn beperkt! Prijzen: €2 voor 2 stukken vlees,  €3 voor 3 stukken/vegetariërs.
+			</div>
+			
+			<div class="slideleftfooter button">
+				<a href="#activiOverview">Overzicht</a>
+			</div>
+			<div class="sliderightfooter button">
+				<a href="#bbqsubscribe">Inschrijven</a>
+			</div>
+		</div>
+		
+		<div id="randanimatie-content" class="activi-content">
+			<h1>
+				Randanimatie
+			</h1>
+			<div class="activi-top">
+				<img src="http://nssdc.gsfc.nasa.gov/image/planetary/venus/gal_venus_37218.jpg" width="250" height="250" />
+	
+				<div class="activi-summary">
+					<b>Wat?</b><br/>
+					Randanimatie<br/>
+					<b>Waar?</b><br/>
+					Plein voor Alma 3<br/>
+					<b>Wanneer?</b><br/>
+					Maandag en Dinsdag<br/>
+				</div>
+			</div>
+			
+			<div class="activi-bottom">
+				Naast alle toffe activiteiten zullen er ook allerlei randanimaties aanwezig zijn op maandag en dinsdag waaronder de hilarische bumperball! Wie meedoet aan de randanimaties krijgt telkens een tombola ticket en kan daarmee enkel vette prijzen winnen. Deze prijzen zullen op de lounge avond worden uitgereikt.
+			</div>
+			<div class="slideleftfooter button">
+				<a href="#activiOverview">Overzicht</a>
+			</div>
+		</div>
+		
+		<div id="kiestd-content" class="activi-content">
+			<h1>
+				KiesTD
+			</h1>
+			<div class="activi-top">
+				<img src="http://nssdc.gsfc.nasa.gov/image/planetary/venus/gal_venus_37218.jpg" width="250" height="250" />
+	
+				<div class="activi-summary">
+					<b>Wat?</b><br/>
+					Schuimfeestje<br/>
+					<b>Waar?</b><br/>
+					De Waaiberg<br/>
+					<b>Wanneer?</b><br/>
+					Maandag, 22u<br/>
+				</div>
+			</div>
+			
+			<div class="activi-bottom">
+				Delta presents: De delta-kies-TD!! Het wordt een heuse schuimparty met niemand minder dan Panta Lunto, Elekick, DJ Thirteen en Gekke Gijs! Voor niet meer dan 2€ voor leden en 3€ voor niet-leden mag je de waaiberg betreden waar bovenop de consumpties aan 1€, er ook nog heel wat free stuff en een gratis vaten op je zullen wachten. Op de TD zullen ook de winnaars van de 24uren quiz worden aangekondigd. Allen daarheen dus!!
+			</div>
+			<div class="slideleftfooter button">
+				<a href="#activiOverview">Overzicht</a>
+			</div>
+		</div>
+		
+		<div id="jamsessie-content" class="activi-content">
+			<h1>
+				Jam Sessie
+			</h1>
+			<div class="activi-top">
+				<img src="http://nssdc.gsfc.nasa.gov/image/planetary/venus/gal_venus_37218.jpg" width="250" height="250" />
+	
+				<div class="activi-summary">
+					<b>Wat?</b><br/>
+					Jam Sessie<br/>
+					<b>Waar?</b><br/>
+					Plein voor Alma 3<br/>
+					<b>Wanneer?</b><br/>
+					Maandag, 19u<br/>
+				</div>
+			</div>
+			
+			<div class="activi-bottom">
+				Ben je een muzikaal talent? Kom dan zeker maandag avond naar het alma3 plein voor een ongelooflijke jamsessie. Instrumenten zullen aanwezig zijn (bas, piano, drum en gitaar), al zijn eigen instrumenten uiteraard toegelaten. Het eerste half uur zal de ESAT-assistent Ratmir Gelagaev ons bovendien zijn piano kunsten laten zien, dus zeker niet te missen. Laat je maar volledig gaan en maak indruk op al het aanwezige volk, sfeer verzekerd!
+			</div>
+			<div class="slideleftfooter button">
+				<a href="#activiOverview">Overzicht</a>
+			</div>
+		</div>
+		
+		<div id="optredens-content" class="activi-content activi-smaller">
+			<h1>
+				Optredens
+			</h1>
+			<div class="activi-top">
+				<img src="http://nssdc.gsfc.nasa.gov/image/planetary/venus/gal_venus_37218.jpg" width="250" height="250" />
+	
+				<div class="activi-summary">
+					<b>Wat?</b><br/>
+					Gratis festivalletje<br/>
+					<b>Waar?</b><br/>
+					Plein voor Alma 3<br/>
+					<b>Wanneer?</b><br/>
+					Dinsdag, 14u<br/>
+				</div>
+			</div>
+			
+			<div class="activi-bottom">
+				Vanaf 14.00 kan je dinsdag terecht aan alma 3 voor een fantastisch festivalletje. Met een stevige portie rock, pop, folk en alternatief is er voor ieder wat wils. Geen reden dus om niet te komen! Volgende bandjes zullen present zijn:<br/>
+				<br/>
+				<p id="concert-schedule">
+					14.30-15.15: Dieter en Koen<br/>
+					15.45-16.30: Booster Club<br/>
+					17.00-17.45: Laloosh<br/>
+					18.15-19.00: The Flax <br/>
+					20.00-20.45: Leaves For Snow<br/>
+					21.15-22.00: Jesse Ashfield
+				</p>
+			</div>
+			<div class="slideleftfooter button">
+				<a href="#activiOverview">Overzicht</a>
+			</div>
+		</div>
+		
+		<div id="chill-content" class="activi-content">
+			<h1>
+				Chill Avond
+			</h1>
+			<div class="activi-top">
+				<img src="http://nssdc.gsfc.nasa.gov/image/planetary/venus/gal_venus_37218.jpg" width="250" height="250" />
+	
+				<div class="activi-summary">
+					<b>Wat?</b><br/>
+					Poker en cocktails<br/>
+					<b>Waar?</b><br/>
+					Tent voor Alma 3<br/>
+					<b>Wanneer?</b><br/>
+					Dinsdag, 21u<br/>
+				</div>
+			</div>
+			
+			<div class="activi-bottom">
+				Na een geslaagde kiesweek is het natuurlijk tijd voor wat ontspanning! Dinsdagavond kan je vanaf 21u in onze tent voor Alma 3 terecht voor een spelletje poker met je vrienden terwijl je geniet van onze heerlijke cocktails voor slecht €1. Be there!
+			</div>
+			<div class="slideleftfooter button">
+				<a href="#activiOverview">Overzicht</a>
+			</div>
+		</div>
+		
+		<div id="kebab-content" class="activi-content">
+			<h1>
+				Kebab (Shift 1)
+			</h1>
+			<div class="activi-top">
+				<img src="http://nssdc.gsfc.nasa.gov/image/planetary/venus/gal_venus_37218.jpg" width="250" height="250" />
+	
+				<div class="activi-summary">
+					<b>Wat?</b><br/>
+					Kebab met frieten à volanté<br/>
+					<b>Waar?</b><br/>
+					Plein voor Alma 3<br/>
+					<b>Wanneer?</b><br/>
+					Dinsdag, 18u<br/>
+				</div>
+			</div>
+			
+			<div class="activi-bottom">
+				Heb je na 3 dagen nog steeds niet genoeg gekregen van de oosterse sfeer? Kom dan je maagje vullen met een overheerlijke zelfgemaakte kebab met frieten à la volanté voor slechts €1,5! Inschrijven via de site is verplicht, want de plaatsen zijn beperkt. Nog een laatste keer: smullen maar!
+			</div>
+			
+			<div class="slideleftfooter button">
+				<a href="#activiOverview">Overzicht</a>
+			</div>
+			<div class="sliderightfooter button">
+				<a href="#kebabsubscribe">Inschrijven</a>
+			</div>
+		</div>
+		
+		<div id="kebab2-content" class="activi-content">
+			<h1>
+				Kebab (Shift 2)
+			</h1>
+			<div class="activi-top">
+				<img src="http://nssdc.gsfc.nasa.gov/image/planetary/venus/gal_venus_37218.jpg" width="250" height="250" />
+	
+				<div class="activi-summary">
+					<b>Wat?</b><br/>
+					Kebab met frieten à volanté<br/>
+					<b>Waar?</b><br/>
+					Plein voor Alma 3<br/>
+					<b>Wanneer?</b><br/>
+					Dinsdag, 19u<br/>
+				</div>
+			</div>
+			
+			<div class="activi-bottom">
+				Heb je na 3 dagen nog steeds niet genoeg gekregen van de oosterse sfeer? Kom dan je maagje vullen met een overheerlijke zelfgemaakte kebab met frieten à la volanté voor slechts €1,5! Inschrijven via de site is verplicht, want de plaatsen zijn beperkt. Nog een laatste keer: smullen maar!
+			</div>
+			
+			<div class="slideleftfooter button">
+				<a href="#activiOverview">Overzicht</a>
+			</div>
+			<div class="sliderightfooter button">
+				<a href="#kebab2subscribe">Inschrijven</a>
+			</div>
+		</div>
+		
+		<div id="pannenkoek-content" class="activi-content">
+			<h1>
+				Pannenkoeken
+			</h1>
+			<div class="activi-top">
+				<img src="http://nssdc.gsfc.nasa.gov/image/planetary/venus/gal_venus_37218.jpg" width="250" height="250" />
+	
+				<div class="activi-summary">
+					<b>Wat?</b><br/>
+					Gratis pannenkoeken<br/>
+					<b>Waar?</b><br/>
+					Plein voor Alma 3<br/>
+					<b>Wanneer?</b><br/>
+					Dinsdag, 11u<br/>
+				</div>
+			</div>
+			
+			<div class="activi-bottom">
+				GRATIS  en PANNENKOEKEN. Twee woorden die op zichzelf al niets negatiefs betekenen. Als je ze combineert, zijn ze zelfs nog beter! Daar gaan we dus niet te veel extra woorden aan vuilmaken. Dinsdag om 11u aan Alma 3! Haast je! Want OP = OP!
+			</div>
+			<div class="slideleftfooter button">
+				<a href="#activiOverview">Overzicht</a>
+			</div>
+		</div>
+		
+		<div id="laser-content" class="activi-content">
+			<h1>
+				Lasergames
+			</h1>
+			<div class="activi-top">
+				<img src="http://nssdc.gsfc.nasa.gov/image/planetary/venus/gal_venus_37218.jpg" width="250" height="250" />
+	
+				<div class="activi-summary">
+					<b>Wat?</b><br/>
+					Lasershooten<br/>
+					<b>Waar?</b><br/>
+					Plein voor Alma 3<br/>
+					<b>Wanneer?</b><br/>
+					Dinsdag, 12u<br/>
+				</div>
+			</div>
+			
+			<div class="activi-bottom">
+				Dinsdag kun je van 12u00-22u00 komen lasershooten. Er zijn 32 lasergeweren beschikbaar die je voor een periode van maximaal 30 minuten kunt reserveren. Het reserveren van de lasershoot kun je doen via de site.
+			</div>
+			<div class="slideleftfooter button">
+				<a href="#activiOverview">Overzicht</a>
+			</div>
+		</div>
+		
+		<div id="quiz-content" class="activi-content activi-smaller">
+			<h1>
+				24 uren quiz
+			</h1>
+			<div class="activi-top">
+				<img src="http://nssdc.gsfc.nasa.gov/image/planetary/venus/gal_venus_37218.jpg" width="250" height="250" />
+	
+				<div class="activi-summary">
+					<b>Wat?</b><br/>
+					24u online quiz<br/>
+					<b>Waar?</b><br/>
+					Overal<br/>
+					<b>Wanneer?</b><br/>
+					Zondag, 23u<br/>
+				</div>
+			</div>
+			
+			<div class="activi-bottom">
+				Onze vetste prijs gaan wij uitdelen aan de winnaar van de 24uren quiz. Hoe kun je meespelen? Door de vragen te beantwoorden of opdrachten te vervullen. De quiz begint op zondag 6 mei om 23u00. Vanaf dan zal er elke uur een nieuwe vraag of opdracht online komen en de laatste vraag zal op maandag 7 mei om 22u00 worden gesteld. Je hoeft niet elke uur mee te spelen maar je kansen op de hoofdprijs vermindert wel hierdoor. De winnaars van de hoofd- en troostprijzen van de quiz zal tijdens de schuimTD worden bekendgemaakt in ’t ElixIr.
+			</div>
+			<div class="slideleftfooter button">
+				<a href="#activiOverview">Overzicht</a>
+			</div>
+		</div>
+		
+		
+	</div>
+
+	<div id="receptie" class="step" data-x="-3600" data-y="-505" data-z="-495" data-rotate-z="180" data-rotate-x="-135">		
+	</div>
+	
+	<div id="fakfeestje" class="step" data-x="-3600" data-y="-505" data-z="-495" data-rotate-z="180" data-rotate-x="-135">		
+	</div>
+	
+	<div id="ontbijt" class="step" data-x="-3600" data-y="-505" data-z="-495" data-rotate-z="180" data-rotate-x="-135">
+	</div>
+	
+	<div id="bbq" class="step" data-x="-3600" data-y="-505" data-z="-495" data-rotate-z="180" data-rotate-x="-135">		
+	</div>
+	
+	<div id="bbq2" class="step" data-x="-3600" data-y="-505" data-z="-495" data-rotate-z="180" data-rotate-x="-135">		
+	</div>
+	
+	<div id="randanimatie" class="step" data-x="-3600" data-y="-505" data-z="-495" data-rotate-z="180" data-rotate-x="-135">		
+	</div>
+	
+	<div id="kiestd" class="step" data-x="-3600" data-y="-505" data-z="-495" data-rotate-z="180" data-rotate-x="-135">		
+	</div>
+	
+	<div id="jamsessie" class="step" data-x="-3600" data-y="-505" data-z="-495" data-rotate-z="180" data-rotate-x="-135">		
+	</div>
+	
+	<div id="optredens" class="step" data-x="-3600" data-y="-505" data-z="-495" data-rotate-z="180" data-rotate-x="-135">		
+	</div>
+	
+	<div id="chill" class="step" data-x="-3600" data-y="-505" data-z="-495" data-rotate-z="180" data-rotate-x="-135">		
+	</div>
+	
+	<div id="kebab" class="step" data-x="-3600" data-y="-505" data-z="-495" data-rotate-z="180" data-rotate-x="-135">		
+	</div>
+	
+	<div id="kebab2" class="step" data-x="-3600" data-y="-505" data-z="-495" data-rotate-z="180" data-rotate-x="-135">		
+	</div>
+	
+	<div id="pannenkoek" class="step" data-x="-3600" data-y="-505" data-z="-495" data-rotate-z="180" data-rotate-x="-135">		
+	</div>
+	
+	<div id="laser" class="step" data-x="-3600" data-y="-505" data-z="-495" data-rotate-z="180" data-rotate-x="-135">		
+	</div>
+	
+	<div id="quiz" class="step" data-x="-3600" data-y="-505" data-z="-495" data-rotate-z="180" data-rotate-x="-135">		
+	</div>
+
+	<div id="activi4" class="step cubeFace fontclass" data-x="-3600" data-y="-1000" data-z="-495" data-rotate-z="180" data-rotate-x="135">
+		<div id="bbqsubscribe-content" class="reservation-content">
+			<h1>Inschrijven BBQ 18u</h1>
+			
+			<div class="reservationform">
+				<form id="bbqform">
+					<div class="reservationforminput">
+						Voornaam<input type="text" name="firstname" tabindex=1 />
+						Achternaam<input type="text" name="lastname" tabindex=2 />
+						Email adres<input type="text" name="email" tabindex=3 />
+					</div>
+					<div class="buttonbar">
+						<a href="#bbq" class="backbutton button">Back</a>
+						<button type="submit" class="submitbutton button">Inschrijven</button>
+					</div>
+		 		</form>
+	 		</div>
+ 		</div>
+ 		
+		<div id="bbq2subscribe-content" class="reservation-content">
+			<h1>Inschrijven BBQ 19u</h1>
+			
+			<div class="reservationform">
+				<form id="bbq2form">
+					<div class="reservationforminput">
+						Voornaam<input type="text" name="firstname" tabindex=1 />
+						Achternaam<input type="text" name="lastname" tabindex=2 />
+						Email adres<input type="text" name="email" tabindex=3 />
+					</div>
+					<div class="buttonbar">
+						<a href="#bbq2" class="backbutton button">Back</a>
+						<button type="submit" class="submitbutton button">Inschrijven</button>
+					</div>
+		 		</form>
+	 		</div>
+ 		</div>
+ 		
+		<div id="kebabsubscribe-content" class="reservation-content">
+			<h1>Inschrijven Kebab 18u</h1>
+			
+			<div class="reservationform">
+				<form id="kebabform">
+					<div class="reservationforminput">
+						Voornaam<input type="text" name="firstname" tabindex=1 />
+						Achternaam<input type="text" name="lastname" tabindex=2 />
+						Email adres<input type="text" name="email" tabindex=3 />
+					</div>
+					<div class="buttonbar">
+						<a href="#kebab" class="backbutton button">Back</a>
+						<button type="submit" class="submitbutton button">Inschrijven</button>
+					</div>
+		 		</form>
+	 		</div>
+ 		</div>
+ 		
+		<div id="kebab2subscribe-content" class="reservation-content">
+			<h1>Inschrijven Kebab 19u</h1>
+			
+			<div class="reservationform">
+				<form id="kebabform2">
+					<div class="reservationforminput">
+						Voornaam<input type="text" name="firstname" tabindex=1 />
+						Achternaam<input type="text" name="lastname" tabindex=2 />
+						Email adres<input type="text" name="email" tabindex=3 />
+					</div>
+					<div class="buttonbar">
+						<a href="#kebab2" class="backbutton button">Back</a>
+						<button type="submit" class="submitbutton button">Inschrijven</button>
+					</div>
+		 		</form>
+	 		</div>
+ 		</div>
+	</div>
+	
+	<div id="bbqsubscribe" class="step" data-x="-3600" data-y="-1000" data-z="-495" data-rotate-z="180" data-rotate-x="135">
+	</div>
+	
+	<div id="bbq2subscribe" class="step" data-x="-3600" data-y="-1000" data-z="-495" data-rotate-z="180" data-rotate-x="135">
+	</div>
+	
+	<div id="kebabsubscribe" class="step" data-x="-3600" data-y="-1000" data-z="-495" data-rotate-z="180" data-rotate-x="135">
+	</div>
+	
+	<div id="kebab2subscribe" class="step" data-x="-3600" data-y="-1000" data-z="-495" data-rotate-z="180" data-rotate-x="135">
+	</div>
+	
+	<div id="activi5" class="step cubeFace fontclass" data-x="-3950" data-y="-753" data-z="-247" data-rotate-x="45" data-rotate-y="-90">
+		<h1>5</h1>
+	</div>		
+    	
+    <div id="standpuntenCentral" class="step" data-x="2800" data-y="-1300" data-z="0" data-rotate="90">
+    <span class="clusterTitle">Standpunten</span>
+    </div>	
+
+		<div id="standpuntenoverzicht" class="step slide standpuntoverzichtslide" data-x="2100" data-y="-1400" data-z="0">
+    		<h1>
+    			Standpunten
+    		</h1>
+    		<div class="standpunten">
+				<a href="#standpunt1" class="standpuntlinkodd"><span class="standpuntlinknumber">1 </span><span class="standpuntlink">VTK komt in de media!</span></a></br>
+				<a href="#standpunt2" class="standpuntlinkeven"><span class="standpuntlinknumber">2 </span><span class="standpuntlink">Less is more!</span></a></br>
+				<a href="#standpunt3" class="standpuntlinkodd"><span class="standpuntlinknumber">3 </span><span class="standpuntlink">Jouw carrière, maak het verschil!</span></a></br>
+				<a href="#standpunt4" class="standpuntlinkeven"><span class="standpuntlinknumber">4 </span><span class="standpuntlink">IT, a new dawn!</span></a></br>
+				<a href="#standpunt5" class="standpuntlinkodd"><span class="standpuntlinknumber">5 </span><span class="standpuntlink">Delta internationalizes!</span></a>
+			</div>
+			
+			<div class="slideleftfooter">
+				<a href="http://www.google.com">
+					<img src="http://www.adobe.com/images/pdficon_large.png"/>
+					Download visietekst
+				</a>
+			</div>
+    	</div>
+    	
+		<div id="standpunt1" class="step slide standpuntslide" data-x="1000" data-y="-10000" data-z="0">
+			<div class="standpunttop">
+				
+				<div class="standpuntnumber">1</div>
+				<div class="standpunttitle slidetitle">VTK komt in de media!</div>
+				<div class="standpunttext">Burgies en archies zijn gegeerde profielen op de arbeidsmarkt (en dat gaan we zo houden!). Delta zorgt ervoor dat we (liefst positief J) in de nationale media komen om zo zowel het studentikoze aspect van onze kring en zijn leden, als de waarde van onze ir.-opleiding extra in de verf zetten. Stay tuned, want wie weet speel jij hier wel een belangrijke rol in …</div>
+			</div>
+			
+			
+			<div class="slideleftfooter button">
+				<a href="#standpuntenoverzicht">Overzicht</a>
+			</div>
+			<div class="sliderightfooter button">
+				<a href="#standpunt2">Volgende</a>
+			</div>
+		</div>
+		
+		<div id="standpunt2" class="step slide standpuntslide" data-x="2000" data-y="-10000" data-z="0">
+			<div class="standpunttop">
+				
+				<div class="standpuntnumber">2</div>
+				<div class="standpunttitle slidetitle">Less is more!</div>
+				<div class="standpunttext">Wat voor vrouwen en hun kledij van toepassing is, geldt ook voor het VTK-aanbod. Door op bepaalde fronten in te krimpen, komt er meer geld en tijd vrij om evenementen te organiseren waar iedereen naar uitkijkt, waar in heel Heverlee en wijde omstreken over gebabbeld wordt en waar je écht wil bij zijn. En uiteraard blijven we samenwerken met andere kringen om zo grootse(re) zaken mogelijk te maken!</div>
+			</div>
+			
+
+			
+			<div class="slideleftfooter button">
+				<a href="#standpunt1">Vorige</a>
+			</div>
+			
+			<div class="sliderightfooter button">
+				<a href="#standpunt3">Volgende</a>
+			</div>
+		</div>
+		
+		<div id="standpunt3" class="step slide standpuntslide" data-x="3000" data-y="-10000" data-z="0">
+			<div class="standpunttop">
+				
+				<div class="standpuntnumber">3</div>
+				<div class="standpunttitle slidetitle">Jouw carrière, maak het verschil!</div>
+				<div class="standpunttext">Derdebachers, eerste masters en laatstejaars kijken dikwijls al verder dan hun studie naar hun verdere carrière. Management, leiderschap en soft skills zijn zaken waar veel interesse voor is en met lezingen en workshops komt Delta hieraan tegemoet. Dit alles ondersteund met een volledig vernieuwde Bedrijvenrelaties-sectie op de website, met informatie, stages, vacatures en evenementen.</div>
+			</div>
+			
+
+			
+			<div class="slideleftfooter button">
+				<a href="#standpunt2">Vorige</a>
+			</div>
+			
+			<div class="sliderightfooter button">
+				<a href="#standpunt4">Volgende</a>
+			</div>
+		</div>
+		
+		<div id="standpunt4" class="step slide standpuntslide" data-x="4000" data-y="-10000" data-z="0">
+			<div class="standpunttop">
+				
+				<div class="standpuntnumber">4</div>
+				<div class="standpunttitle slidetitle">IT, a new dawn!</div>
+				<div class="standpunttext">Een totaal nieuwe website aangevuld met een nieuw cursusdienstprogramma moeten jouw interactie met VTK en zijn diensten zo eenvoudig, snel en efficiënt mogelijk maken. Een geheel nieuwe en moderne gebruikservaring vergemakkelijkt de informatiedoorstroom en houdt je up-to-date zonder een overflow aan irrelevantie met zich mee te brengen.</div>
+			</div>
+			
+
+			
+			<div class="slideleftfooter button">
+				<a href="#standpunt3">Vorige</a>
+			</div>
+			
+			<div class="sliderightfooter button">
+				<a href="#standpunt5">Volgende</a>
+			</div>
+		</div>
+		
+		<div id="standpunt5" class="step slide standpuntslide" data-x="5000" data-y="-10000" data-z="0">
+			<div class="standpunttop">
+				
+				<div class="standpuntnumber">5</div>
+				<div class="standpunttitle slidetitle">Delta internationalizes!</div>
+				<div class="standpunttext">Especially for the vast population of international students in our faculty, Delta will make Fakbar ’t ElixIr your central meeting point one day a week. Getting to know students from different countries, drinking tequila and sangria … Put simple: enjoying your stay in Belgium in a student-minded atmosphere! And of course, also locals can come and join, cause the internationals definitely know how to party!</div>
+			</div>
+			
+
+			
+			<div class="slideleftfooter button">
+				<a href="#standpunt4">Vorige</a>
+			</div>
+			
+			<div class="sliderightfooter button">
+				<a href="#standpuntenoverzicht">Overzicht</a>
+			</div>
+		</div>
+  
+   	
+<!--     START OF MEMBER SECTION	 -->
+
+
+
+
+
+<!--     END OF MEMBER SECTION	 -->
+    
+    <div id="memberoverview" class="step" data-x="10000" data-y="0" data-z="3500">
+    </div>
+    
+    <div id="movie" class="step movieslide slide" data-x="20000" data-y="0">
+	    	<div id="moviecontainer">
+	    		<iframe width="640" height="480" src="http://www.youtube.com/embed/lQ3HV0lRMOo" frameborder="0" allowfullscreen></iframe>
+	    	</div>
+	    	<div id="moviespoofer">
+	    		<img width="640" height="480" src="images/movie-screenshot.png" alt="Movie"/>
+	    	</div>
+    </div>
+
+</div>
+
+
+<!-- Embed the impress library -->
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+
+</body>
+</html>

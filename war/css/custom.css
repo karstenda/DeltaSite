@@ -35,6 +35,10 @@
         height: 700px !important;
 }
 
+.cubeFace:not(.active) {
+	opacity: 1 !important;
+}
+
 .fontclass {
 	    font-family: 'Open Sans', Arial, sans-serif;
 	
@@ -279,9 +283,17 @@ h1 {
 	cursor: default;
 }
 
+#impress tr {
+	pointer-events: none;
+}
+
 #impress .present a {
 	pointer-events: auto;
 	cursor: auto;
+}
+
+#impress .present tr {
+	pointer-events: auto;
 }
 
 .standpuntslide {
@@ -502,55 +514,6 @@ h1 {
 	display: inline;
 }
 
-.impress-on-quiz .step {
-	opacity:1 !important;
-}
-.impress-on-laser .step {
-	opacity:1 !important;
-}
-.impress-on-receptie .step {
-	opacity:1 !important;
-}
-.impress-on-fakfeestje .step {
-	opacity:1 !important;
-}
-.impress-on-ontbijt .step {
-	opacity:1 !important;
-}
-.impress-on-bbq .step {
-	opacity:1 !important;
-}
-.impress-on-bbq2 .step {
-	opacity:1 !important;
-}
-.impress-on-randanimatie .step {
-	opacity:1 !important;
-}
-.impress-on-kiestd .step {
-	opacity:1 !important;
-}
-.impress-on-jamsessie .step {
-	opacity:1 !important;
-}
-.impress-on-optredens .step {
-	opacity:1 !important;
-}
-.impress-on-attracties .step {
-	opacity:1 !important;
-}
-.impress-on-chill .step {
-	opacity:1 !important;
-}
-.impress-on-kebab .step {
-	opacity:1 !important;
-}
-.impress-on-kebab2 .step {
-	opacity:1 !important;
-}
-.impress-on-pannenkoek .step {
-	opacity:1 !important;
-}
-
 input {
 	width: 390px;
 	display: block;
@@ -602,23 +565,6 @@ input {
 	padding-top: 5px;
 	height: 38px;
 }
-
-.impress-on-bbqsubscribe .step {
-	opacity:1 !important;
-}
-
-.impress-on-bbq2subscribe .step {
-	opacity:1 !important;
-}
-
-.impress-on-kebabsubscribe .step {
-	opacity:1 !important;
-}
-
-.impress-on-kebab2subscribe .step {
-	opacity:1 !important;
-}
-
 
 .reservation-content {
 	display: none;

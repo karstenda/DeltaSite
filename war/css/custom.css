@@ -259,7 +259,6 @@ h1 {
 
 #impress tr {
 	pointer-events: none;
-	cursor: default;
 }
 
 #impress .present a {

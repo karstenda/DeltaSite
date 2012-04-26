@@ -430,6 +430,9 @@ h1 {
 .impress-on-kebab #kebab-content {
 	display: inline;
 }
+.impress-on-kebab2 #kebab2-content {
+	display: inline;
+}
 .impress-on-pannenkoek #pannenkoek-content {
 	display: inline;
 }
@@ -480,6 +483,9 @@ h1 {
 	opacity:1 !important;
 }
 .impress-on-kebab .step {
+	opacity:1 !important;
+}
+.impress-on-kebab2 .step {
 	opacity:1 !important;
 }
 .impress-on-pannenkoek .step {
@@ -550,6 +556,11 @@ input {
 	opacity:1 !important;
 }
 
+.impress-on-kebab2subscribe .step {
+	opacity:1 !important;
+}
+
+
 .reservation-content {
 	display: none;
 }
@@ -573,6 +584,10 @@ input {
 }
 
 .impress-on-kebabsubscribe #kebabsubscribe-content {
+	display: block;
+}
+
+.impress-on-kebab2subscribe #kebab2subscribe-content {
 	display: block;
 }
 

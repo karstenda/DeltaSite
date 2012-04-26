@@ -758,7 +758,7 @@
             		target.id != "jamsessie" && target.id != "optredens" && target.id != "chill" && 
             		target.id != "kebab" && target.id != "pannenkoek" && target.id != "laser" && 
             		target.id != "quiz" && target.id != "bbqsubscribe" && target.id != "bbq2subscribe" && 
-            		target.id != "kebabsubscribe") &&
+            		target.id != "kebabsubscribe" && target.id != "kebab2subscribe" && target.id != "kebab2") &&
                     (target !== document.documentElement) ) {
                 target = target.parentNode;
             }

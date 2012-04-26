@@ -1,6 +1,7 @@
 /* Make sure the menu can be clicked */
 #menu	{pointer-events: auto; }
 
+
 .menubar {
 	background-repeat: repeat-x;
 	background-image: url("../images/main_menu.png");
@@ -51,11 +52,15 @@
 /* Activiteiten Overzicht */
 
 
-.activiOverviewTitle {
+#activiteitenTitle {
+	width: 600px;
+}
+
+.ActiviOverviewTitle {
+	font-size: 77pt;
+	color: white;
 	font-weight: bold;
-	font-size: 20pt;
-	margin-bottom: 10px;
-	margin-top: 0px;
+	margin-left: 0px;
 }
 
 tr.ActiDay {
@@ -93,7 +98,7 @@ tr.ActiOverview:HOVER {
 }
 
 td.ActiOverviewAct {
-	font-size: 11pt;
+	font-size: 12pt;
 	width: 200px;
 }
 

@@ -20,7 +20,7 @@
 .clusterTitle {
     font-weight: bold;
     text-align: center;
-    font-size: 3em;
+    font-size: 6em;
     line-height: 1;
     color: white;
 }
@@ -74,12 +74,23 @@ tr.ActiDay {
 td.ActiWrapperDay {
 	vertical-align:top; 
 	font-size: 16pt;
-	width: 140px;
+	width: 110px;
 }
 
 td.ActiWrapperSchedule {
 	padding-bottom: 20px;
 }
+
+
+tr.ActiOverviewAltNoPointer {
+	color: #9E9E9E;
+	background-color: #DDE9ED;
+}
+
+/*tr.ActiOverviewAltNoPointer:HOVER {
+	color: white;
+	background-color: #7BA7B5;
+}*/
 
 
 tr.ActiOverviewAlt {
@@ -92,6 +103,16 @@ tr.ActiOverviewAlt:HOVER {
 	background-color: #7BA7B5;
 }
 
+
+tr.ActiOverviewNoPointer {
+	color: #9E9E9E;
+}
+
+/*tr.ActiOverviewNoPointer:HOVER {
+	color: white;
+	background-color: #7BA7B5;
+}*/
+
 tr.ActiOverview {
 	cursor: pointer;
 }
@@ -103,19 +124,24 @@ tr.ActiOverview:HOVER {
 
 td.ActiOverviewAct {
 	font-size: 12pt;
-	width: 200px;
+	width: 190px;
 }
 
 td.ActiOverviewHour {
 	font-size: 11pt;
-	width: 150px;
+	width: 130px;
 }
 
 td.ActiOverviewLoc {
 	font-size: 11pt;
-	width: 120px;
+	width: 110px;
 }
 
+td.ActiOverviewInschr {
+	text-align: center;
+	font-size: 10pt;
+	width: 70px;
+}
 
 
 /* The buttons themselves */
@@ -275,6 +301,34 @@ h1 {
 	width: 900px !important;
 	padding: 10px !important;
 }
+
+.sponsorslide1 {
+	width: 820px !important;
+	padding: 10px !important;
+	height: 560px !important;
+}
+
+
+.sponsorslide2 {
+	width: 820px !important;
+	padding: 10px !important;
+	height: 244px !important;
+}
+
+.sponsorslide3 {
+	width: 820px !important;
+	padding: 10px !important;
+	height: 258px !important;
+}
+
+
+.ploegslide {
+	width: 820px !important;
+	height: 545px !important;
+	padding: 10px !important;
+	text-align: center;
+}
+
 
 .slideleftfooter {
 	position: absolute;

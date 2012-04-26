@@ -427,10 +427,6 @@
                 return false;
             }
             
-            if (el.classList.contains("nogo-step"))
-            	// Impossible to go to steps with class "nogo-step"
-            	return false;
-            
             // Sometimes it's possible to trigger focus on first link with some keyboard action.
             // Browser in such a case tries to scroll the page to make this element visible
             // (even that body overflow is set to hidden) and it breaks our careful positioning.
@@ -755,14 +751,15 @@
         document.addEventListener("click", function ( event ) {
            var target = event.target;
             // find closest step element that is not active
-            while ( !(target.classList.contains("step") && !target.classList.contains("active") && 
-            		target.id != "activi3" && target.id != "activi4" && target.id != "receptie" &&
-            		target.id != "fakfeestje" && target.id != "ontbijt" && target.id != "bbq" && 
-            		target.id != "bbq2" && target.id != "randanimatie" && target.id != "kiestd" && 
-            		target.id != "jamsessie" && target.id != "optredens" && target.id != "chill" && 
-            		target.id != "kebab" && target.id != "pannenkoek" && target.id != "laser" && 
-            		target.id != "quiz" && target.id != "bbqsubscribe" && target.id != "bbq2subscribe" && 
-            		target.id != "kebabsubscribe" && target.id != "kebab2subscribe" && target.id != "kebab2") &&
+            while ( !(target.classList.contains("step") && !target.classList.contains("active") && !target.classList.contains("noclick-step")
+//            		&& target.id != "activi3" && target.id != "activi4" && target.id != "receptie" &&
+//            		target.id != "fakfeestje" && target.id != "ontbijt" && target.id != "bbq" && 
+//            		target.id != "bbq2" && target.id != "randanimatie" && target.id != "kiestd" && 
+//            		target.id != "jamsessie" && target.id != "optredens" && target.id != "chill" && 
+//            		target.id != "kebab" && target.id != "pannenkoek" && target.id != "laser" && 
+//            		target.id != "quiz" && target.id != "bbqsubscribe" && target.id != "bbq2subscribe" && 
+//            		target.id != "kebabsubscribe" && target.id != "kebab2subscribe" && target.id != "kebab2"
+            			) &&
                     (target !== document.documentElement) ) {
                 target = target.parentNode;
             }

@@ -162,3 +162,18 @@ body     { pointer-events: none; }
 .cubeFace {
 	margin-top: 60px !important;
 }
+
+
+.reservation-content {
+	display: none;
+}
+
+.reservation-content a {
+	pointer-events: auto !important;
+	cursor: auto !important;
+}
+
+.reservation-content button {
+	pointer-events: auto !important;
+	cursor: pointer !important;
+}

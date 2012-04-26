@@ -440,21 +440,6 @@ input {
 	height: 38px;
 }
 
-.reservation-content {
-	display: none;
-}
-
-.reservation-content a {
-	pointer-events: auto !important;
-	cursor: auto !important;
-}
-
-.reservation-content button {
-	pointer-events: auto !important;
-	cursor: pointer !important;
-}
-
-
 .activi-smaller .activi-bottom {
 	font-size: 12pt;
 }

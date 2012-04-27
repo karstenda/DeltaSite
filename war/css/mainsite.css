@@ -177,3 +177,11 @@ body     { pointer-events: none; }
 	pointer-events: auto !important;
 	cursor: pointer !important;
 }
+
+.impress-on-overview .titlestep {
+	opacity: 1;
+}
+
+.impress-on-overview .cubeFace {
+	opacity: 0.3 !important;
+}

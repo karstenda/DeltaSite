@@ -185,3 +185,19 @@ body     { pointer-events: none; }
 .impress-on-overview .cubeFace {
 	opacity: 0.3 !important;
 }
+
+.impress-on-SponsorsOverview #SponsorsCentral {
+	opacity: 1;
+}
+
+.impress-on-SponsorsOverview #sponsors1 {
+	opacity: 1;
+}
+
+.impress-on-SponsorsOverview #sponsors2 {
+	opacity: 1;
+}
+
+.impress-on-SponsorsOverview #sponsors3 {
+	opacity: 1;
+}

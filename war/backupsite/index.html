@@ -22,9 +22,151 @@
 <link rel="shortcut icon" href="favicon.png" />
 <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 
+<script type="text/javascript">
+<!--
+var BrowserDetect = {
+	init: function () {
+		this.browser = this.searchString(this.dataBrowser) || "An unknown browser";
+		this.version = this.searchVersion(navigator.userAgent)
+			|| this.searchVersion(navigator.appVersion)
+			|| "an unknown version";
+		this.OS = this.searchString(this.dataOS) || "an unknown OS";
+	},
+	searchString: function (data) {
+		for (var i=0;i<data.length;i++)	{
+			var dataString = data[i].string;
+			var dataProp = data[i].prop;
+			this.versionSearchString = data[i].versionSearch || data[i].identity;
+			if (dataString) {
+				if (dataString.indexOf(data[i].subString) != -1)
+					return data[i].identity;
+			}
+			else if (dataProp)
+				return data[i].identity;
+		}
+	},
+	searchVersion: function (dataString) {
+		var index = dataString.indexOf(this.versionSearchString);
+		if (index == -1) return;
+		return parseFloat(dataString.substring(index+this.versionSearchString.length+1));
+	},
+	dataBrowser: [
+		{
+			string: navigator.userAgent,
+			subString: "Chrome",
+			identity: "Chrome"
+		},
+		{ 	string: navigator.userAgent,
+			subString: "OmniWeb",
+			versionSearch: "OmniWeb/",
+			identity: "OmniWeb"
+		},
+		{
+			string: navigator.vendor,
+			subString: "Apple",
+			identity: "Safari",
+			versionSearch: "Version"
+		},
+		{
+			prop: window.opera,
+			identity: "Opera",
+			versionSearch: "Version"
+		},
+		{
+			string: navigator.vendor,
+			subString: "iCab",
+			identity: "iCab"
+		},
+		{
+			string: navigator.vendor,
+			subString: "KDE",
+			identity: "Konqueror"
+		},
+		{
+			string: navigator.userAgent,
+			subString: "Firefox",
+			identity: "Firefox"
+		},
+		{
+			string: navigator.vendor,
+			subString: "Camino",
+			identity: "Camino"
+		},
+		{		// for newer Netscapes (6+)
+			string: navigator.userAgent,
+			subString: "Netscape",
+			identity: "Netscape"
+		},
+		{
+			string: navigator.userAgent,
+			subString: "MSIE",
+			identity: "Explorer",
+			versionSearch: "MSIE"
+		},
+		{
+			string: navigator.userAgent,
+			subString: "Gecko",
+			identity: "Mozilla",
+			versionSearch: "rv"
+		},
+		{ 		// for older Netscapes (4-)
+			string: navigator.userAgent,
+			subString: "Mozilla",
+			identity: "Netscape",
+			versionSearch: "Mozilla"
+		}
+	],
+	dataOS : [
+		{
+			string: navigator.platform,
+			subString: "Win",
+			identity: "Windows"
+		},
+		{
+			string: navigator.platform,
+			subString: "Mac",
+			identity: "Mac"
+		},
+		{
+			   string: navigator.userAgent,
+			   subString: "iPhone",
+			   identity: "iPhone/iPod"
+	    },
+		{
+			string: navigator.platform,
+			subString: "Linux",
+			identity: "Linux"
+		}
+	]
+
+};
+BrowserDetect.init();
+
+// -->
+</script>
+
+
+<script type="text/javascript">
+<!--
+
+function showKeuze(){
+        document.getElementById('keuze_message').style.display = 'block';
+        document.getElementById('verplicht_message').style.display = 'none';
+}
+
+
+function showVerplichting(){
+        document.getElementById('verplicht_message').style.display = 'block';
+        document.getElementById('keuze_message').style.display = 'none';
+}
+
+// -->
+</script>
+
 </head>
 
 <div id="menu" class="menubar">
+
 
 	<div class="menubutton-container">
 
@@ -57,10 +199,55 @@
 	</div>
 
 
-	<div class="fallback-message" id="overview-message">
-	    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this website.</p>
+
+        <div class="fallback-message" id="keuze_message" style="display: none">    
+	    <p><b>KEUZE:</b> Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this website.</p>
 	    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
 	</div>
+
+        <div class="fallback-message" id="verplicht_message" style="display: none">    
+	    <p><b>VERPLICHT:</b> Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this website.</p>
+	    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+	</div>
+
+
+
+
+        <script type="text/javascript">
+
+        if (BrowserDetect.browser == "Chrome") {
+                // Doorverwijzen ...
+                window.location = "../delta.html"
+
+        } else if (BrowserDetect.browser == "Safari") {
+                // Doorverwijzen ...
+                window.location = "../delta.html"
+
+        } else if (BrowserDetect.browser == "Firefox") {
+                if (BrowserDetect.version >= 10) {
+                        // geeft de keuze ...
+                        showKeuze();
+                } else {
+                        // Moet backup site gebruiken
+                        showVerplichting();
+                }                
+        } else if (BrowserDetect.browser == "Explorer") {
+                if (BrowserDetect.version >= 10) {
+                        // geeft de keuze ...
+                        showKeuze();
+                } else {
+                        // Moet backup site gebruiken
+                        showVerplichting();
+                }           
+        } else {
+               showVerplichting();
+        }
+        </script>
+
+
+
+
+
 
 
 </div>

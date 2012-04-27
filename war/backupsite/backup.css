@@ -57,3 +57,13 @@ h1 {
 	font-size: 30px;
 	margin-top: 300px;
 }
+
+#choice-message {
+	display: block;
+	font-size: 30px;
+	margin-top: 300px;
+}
+
+#logos {
+	margin-top: 30px;
+}

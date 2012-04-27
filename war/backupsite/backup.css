@@ -51,3 +51,9 @@ h1 {
 .cubeFace {
 	border-radius: 10px;
 }
+
+#overview-message {
+	display: block;
+	font-size: 30px;
+	margin-top: 300px;
+}

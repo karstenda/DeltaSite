@@ -272,7 +272,7 @@ h1 {
 }
 
 .button {
-    background: #8d5cad;
+    background: #aeaeae;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
@@ -440,6 +440,10 @@ input {
 
 .activi-smaller .activi-bottom {
 	font-size: 12pt;
+}
+
+.activi-smallerer .activi-bottom {
+	font-size: 11pt;
 }
 
 #concert-schedule {

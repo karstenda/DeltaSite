@@ -107,7 +107,7 @@
     <div id="overview" class="step noclick-step" data-x="0" data-y="0" data-z="6000"></div>
 
     <div id="deltaIcon" class="step noclick-step titlestep" data-x="1700" data-y="300" data-z="0" data-scale="7">
-    <img src="images/delta_white2.png"></img>
+    <img src="images/delta_orange2.png"></img>
     </div>
 
     <div id="activiteitenCentral" class="step noclick-step titlestep" data-x="-2200" data-y="-200" data-z="0">
@@ -903,32 +903,18 @@
 <!--  		</div> -->
 	</div>
 	
-<<<<<<< HEAD
-	<div id="bbqsubscribe" class="noclick-step step" data-x="-1700" data-y="-805" data-z="0" data-rotate-x="-45">
-	</div>
-	
-	<div id="bbq2subscribe" class="noclick-step step" data-x="-1700" data-y="-805" data-z="0" data-rotate-x="-45">
-	</div>
-	
-	<div id="kebabsubscribe" class="noclick-step step" data-x="-1700" data-y="-805" data-z="0" data-rotate-x="-45">
-	</div>
-	
-	<div id="kebab2subscribe" class="noclick-step step" data-x="-1700" data-y="-805" data-z="0" data-rotate-x="-45">
-	</div>	
-=======
-<!-- 	<div id="bbqsubscribe" class="noclick-step step" data-x="-2100" data-y="-505" data-z="0" data-rotate-x="-45"> -->
+<!-- 	<div id="bbqsubscribe" class="noclick-step step" data-x="-1700" data-y="-805" data-z="0" data-rotate-x="-45"> -->
 <!-- 	</div> -->
 	
-<!-- 	<div id="bbq2subscribe" class="noclick-step step" data-x="-2100" data-y="-505" data-z="0" data-rotate-x="-45"> -->
+<!-- 	<div id="bbq2subscribe" class="noclick-step step" data-x="-1700" data-y="-805" data-z="0" data-rotate-x="-45"> -->
 <!-- 	</div> -->
 	
-<!-- 	<div id="kebabsubscribe" class="noclick-step step" data-x="-2100" data-y="-505" data-z="0" data-rotate-x="-45"> -->
+<!-- 	<div id="kebabsubscribe" class="noclick-step step" data-x="-1700" data-y="-805" data-z="0" data-rotate-x="-45"> -->
 <!-- 	</div> -->
 	
-<!-- 	<div id="kebab2subscribe" class="noclick-step step" data-x="-2100" data-y="-505" data-z="0" data-rotate-x="-45"> -->
+<!-- 	<div id="kebab2subscribe" class="noclick-step step" data-x="-1700" data-y="-805" data-z="0" data-rotate-x="-45"> -->
 <!-- 	</div>	 -->
->>>>>>> 190d2545cb853d93576aade3c875c6e517e05147
-    	
+	
         <div id="standpuntenCentral" class="step titlestep" data-x="1300" data-y="-1300" data-z="0" data-rotate="90">
             <span class="clusterTitle">Standpunten</span>
         </div>	

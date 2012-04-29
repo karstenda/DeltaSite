@@ -114,8 +114,7 @@
     	<span class="clusterTitle">Activiteiten</span>
     </div>
 
-
-    <div id="activiteitenTitle" class="step" data-x="-2500" data-y="-1000" data-z="0" data-rotate-x="45" data-rotate-z="-90" >
+    <div id="activiteitenTitle" class="step" data-x="-2100" data-y="-1300" data-z="0" data-rotate-x="45" data-rotate-z="-90" >
     	<span class="ActiviOverviewTitle">Overzicht</span>
     </div>		
 		
@@ -422,8 +421,9 @@
 			<div class="slideleftfooter button">
 				<a href="#activiOverview">Overzicht</a>
 			</div>
-			<div class="sliderightfooter button">
-				<a href="#bbqsubscribe">Inschrijven</a>
+			<div class="sliderightfooter">
+<!-- 				<a href="#bbqsubscribe" class="button">Inschrijven</a> -->
+				Binnenkort inschrijven
 			</div>
 		</div>
 		
@@ -451,8 +451,9 @@
 			<div class="slideleftfooter button">
 				<a href="#activiOverview">Overzicht</a>
 			</div>
-			<div class="sliderightfooter button">
-				<a href="#bbqsubscribe">Inschrijven</a>
+			<div class="sliderightfooter">
+<!-- 				<a href="#bbq2subscribe" class="button">Inschrijven</a> -->
+				Binnenkort inschrijven
 			</div>
 		</div>
 		
@@ -614,8 +615,9 @@
 			<div class="slideleftfooter button">
 				<a href="#activiOverview">Overzicht</a>
 			</div>
-			<div class="sliderightfooter button">
-				<a href="#kebabsubscribe">Inschrijven</a>
+			<div class="sliderightfooter">
+<!-- 				<a href="#kebabsubscribe" class="button">Inschrijven</a> -->
+				Binnenkort inschrijven
 			</div>
 		</div>
 		
@@ -643,8 +645,9 @@
 			<div class="slideleftfooter button">
 				<a href="#activiOverview">Overzicht</a>
 			</div>
-			<div class="sliderightfooter button">
-				<a href="#kebab2subscribe">Inschrijven</a>
+			<div class="sliderightfooter">
+<!-- 				<a href="#kebab2subscribe" class="button">Inschrijven</a> -->
+				Binnenkort inschrijven
 			</div>
 		</div>
 		
@@ -825,80 +828,82 @@
 	<div id="shishabar" class="noclick-step step" data-x="-1350" data-y="-1053" data-z="-247" data-rotate-x="45" data-rotate-y="90">		
 	</div>
 
+
 	<div id="activi2" class="step cubeFace fontclass noclick-step" data-x="-1700" data-y="-805" data-z="0" data-rotate-x="-45">
-		<div id="bbqsubscribe-content" class="reservation-content">
-			<h1>Inschrijven BBQ 18u</h1>
-			
-			<div class="reservationform">
-				<form id="bbqform">
-					<div class="reservationforminput">
-						Voornaam<input type="text" name="firstname" tabindex=1 />
-						Achternaam<input type="text" name="lastname" tabindex=2 />
-						Email adres<input type="text" name="email" tabindex=3 />
-					</div>
-					<div class="buttonbar">
-						<button type="button" onclick="document.location = '#/bbq'" class="backbutton button">Back</button>
-						<button type="submit" class="submitbutton button">Inschrijven</button>
-					</div>
-		 		</form>
-	 		</div>
- 		</div>
+<!-- 		<div id="bbqsubscribe-content" class="reservation-content"> -->
+<!-- 			<h1>Inschrijven BBQ 18u</h1> -->
+
+<!-- 			<div class="reservationform"> -->
+<!-- 				<form id="bbqform"> -->
+<!-- 					<div class="reservationforminput"> -->
+<!-- 						Voornaam<input type="text" name="firstname" tabindex=1 /> -->
+<!-- 						Achternaam<input type="text" name="lastname" tabindex=2 /> -->
+<!-- 						Email adres<input type="text" name="email" tabindex=3 /> -->
+<!-- 					</div> -->
+<!-- 					<div class="buttonbar"> -->
+<!-- 						<button type="button" onclick="document.location = '#/bbq'" class="backbutton button">Back</button> -->
+<!-- 						<button type="submit" class="submitbutton button">Inschrijven</button> -->
+<!-- 					</div> -->
+<!-- 		 		</form> -->
+<!-- 	 		</div> -->
+<!--  		</div> -->
  		
-		<div id="bbq2subscribe-content" class="reservation-content">
-			<h1>Inschrijven BBQ 19u</h1>
+<!-- 		<div id="bbq2subscribe-content" class="reservation-content"> -->
+<!-- 			<h1>Inschrijven BBQ 19u</h1> -->
 			
-			<div class="reservationform">
-				<form id="bbq2form">
-					<div class="reservationforminput">
-						Voornaam<input type="text" name="firstname" tabindex=1 />
-						Achternaam<input type="text" name="lastname" tabindex=2 />
-						Email adres<input type="text" name="email" tabindex=3 />
-					</div>
-					<div class="buttonbar">
-						<button type="button" onclick="document.location = '#/bbq2'" class="backbutton button">Back</button>
-						<button type="submit" class="submitbutton button">Inschrijven</button>
-					</div>
-		 		</form>
-	 		</div>
- 		</div>
+<!-- 			<div class="reservationform"> -->
+<!-- 				<form id="bbq2form"> -->
+<!-- 					<div class="reservationforminput"> -->
+<!-- 						Voornaam<input type="text" name="firstname" tabindex=1 /> -->
+<!-- 						Achternaam<input type="text" name="lastname" tabindex=2 /> -->
+<!-- 						Email adres<input type="text" name="email" tabindex=3 /> -->
+<!-- 					</div> -->
+<!-- 					<div class="buttonbar"> -->
+<!-- 						<button type="button" onclick="document.location = '#/bbq2'" class="backbutton button">Back</button> -->
+<!-- 						<button type="submit" class="submitbutton button">Inschrijven</button> -->
+<!-- 					</div> -->
+<!-- 		 		</form> -->
+<!-- 	 		</div> -->
+<!--  		</div> -->
  		
-		<div id="kebabsubscribe-content" class="reservation-content">
-			<h1>Inschrijven Kebab 18u</h1>
+<!-- 		<div id="kebabsubscribe-content" class="reservation-content"> -->
+<!-- 			<h1>Inschrijven Kebab 18u</h1> -->
 			
-			<div class="reservationform">
-				<form id="kebabform">
-					<div class="reservationforminput">
-						Voornaam<input type="text" name="firstname" tabindex=1 />
-						Achternaam<input type="text" name="lastname" tabindex=2 />
-						Email adres<input type="text" name="email" tabindex=3 />
-					</div>
-					<div class="buttonbar">
-						<button type="button" onclick="document.location = '#/kebab'" class="backbutton button">Back</button>
-						<button type="submit" class="submitbutton button">Inschrijven</button>
-					</div>
-		 		</form>
-	 		</div>
- 		</div>
+<!-- 			<div class="reservationform"> -->
+<!-- 				<form id="kebabform"> -->
+<!-- 					<div class="reservationforminput"> -->
+<!-- 						Voornaam<input type="text" name="firstname" tabindex=1 /> -->
+<!-- 						Achternaam<input type="text" name="lastname" tabindex=2 /> -->
+<!-- 						Email adres<input type="text" name="email" tabindex=3 /> -->
+<!-- 					</div> -->
+<!-- 					<div class="buttonbar"> -->
+<!-- 						<button type="button" onclick="document.location = '#/kebab'" class="backbutton button">Back</button> -->
+<!-- 						<button type="submit" class="submitbutton button">Inschrijven</button> -->
+<!-- 					</div> -->
+<!-- 		 		</form> -->
+<!-- 	 		</div> -->
+<!--  		</div> -->
  		
-		<div id="kebab2subscribe-content" class="reservation-content">
-			<h1>Inschrijven Kebab 19u</h1>
+<!-- 		<div id="kebab2subscribe-content" class="reservation-content"> -->
+<!-- 			<h1>Inschrijven Kebab 19u</h1> -->
 			
-			<div class="reservationform">
-				<form id="kebabform2">
-					<div class="reservationforminput">
-						Voornaam<input type="text" name="firstname" tabindex=1 />
-						Achternaam<input type="text" name="lastname" tabindex=2 />
-						Email adres<input type="text" name="email" tabindex=3 />
-					</div>
-					<div class="buttonbar">
-						<button type="button" onclick="document.location = '#/kebab2'" class="backbutton button">Back</button>
-						<button type="submit" class="submitbutton button">Inschrijven</button>
-					</div>
-		 		</form>
-	 		</div>
- 		</div>
+<!-- 			<div class="reservationform"> -->
+<!-- 				<form id="kebabform2"> -->
+<!-- 					<div class="reservationforminput"> -->
+<!-- 						Voornaam<input type="text" name="firstname" tabindex=1 /> -->
+<!-- 						Achternaam<input type="text" name="lastname" tabindex=2 /> -->
+<!-- 						Email adres<input type="text" name="email" tabindex=3 /> -->
+<!-- 					</div> -->
+<!-- 					<div class="buttonbar"> -->
+<!-- 						<button type="button" onclick="document.location = '#/kebab2'" class="backbutton button">Back</button> -->
+<!-- 						<button type="submit" class="submitbutton button">Inschrijven</button> -->
+<!-- 					</div> -->
+<!-- 		 		</form> -->
+<!-- 	 		</div> -->
+<!--  		</div> -->
 	</div>
 	
+<<<<<<< HEAD
 	<div id="bbqsubscribe" class="noclick-step step" data-x="-1700" data-y="-805" data-z="0" data-rotate-x="-45">
 	</div>
 	
@@ -910,6 +915,19 @@
 	
 	<div id="kebab2subscribe" class="noclick-step step" data-x="-1700" data-y="-805" data-z="0" data-rotate-x="-45">
 	</div>	
+=======
+<!-- 	<div id="bbqsubscribe" class="noclick-step step" data-x="-2100" data-y="-505" data-z="0" data-rotate-x="-45"> -->
+<!-- 	</div> -->
+	
+<!-- 	<div id="bbq2subscribe" class="noclick-step step" data-x="-2100" data-y="-505" data-z="0" data-rotate-x="-45"> -->
+<!-- 	</div> -->
+	
+<!-- 	<div id="kebabsubscribe" class="noclick-step step" data-x="-2100" data-y="-505" data-z="0" data-rotate-x="-45"> -->
+<!-- 	</div> -->
+	
+<!-- 	<div id="kebab2subscribe" class="noclick-step step" data-x="-2100" data-y="-505" data-z="0" data-rotate-x="-45"> -->
+<!-- 	</div>	 -->
+>>>>>>> 190d2545cb853d93576aade3c875c6e517e05147
     	
         <div id="standpuntenCentral" class="step titlestep" data-x="1300" data-y="-1300" data-z="0" data-rotate="90">
             <span class="clusterTitle">Standpunten</span>

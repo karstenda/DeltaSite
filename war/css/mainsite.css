@@ -193,15 +193,7 @@ body     { pointer-events: none; }
 	opacity: 1;
 }
 
-.impress-on-SponsorsOverview #sponsors1 {
-	opacity: 1;
-}
-
-.impress-on-SponsorsOverview #sponsors2 {
-	opacity: 1;
-}
-
-.impress-on-SponsorsOverview #sponsors3 {
+.impress-on-SponsorsOverview .sponsorslide {
 	opacity: 1;
 }
 

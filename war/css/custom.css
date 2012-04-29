@@ -229,20 +229,31 @@ h1 {
 	padding: 10px !important;
 }
 
-.sponsorslide1 {
-	width: 820px !important;
+#sponsors1 {
+	width: 831px !important;
 	padding: 10px !important;
 	height: 560px !important;
 }
 
-
-.sponsorslide2 {
+#sponsors2 {
 	width: 820px !important;
 	padding: 10px !important;
 	height: 244px !important;
 }
 
-.sponsorslide3 {
+#sponsors3 {
+	width: 820px !important;
+	padding: 10px !important;
+	height: 258px !important;
+}
+
+#sponsors4 {
+	width: 820px !important;
+	padding: 10px !important;
+	height: 258px !important;
+}
+
+#sponsors5 {
 	width: 820px !important;
 	padding: 10px !important;
 	height: 258px !important;

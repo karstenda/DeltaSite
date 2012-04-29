@@ -71,3 +71,7 @@ h1 {
 	width: 410px;
 	height: 385px;
 }
+
+#activiOverview {
+	height: 720px !important;
+}

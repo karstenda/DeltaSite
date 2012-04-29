@@ -14,6 +14,7 @@
 .menubutton-container {
 	display: inline-block;
 	margin:auto;
+	min-width: 1075px;
 }
 
 .cubeFace {
@@ -134,7 +135,8 @@ td.ActiOverviewInschr {
 /* The buttons themselves */
 .menubutton-container a {
 	background: none;
-	padding: 0px;
+	padding: 0 1px;
+	margin: 0 1px;
 }
 
 /* The buttons when hovered */

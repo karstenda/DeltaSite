@@ -8,6 +8,7 @@
     position: relative;
     z-index: 1000;
     text-align: center;
+    min-width: 1075px;
 }
 
 /* The button container */
@@ -451,7 +452,6 @@ input {
 #concert-schedule {
 	margin-left: 200px;
 }
-
 
 .backupbutton {
 	position: absolute;

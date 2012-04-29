@@ -218,8 +218,3 @@ body     { pointer-events: none; }
 .impress-on-bbqsubscribe #activiOverview {
 	display:none;
 }
-
-#backupbutton {
-	position: absolute;
-	right: 0px;
-}

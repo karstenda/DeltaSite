@@ -5,8 +5,8 @@
 
     <!-- Meta data.                     -->
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=1024" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
+<!--     <meta name="viewport" content="width=1024" /> -->
+<!--     <meta name="apple-mobile-web-app-capable" content="yes" /> -->
 
     <!-- Meta info.                     -->
     <title>Delta</title>
@@ -15,22 +15,23 @@
 
     <!-- Loading the stylesheets.       -->
     <link type="text/css" rel="stylesheet" href="css/custom.css"/>
-    <link type="text/css" rel="stylesheet" href="css/impress-demo.css"/>   
+    <link type="text/css" rel="stylesheet" href="css/impress-demo.css"/>
+    <link type="text/css" rel="stylesheet" href="css/mainsite.css"/>
 
-    <!-- Loading the font stylesheet.   -->
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+<!--     Loading the font stylesheet.   -->
+<!--     <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" /> -->
 
      
     <!-- Icons ...                      -->
     <link rel="shortcut icon" href="favicon.png" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 	
-    <!--                                           -->
-    <!-- This script loads your compiled module.   -->
-    <!-- If you add any GWT meta tags, they must   -->
-    <!-- be added before this line.                -->
+<!--                                               -->
+<!--     This script loads your compiled module.   -->
+<!--     If you add any GWT meta tags, they must   -->
+<!--     be added before this line.                -->
 		                                   
-    <script type="text/javascript" language="javascript" src="deltasite/deltasite.nocache.js"></script>
+<!--     <script type="text/javascript" language="javascript" src="deltasite/deltasite.nocache.js"></script> -->
 
 </head>
 
@@ -41,10 +42,11 @@
     <iframe src="javascript:''" id="__gwt_historyFrame" tabIndex='-1' style="position:absolute;width:0;height:0;border:0"></iframe>
 
 
-<div class="fallback-message">
-    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
-    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
-</div>
+<!--  Dit kwam af en toe tevoorschijn => disabled! -->
+<!-- <div class="fallback-message"> -->
+<!--     <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p> -->
+<!--     <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p> -->
+<!-- </div> -->
 
 
 <div id="menu" class="menubar">
@@ -75,43 +77,50 @@
 				onmouseout="this.src='images/button_standpunten.png'">
 			</a>
 			
-			<a href="#movie" class="menubutton">
+			<a href="movie.html" class="menubutton">
 				<img src="images/button_promo.png" 
 				onmouseover="this.src='images/button_promo_hover.png'" 
 				onmouseout="this.src='images/button_promo.png'">
 			</a>
 			
-			<a href="#intro1" class="menubutton">
+			<a href="#SponsorsOverview" class="menubutton">
 				<img src="images/button_sponsor.png" 
 				onmouseover="this.src='images/button_sponsor_hover.png'" 
 				onmouseout="this.src='images/button_sponsor.png'">
 			</a>
+			
+			<a href="backupsite/overzicht.html" class="backupbutton">
+				<img src="images/button_backup.png"
+				onmouseover="this.src='images/button_backup_hover.png'" 
+				onmouseout="this.src='images/button_backup.png'">
+			</a>
 	
 	</div>
-	
 
 </div>
 
 
-<div id="impress">
+<div id="impress" data-transition-duration="300">
 
-    <div id="overview" class="step" data-x="0" data-y="0" data-z="6000">
-    <img src="images/delta_white.png"></img>
+
+
+    <div id="overview" class="step noclick-step" data-x="0" data-y="0" data-z="6000"></div>
+
+    <div id="deltaIcon" class="step noclick-step titlestep" data-x="1700" data-y="300" data-z="0" data-scale="7">
+    <img src="images/delta_white2.png"></img>
     </div>
 
-
-
-    <div id="activiteitenCentral" class="step" data-x="-3000" data-y="-1300" data-z="0" data-rotate="68">
+    <div id="activiteitenCentral" class="step noclick-step titlestep" data-x="-2200" data-y="-200" data-z="0">
     	<span class="clusterTitle">Activiteiten</span>
     </div>
 
 
-    <div id="activiteitenTitle" class="step" data-x="-4000" data-y="-1000" data-z="0" data-rotate-x="45" data-rotate-z="-90" >
+    <div id="activiteitenTitle" class="step" data-x="-2500" data-y="-1000" data-z="0" data-rotate-x="45" data-rotate-z="-90" >
     	<span class="ActiviOverviewTitle">Overzicht</span>
     </div>		
 		
-	<div id="activiOverview" class="step cubeFace fontclass" data-x="-3600" data-y="-1000" data-z="0" data-rotate-x="45">
-		<div style="overflow:auto; height:1000px; margin-top:20px">
+	<div id="activiOverview" class="cubeFace step fontclass" data-x="-1700" data-y="-1300" data-z="0" data-rotate-x="45">
+		<div style="height:650px; margin-top:20px; overflow-x: auto; overflow-y:scroll;">
 		<table>
 
 		<tr class="ActiDay">
@@ -123,7 +132,6 @@
 					<td class="ActiOverviewAct">Frietkot</td>
 					<td class="ActiOverviewLoc">@Alma3</td>
 					<td class="ActiOverviewInschr">-</td>
-				
 				</tr>
 				<tr class="ActiOverviewAlt" onclick="document.location = '#/receptie'">
 					<td class="ActiOverviewHour">19:00 - 24:00</td>
@@ -156,7 +164,8 @@
 					<td class="ActiOverviewLoc">@Alma3</td>
 					<td class="ActiOverviewInschr">-</td>
 				</tr>
-				<tr class="ActiOverviewAlt" onclick="document.location = '#/randanimatie'">
+<!-- 				<tr class="ActiOverviewAlt" onclick="document.location = '#/randanimatie'"> -->
+				<tr class="ActiOverviewAltNoPointer">
 					<td class="ActiOverviewHour">11:00 - 21:00</td>
 					<td class="ActiOverviewAct">Randanimatie</td>
 					<td class="ActiOverviewLoc">@Alma3</td>
@@ -168,13 +177,19 @@
 					<td class="ActiOverviewLoc">@Alma3</td>
 					<td class="ActiOverviewInschr">-</td>
 				</tr>
-				<tr class="ActiOverviewAltNoPointer">
-					<td class="ActiOverviewHour">14:00 - 15:00</td>
-					<td class="ActiOverviewAct">Dr Oetker Snacks</td>
+				<tr class="ActiOverview" onclick="document.location = '#/shishabar'">
+					<td class="ActiOverviewHour">12:00 - 22:00</td>
+					<td class="ActiOverviewAct">Shishabar</td>
 					<td class="ActiOverviewLoc">@Alma3</td>
 					<td class="ActiOverviewInschr">-</td>
 				</tr>
-				<tr class="ActiOverviewNoPointer">
+				<tr class="ActiOverviewAltNoPointer">
+					<td class="ActiOverviewHour">14:00 - 15:00</td>
+					<td class="ActiOverviewAct">Gratis Snacks</td>
+					<td class="ActiOverviewLoc">@Alma3</td>
+					<td class="ActiOverviewInschr">-</td>
+				</tr>
+				<tr class="ActiOverview" onclick="document.location = '#/smoothies'">
 					<td class="ActiOverviewHour">16:00 - 17:00</td>
 					<td class="ActiOverviewAct">Smoothies vs Soepjes</td>
 					<td class="ActiOverviewLoc">@Alma3</td>
@@ -217,7 +232,8 @@
 			<td class="ActiWrapperDay">Dinsdag</td>
 			<td class="ActiWrapperSchedule">
 				<table>
-				<tr class="ActiOverview" onclick="document.location = '#/randanimatie'">
+<!-- 				<tr class="ActiOverview" onclick="document.location = '#/randanimatie'"> -->
+				<tr class="ActiOverviewNoPointer">
 					<td class="ActiOverviewHour">10:00 - 19:00</td>
 					<td class="ActiOverviewAct">Randanimatie</td>
 					<td class="ActiOverviewLoc">@Alma3</td>
@@ -235,14 +251,20 @@
 					<td class="ActiOverviewLoc">@Alma3</td>
 					<td class="ActiOverviewInschr">-</td>			
 				</tr>
-				<tr class="ActiOverviewAltNoPointer">
-					<td class="ActiOverviewHour">13:30 - 15:00</td>
-					<td class="ActiOverviewAct">Monster Sampling</td>
+				<tr class="ActiOverview" onclick="document.location = '#/shishabar'">
+					<td class="ActiOverviewHour">12:00 - 22:00</td>
+					<td class="ActiOverviewAct">Shishabar</td>
 					<td class="ActiOverviewLoc">@Alma3</td>
 					<td class="ActiOverviewInschr">-</td>
 				</tr>
+<!-- 				<tr class="ActiOverviewAltNoPointer"> -->
+<!-- 					<td class="ActiOverviewHour">13:30 - 15:00</td> -->
+<!-- 					<td class="ActiOverviewAct">Monster Sampling</td> -->
+<!-- 					<td class="ActiOverviewLoc">@Alma3</td> -->
+<!-- 					<td class="ActiOverviewInschr">-</td> -->
+<!-- 				</tr> -->
 				<tr class="ActiOverview" onclick="document.location = '#/optredens'">
-					<td class="ActiOverviewHour">16:00 - 23:00</td>
+					<td class="ActiOverviewHour">14:30 - 22:00</td>
 					<td class="ActiOverviewAct">Optredens</td>
 					<td class="ActiOverviewLoc">@Alma3</td>
 					<td class="ActiOverviewInschr">-</td>					
@@ -298,25 +320,19 @@
 		
 		</div>
 	</div>
-	
-	<div id="activi1" class="step cubeFace fontclass" data-x="-3250" data-y="-753" data-z="-247" data-rotate-x="45" data-rotate-y="90" >
-		<center><br><br><img src="images/delta_dark2.png"></img></center>
-	</div>
-	<div id="activi2" class="step cubeFace fontclass" data-x="-3600" data-y="-505" data-z="0" data-rotate-x="-45" style="vertical-align:center;">
-		<center><br><br><img src="images/delta_dark2.png"></img></center>
-	</div>
-	<div id="activi3" class="step cubeFace fontclass" data-x="-3600" data-y="-505" data-z="-495" data-rotate-z="180" data-rotate-x="-135">
-		
+
+	<div id="activi3" class="noclick-step step cubeFace fontclass" data-x="-1350" data-y="-1053" data-z="-247" data-rotate-x="45" data-rotate-y="90">
+
 		<div id="receptie-content" class="activi-content">
 			<h1>
 				Openingsreceptie
 			</h1>
 			<div class="activi-top">
-				<img src="http://nssdc.gsfc.nasa.gov/image/planetary/venus/gal_venus_37218.jpg" width="250" height="250" />
+				<img src="images/activiteiten/openingsreceptie.jpg" width="250" height="250" />
 	
 				<div class="activi-summary">
 					<b>Wat?</b><br/>
-					Openingsrecepite<br/>
+					Openingsreceptie<br/>
 					<b>Waar?</b><br/>
 					Tent voor Alma 3<br/>
 					<b>Wanneer?</b><br/>
@@ -331,13 +347,13 @@
 				<a href="#activiOverview">Overzicht</a>
 			</div>
 		</div>
-		
+
 		<div id="fakfeestje-content" class="activi-content">
 			<h1>
 				Fakfeestje
 			</h1>
 			<div class="activi-top">
-				<img src="http://nssdc.gsfc.nasa.gov/image/planetary/venus/gal_venus_37218.jpg" width="250" height="250" />
+				<img src="images/activiteiten/fakfeestje.jpg" width="250" height="250" />
 	
 				<div class="activi-summary">
 					<b>Wat?</b><br/>
@@ -362,7 +378,7 @@
 				Ontbijt
 			</h1>
 			<div class="activi-top">
-				<img src="http://nssdc.gsfc.nasa.gov/image/planetary/venus/gal_venus_37218.jpg" width="250" height="250" />
+				<img src="images/activiteiten/ontbijt.jpg" width="250" height="250" />
 	
 				<div class="activi-summary">
 					<b>Wat?</b><br/>
@@ -387,11 +403,11 @@
 				BBQ (Shift 1)
 			</h1>
 			<div class="activi-top">
-				<img src="http://nssdc.gsfc.nasa.gov/image/planetary/venus/gal_venus_37218.jpg" width="250" height="250" />
+				<img src="images/activiteiten/bbq.jpg" width="250" height="250" />
 	
 				<div class="activi-summary">
 					<b>Wat?</b><br/>
-					Barbeque<br/>
+					Barbecue<br/>
 					<b>Waar?</b><br/>
 					Plein voor Alma 3<br/>
 					<b>Wanneer?</b><br/>
@@ -416,11 +432,11 @@
 				BBQ (Shift 2)
 			</h1>
 			<div class="activi-top">
-				<img src="http://nssdc.gsfc.nasa.gov/image/planetary/venus/gal_venus_37218.jpg" width="250" height="250" />
+				<img src="images/activiteiten/bbq.jpg" width="250" height="250" />
 	
 				<div class="activi-summary">
 					<b>Wat?</b><br/>
-					Barbeque<br/>
+					Barbecue<br/>
 					<b>Waar?</b><br/>
 					Plein voor Alma 3<br/>
 					<b>Wanneer?</b><br/>
@@ -445,7 +461,7 @@
 				Randanimatie
 			</h1>
 			<div class="activi-top">
-				<img src="http://nssdc.gsfc.nasa.gov/image/planetary/venus/gal_venus_37218.jpg" width="250" height="250" />
+				<img src="images/activiteiten/randanimatie.jpg" width="250" height="250" />
 	
 				<div class="activi-summary">
 					<b>Wat?</b><br/>
@@ -470,7 +486,7 @@
 				KiesTD
 			</h1>
 			<div class="activi-top">
-				<img src="http://nssdc.gsfc.nasa.gov/image/planetary/venus/gal_venus_37218.jpg" width="250" height="250" />
+				<img src="images/activiteiten/kiesTD.jpg" width="250" height="250" />
 	
 				<div class="activi-summary">
 					<b>Wat?</b><br/>
@@ -495,7 +511,7 @@
 				Jam Sessie
 			</h1>
 			<div class="activi-top">
-				<img src="http://nssdc.gsfc.nasa.gov/image/planetary/venus/gal_venus_37218.jpg" width="250" height="250" />
+				<img src="images/activiteiten/jamsessie.jpg" width="250" height="250" />
 	
 				<div class="activi-summary">
 					<b>Wat?</b><br/>
@@ -520,7 +536,7 @@
 				Optredens
 			</h1>
 			<div class="activi-top">
-				<img src="http://nssdc.gsfc.nasa.gov/image/planetary/venus/gal_venus_37218.jpg" width="250" height="250" />
+				<img src="images/activiteiten/optredens.jpg" width="250" height="250" />
 	
 				<div class="activi-summary">
 					<b>Wat?</b><br/>
@@ -554,7 +570,7 @@
 				Chill Avond
 			</h1>
 			<div class="activi-top">
-				<img src="http://nssdc.gsfc.nasa.gov/image/planetary/venus/gal_venus_37218.jpg" width="250" height="250" />
+				<img src="images/activiteiten/lounge.jpg" width="250" height="250" />
 	
 				<div class="activi-summary">
 					<b>Wat?</b><br/>
@@ -579,11 +595,11 @@
 				Kebab (Shift 1)
 			</h1>
 			<div class="activi-top">
-				<img src="http://nssdc.gsfc.nasa.gov/image/planetary/venus/gal_venus_37218.jpg" width="250" height="250" />
+				<img src="images/activiteiten/kebab.jpg" width="250" height="250" />
 	
 				<div class="activi-summary">
 					<b>Wat?</b><br/>
-					Kebab met frieten à volanté<br/>
+					Kebab met frieten à volonté<br/>
 					<b>Waar?</b><br/>
 					Plein voor Alma 3<br/>
 					<b>Wanneer?</b><br/>
@@ -592,7 +608,7 @@
 			</div>
 			
 			<div class="activi-bottom">
-				Heb je na 3 dagen nog steeds niet genoeg gekregen van de oosterse sfeer? Kom dan je maagje vullen met een overheerlijke zelfgemaakte kebab met frieten à la volanté voor slechts €1,5! Inschrijven via de site is verplicht, want de plaatsen zijn beperkt. Nog een laatste keer: smullen maar!
+				Heb je na 3 dagen nog steeds niet genoeg gekregen van de oosterse sfeer? Kom dan je maagje vullen met een overheerlijke zelfgemaakte kebab met frieten à la volonté voor slechts €1,5! Inschrijven via de site is verplicht, want de plaatsen zijn beperkt. Nog een laatste keer: smullen maar!
 			</div>
 			
 			<div class="slideleftfooter button">
@@ -608,11 +624,11 @@
 				Kebab (Shift 2)
 			</h1>
 			<div class="activi-top">
-				<img src="http://nssdc.gsfc.nasa.gov/image/planetary/venus/gal_venus_37218.jpg" width="250" height="250" />
+				<img src="images/activiteiten/kebab.jpg" width="250" height="250" />
 	
 				<div class="activi-summary">
 					<b>Wat?</b><br/>
-					Kebab met frieten à volanté<br/>
+					Kebab met frieten à volonté<br/>
 					<b>Waar?</b><br/>
 					Plein voor Alma 3<br/>
 					<b>Wanneer?</b><br/>
@@ -621,7 +637,7 @@
 			</div>
 			
 			<div class="activi-bottom">
-				Heb je na 3 dagen nog steeds niet genoeg gekregen van de oosterse sfeer? Kom dan je maagje vullen met een overheerlijke zelfgemaakte kebab met frieten à la volanté voor slechts €1,5! Inschrijven via de site is verplicht, want de plaatsen zijn beperkt. Nog een laatste keer: smullen maar!
+				Heb je na 3 dagen nog steeds niet genoeg gekregen van de oosterse sfeer? Kom dan je maagje vullen met een overheerlijke zelfgemaakte kebab met frieten à la volonté voor slechts €1,5! Inschrijven via de site is verplicht, want de plaatsen zijn beperkt. Nog een laatste keer: smullen maar!
 			</div>
 			
 			<div class="slideleftfooter button">
@@ -637,7 +653,7 @@
 				Pannenkoeken
 			</h1>
 			<div class="activi-top">
-				<img src="http://nssdc.gsfc.nasa.gov/image/planetary/venus/gal_venus_37218.jpg" width="250" height="250" />
+				<img src="images/activiteiten/pannenkoeken.jpg" width="250" height="250" />
 	
 				<div class="activi-summary">
 					<b>Wat?</b><br/>
@@ -682,12 +698,12 @@
 			</div>
 		</div>
 		
-		<div id="quiz-content" class="activi-content activi-smaller">
+		<div id="quiz-content" class="activi-content activi-smallerer">
 			<h1>
 				24 uren quiz
 			</h1>
 			<div class="activi-top">
-				<img src="http://nssdc.gsfc.nasa.gov/image/planetary/venus/gal_venus_37218.jpg" width="250" height="250" />
+				<img src="images/activiteiten/24urenquiz.jpg" width="250" height="250" />
 	
 				<div class="activi-summary">
 					<b>Wat?</b><br/>
@@ -700,62 +716,116 @@
 			</div>
 			
 			<div class="activi-bottom">
-				Onze vetste prijs gaan wij uitdelen aan de winnaar van de 24uren quiz. Hoe kun je meespelen? Door de vragen te beantwoorden of opdrachten te vervullen. De quiz begint op zondag 6 mei om 23u00. Vanaf dan zal er elke uur een nieuwe vraag of opdracht online komen en de laatste vraag zal op maandag 7 mei om 22u00 worden gesteld. Je hoeft niet elke uur mee te spelen maar je kansen op de hoofdprijs vermindert wel hierdoor. De winnaars van de hoofd- en troostprijzen van de quiz zal tijdens de schuimTD worden bekendgemaakt in ’t ElixIr.
+				Wil je een reiswaardebon van <a href="http://www.joker.be/">Joker</a> winnen ter waarde van €500 en een hele hoop goodies? Dan moet je meedoen aan de 24uren quiz! Dit kan je doen door je hier online in te schrijven of naar de tent @Alma 3 te komen. Inschrijven kun je doen vanaf zondag 6 mei om 22u en je kunt op eender welk moment instappen in het spel. Eens je ingeschreven bent, moet je enkel de uitleg van de vragen bekijken om te weten hoe je moet antwoorden. Elke uur zal er een nieuwe vraag worden gepost op de facebookpagina van Delta waarbij de laatste vraag gepost zal worden op maandag 7 mei om 23u00. De winnaars van de hoofd- en troostprijzen van de quiz zal tijdens de schuim-TD worden bekendgemaakt in ’t ElixIr.
 			</div>
 			<div class="slideleftfooter button">
 				<a href="#activiOverview">Overzicht</a>
 			</div>
 		</div>
 		
+		<div id="smoothies-content" class="activi-content">
+			<h1>
+				Smoothies vs Soepjes
+			</h1>
+			<div class="activi-top">
+				<img src="images/activiteiten/smoothies_soepjes.jpg" width="250" height="250" />
+	
+				<div class="activi-summary">
+					<b>Wat?</b><br/>
+					Smoothies of Soepjes<br/>
+					<b>Waar?</b><br/>
+					Plein voor Alma 3<br/>
+					<b>Wanneer?</b><br/>
+					Maandag, 16u<br/>
+				</div>
+			</div>
+			
+			<div class="activi-bottom">
+				Is het goed weer en heb je dorst? Dan moet je even langskomen om een gratis smoothie te komen halen. Is het slecht weer en heb je het koud? Dan moet je ook langskomen want dan zullen er soepjes zijn in plaats van smoothies. Wees snel want OP=OP!
+			</div>
+			<div class="slideleftfooter button">
+				<a href="#activiOverview">Overzicht</a>
+			</div>
+		</div>
 		
+		<div id="shishabar-content" class="activi-content">
+			<h1>
+				Shishabar
+			</h1>
+			<div class="activi-top">
+				<img src="images/activiteiten/shishabar.jpg" width="250" height="250" />
+	
+				<div class="activi-summary">
+					<b>Wat?</b><br/>
+					Shishabar<br/>
+					<b>Waar?</b><br/>
+					Plein voor Alma 3<br/>
+					<b>Wanneer?</b><br/>
+					Maandag, Dinsdag, 12u<br/>
+				</div>
+			</div>
+			
+			<div class="activi-bottom">
+				Ontsnap aan de drukte van de kiesweek en dompel je onder in de Oosterse sfeer van onze shishabar, doorlopend aanwezig op locatie voor Alma 3. Ideaal voor of na een lekkere almamaaltijd, of gewoon als afwisseling tussen de liters bier.
+			</div>
+			<div class="slideleftfooter button">
+				<a href="#activiOverview">Overzicht</a>
+			</div>
+		</div>
 	</div>
 
-	<div id="receptie" class="step" data-x="-3600" data-y="-505" data-z="-495" data-rotate-z="180" data-rotate-x="-135">		
+	<div id="receptie" class="noclick-step step" data-x="-1350" data-y="-1053" data-z="-247" data-rotate-x="45" data-rotate-y="90">		
 	</div>
 	
-	<div id="fakfeestje" class="step" data-x="-3600" data-y="-505" data-z="-495" data-rotate-z="180" data-rotate-x="-135">		
+	<div id="fakfeestje" class="noclick-step step" data-x="-1350" data-y="-1053" data-z="-247" data-rotate-x="45" data-rotate-y="90">		
 	</div>
 	
-	<div id="ontbijt" class="step" data-x="-3600" data-y="-505" data-z="-495" data-rotate-z="180" data-rotate-x="-135">
+	<div id="ontbijt" class="noclick-step step" data-x="-1350" data-y="-1053" data-z="-247" data-rotate-x="45" data-rotate-y="90">
 	</div>
 	
-	<div id="bbq" class="step" data-x="-3600" data-y="-505" data-z="-495" data-rotate-z="180" data-rotate-x="-135">		
+	<div id="bbq" class="noclick-step step" data-x="-1350" data-y="-1053" data-z="-247" data-rotate-x="45" data-rotate-y="90">		
 	</div>
 	
-	<div id="bbq2" class="step" data-x="-3600" data-y="-505" data-z="-495" data-rotate-z="180" data-rotate-x="-135">		
+	<div id="bbq2" class="noclick-step step" data-x="-1350" data-y="-1053" data-z="-247" data-rotate-x="45" data-rotate-y="90">		
 	</div>
 	
-	<div id="randanimatie" class="step" data-x="-3600" data-y="-505" data-z="-495" data-rotate-z="180" data-rotate-x="-135">		
+	<div id="randanimatie" class="noclick-step step" data-x="-1350" data-y="-1053" data-z="-247" data-rotate-x="45" data-rotate-y="90">		
 	</div>
 	
-	<div id="kiestd" class="step" data-x="-3600" data-y="-505" data-z="-495" data-rotate-z="180" data-rotate-x="-135">		
+	<div id="kiestd" class="noclick-step step" data-x="-1350" data-y="-1053" data-z="-247" data-rotate-x="45" data-rotate-y="90">		
 	</div>
 	
-	<div id="jamsessie" class="step" data-x="-3600" data-y="-505" data-z="-495" data-rotate-z="180" data-rotate-x="-135">		
+	<div id="jamsessie" class="noclick-step step" data-x="-1350" data-y="-1053" data-z="-247" data-rotate-x="45" data-rotate-y="90">		
 	</div>
 	
-	<div id="optredens" class="step" data-x="-3600" data-y="-505" data-z="-495" data-rotate-z="180" data-rotate-x="-135">		
+	<div id="optredens" class="noclick-step step" data-x="-1350" data-y="-1053" data-z="-247" data-rotate-x="45" data-rotate-y="90">		
 	</div>
 	
-	<div id="chill" class="step" data-x="-3600" data-y="-505" data-z="-495" data-rotate-z="180" data-rotate-x="-135">		
+	<div id="chill" class="noclick-step step" data-x="-1350" data-y="-1053" data-z="-247" data-rotate-x="45" data-rotate-y="90">		
 	</div>
 	
-	<div id="kebab" class="step" data-x="-3600" data-y="-505" data-z="-495" data-rotate-z="180" data-rotate-x="-135">		
+	<div id="kebab" class="noclick-step step" data-x="-1350" data-y="-1053" data-z="-247" data-rotate-x="45" data-rotate-y="90">		
 	</div>
 	
-	<div id="kebab2" class="step" data-x="-3600" data-y="-505" data-z="-495" data-rotate-z="180" data-rotate-x="-135">		
+	<div id="kebab2" class="noclick-step step" data-x="-1350" data-y="-1053" data-z="-247" data-rotate-x="45" data-rotate-y="90">		
 	</div>
 	
-	<div id="pannenkoek" class="step" data-x="-3600" data-y="-505" data-z="-495" data-rotate-z="180" data-rotate-x="-135">		
+	<div id="pannenkoek" class="noclick-step step" data-x="-1350" data-y="-1053" data-z="-247" data-rotate-x="45" data-rotate-y="90">		
 	</div>
 	
-	<div id="laser" class="step" data-x="-3600" data-y="-505" data-z="-495" data-rotate-z="180" data-rotate-x="-135">		
+	<div id="laser" class="noclick-step step" data-x="-1350" data-y="-1053" data-z="-247" data-rotate-x="45" data-rotate-y="90">		
 	</div>
 	
-	<div id="quiz" class="step" data-x="-3600" data-y="-505" data-z="-495" data-rotate-z="180" data-rotate-x="-135">		
+	<div id="quiz" class="noclick-step step" data-x="-1350" data-y="-1053" data-z="-247" data-rotate-x="45" data-rotate-y="90">		
+	</div>
+	
+	<div id="smoothies" class="noclick-step step" data-x="-1350" data-y="-1053" data-z="-247" data-rotate-x="45" data-rotate-y="90">		
+	</div>
+	
+	<div id="shishabar" class="noclick-step step" data-x="-1350" data-y="-1053" data-z="-247" data-rotate-x="45" data-rotate-y="90">		
 	</div>
 
-	<div id="activi4" class="step cubeFace fontclass" data-x="-3600" data-y="-1000" data-z="-495" data-rotate-z="180" data-rotate-x="135">
+	<div id="activi2" class="step cubeFace fontclass noclick-step" data-x="-1700" data-y="-805" data-z="0" data-rotate-x="-45">
 		<div id="bbqsubscribe-content" class="reservation-content">
 			<h1>Inschrijven BBQ 18u</h1>
 			
@@ -767,7 +837,7 @@
 						Email adres<input type="text" name="email" tabindex=3 />
 					</div>
 					<div class="buttonbar">
-						<a href="#bbq" class="backbutton button">Back</a>
+						<button type="button" onclick="document.location = '#/bbq'" class="backbutton button">Back</button>
 						<button type="submit" class="submitbutton button">Inschrijven</button>
 					</div>
 		 		</form>
@@ -785,7 +855,7 @@
 						Email adres<input type="text" name="email" tabindex=3 />
 					</div>
 					<div class="buttonbar">
-						<a href="#bbq2" class="backbutton button">Back</a>
+						<button type="button" onclick="document.location = '#/bbq2'" class="backbutton button">Back</button>
 						<button type="submit" class="submitbutton button">Inschrijven</button>
 					</div>
 		 		</form>
@@ -803,7 +873,7 @@
 						Email adres<input type="text" name="email" tabindex=3 />
 					</div>
 					<div class="buttonbar">
-						<a href="#kebab" class="backbutton button">Back</a>
+						<button type="button" onclick="document.location = '#/kebab'" class="backbutton button">Back</button>
 						<button type="submit" class="submitbutton button">Inschrijven</button>
 					</div>
 		 		</form>
@@ -821,7 +891,7 @@
 						Email adres<input type="text" name="email" tabindex=3 />
 					</div>
 					<div class="buttonbar">
-						<a href="#kebab2" class="backbutton button">Back</a>
+						<button type="button" onclick="document.location = '#/kebab2'" class="backbutton button">Back</button>
 						<button type="submit" class="submitbutton button">Inschrijven</button>
 					</div>
 		 		</form>
@@ -829,27 +899,23 @@
  		</div>
 	</div>
 	
-	<div id="bbqsubscribe" class="step" data-x="-3600" data-y="-1000" data-z="-495" data-rotate-z="180" data-rotate-x="135">
+	<div id="bbqsubscribe" class="noclick-step step" data-x="-1700" data-y="-805" data-z="0" data-rotate-x="-45">
 	</div>
 	
-	<div id="bbq2subscribe" class="step" data-x="-3600" data-y="-1000" data-z="-495" data-rotate-z="180" data-rotate-x="135">
+	<div id="bbq2subscribe" class="noclick-step step" data-x="-1700" data-y="-805" data-z="0" data-rotate-x="-45">
 	</div>
 	
-	<div id="kebabsubscribe" class="step" data-x="-3600" data-y="-1000" data-z="-495" data-rotate-z="180" data-rotate-x="135">
+	<div id="kebabsubscribe" class="noclick-step step" data-x="-1700" data-y="-805" data-z="0" data-rotate-x="-45">
 	</div>
 	
-	<div id="kebab2subscribe" class="step" data-x="-3600" data-y="-1000" data-z="-495" data-rotate-z="180" data-rotate-x="135">
-	</div>
-	
-	<div id="activi5" class="step cubeFace fontclass" data-x="-3950" data-y="-753" data-z="-247" data-rotate-x="45" data-rotate-y="-90">
-		<h1>5</h1>
-	</div>		
+	<div id="kebab2subscribe" class="noclick-step step" data-x="-1700" data-y="-805" data-z="0" data-rotate-x="-45">
+	</div>	
     	
-    <div id="standpuntenCentral" class="step" data-x="2800" data-y="-1300" data-z="0" data-rotate="90">
-    <span class="clusterTitle">Standpunten</span>
-    </div>	
+        <div id="standpuntenCentral" class="step titlestep" data-x="1300" data-y="-1300" data-z="0" data-rotate="90">
+            <span class="clusterTitle">Standpunten</span>
+        </div>	
 
-		<div id="standpuntenoverzicht" class="step slide standpuntoverzichtslide" data-x="2100" data-y="-1400" data-z="0">
+		<div id="standpuntenoverzicht" class="step slide standpuntoverzichtslide" data-x="600" data-y="-1400" data-z="0">
     		<h1>
     			Standpunten
     		</h1>
@@ -864,12 +930,18 @@
 			<div class="slideleftfooter">
 				<a href="http://www.google.com">
 					<img src="http://www.adobe.com/images/pdficon_large.png"/>
-					Download visietekst
+					<a href="standpunten.pdf">Download visietekst</a>
+				</a>
+			</div>
+			
+			<div class="sliderightfooter">
+				<a href="#standpunt1">
+					Naar Standpunt 1
 				</a>
 			</div>
     	</div>
     	
-		<div id="standpunt1" class="step slide standpuntslide" data-x="1000" data-y="-10000" data-z="0">
+		<div id="standpunt1" class="step slide standpuntslide" data-x="1800" data-y="-1250" data-z="0" data-rotate="90">
 			<div class="standpunttop">
 				
 				<div class="standpuntnumber">1</div>
@@ -886,7 +958,7 @@
 			</div>
 		</div>
 		
-		<div id="standpunt2" class="step slide standpuntslide" data-x="2000" data-y="-10000" data-z="0">
+		<div id="standpunt2" class="step slide standpuntslide" data-x="1800" data-y="-310" data-z="0" data-rotate="90">
 			<div class="standpunttop">
 				
 				<div class="standpuntnumber">2</div>
@@ -905,7 +977,7 @@
 			</div>
 		</div>
 		
-		<div id="standpunt3" class="step slide standpuntslide" data-x="3000" data-y="-10000" data-z="0">
+		<div id="standpunt3" class="step slide standpuntslide" data-x="2590" data-y="-160" data-z="0">
 			<div class="standpunttop">
 				
 				<div class="standpuntnumber">3</div>
@@ -924,7 +996,7 @@
 			</div>
 		</div>
 		
-		<div id="standpunt4" class="step slide standpuntslide" data-x="4000" data-y="-10000" data-z="0">
+		<div id="standpunt4" class="step slide standpuntslide" data-x="2440" data-y="-950" data-z="0" data-rotate="-90">
 			<div class="standpunttop">
 				
 				<div class="standpuntnumber">4</div>
@@ -943,7 +1015,7 @@
 			</div>
 		</div>
 		
-		<div id="standpunt5" class="step slide standpuntslide" data-x="5000" data-y="-10000" data-z="0">
+		<div id="standpunt5" class="step slide standpuntslide" data-x="3230" data-y="-800" data-z="0">
 			<div class="standpunttop">
 				
 				<div class="standpuntnumber">5</div>
@@ -964,30 +1036,39 @@
 
 
 
-    <div id="SponsorsCentral" class="step" data-x="3400" data-y="1210" data-z="0" data-rotate="50">
+    <div id="SponsorsCentral" class="step titlestep" data-x="1050" data-y="1350" data-z="0" data-rotate="-50">
     	<span class="clusterTitle">Sponsors</span>
     </div>
 
-    <div id="sponsors2" class="step slide sponsorslide2" data-x="3100" data-y="1365" data-z="0" data-rotate="50">
+    <div id="SponsorsOverview" class="step" data-x="1575" data-y="1400" data-z="800" data-rotate="-50">
+    </div>
+
+    <div id="sponsors2" class="step slide sponsorslide" data-x="1700" data-y="1100" data-z="0" data-rotate="-50">
 	<div><img src="./images/sponsors2.png"></img></div>
     </div>
 
-    <div id="sponsors1" class="step slide sponsorslide1" data-x="3345" data-y="2090" data-z="0" data-rotate="-40">
+    <div id="sponsors1" class="step slide sponsorslide" data-x="1456" data-y="1846" data-z="0" data-rotate="40">
 	<div><img src="./images/sponsors1.png"></img></div>
     </div>    
 
-    <div id="sponsors3" class="step slide sponsorslide3" data-x="2890" data-y="1540" data-z="0" data-rotate="50">
+    <div id="sponsors3" class="step slide sponsorslide" data-x="1920" data-y="1282" data-z="0" data-rotate="-50">
 	<div><img src="./images/sponsors3.png"></img></div>
-    </div>        
-   	
-<!--     START OF MEMBER SECTION	 -->
+    </div>
 
-    <div id="MemnberCentral" class="step" data-x="-3600" data-y="1300" data-z="0" data-rotate="-50">
+	<div id="sponsors4" class="step sponsorslide" data-x="2175" data-y="1875" data-z="0" data-rotate="-50">
+	<div><img src="./images/sponsors4.jpg" width="800"></img></div>
+    </div> 
+    
+	<div id="sponsors5" class="step slide sponsorslide" data-x="2145" data-y="1468" data-z="0" data-rotate="-50">
+	<div><img src="./images/sponsors5.JPG" width="800"></img></div>
+    </div> 
+
+    <div id="MemnberCentral" class="step titlestep" data-x="-1250" data-y="1200" data-z="0" data-rotate="40">
     	<span class="clusterTitle">Ploeg</span>
     </div>
 
 
-    <div id="memberoverview" class="step slide ploegslide" data-x="-3200" data-y="1650" data-z="0" data-rotate="-50">
+    <div id="memberoverview" class="step slide ploegslide" data-x="-1700" data-y="1650" data-z="0" data-rotate="-50">
 	<div><img src="./images/ploeg2.png"></img></div>
 	
 	<!--  Pieter Willemsen - Nero Pieters - Pieter Maene - Katja Huis - Nils Charels - Jeroen Van Hemelen - Jorn Hendrickx - Dieter Maes - Jef Mannaerts - Manu something - Wout Van der Veken - Kristof Dens - Marvin Claes - Sam Verbueken (de persoon die er voor zit weet ik niet..) - Niels Avonds - Sven Dewilde - Karsten Daemen - Nicolas Butzen - Den Boets - Heleen Van Den Noortgate
@@ -1000,17 +1081,8 @@
 	
     </div>
 
+<!-- MEMBERSECTION -->
 
-<!--     END OF MEMBER SECTION	 -->
-    
-    <div id="movie" class="step movieslide slide" data-x="20000" data-y="0">
-	    	<div id="moviecontainer">
-	    		<iframe width="640" height="480" src="http://www.youtube.com/embed/lQ3HV0lRMOo" frameborder="0" allowfullscreen></iframe>
-	    	</div>
-	    	<div id="moviespoofer">
-	    		<img width="640" height="480" src="images/movie-screenshot.png" alt="Movie"/>
-	    	</div>
-    </div>
 
 <!-- SPONSORS -->
 

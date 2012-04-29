@@ -204,3 +204,17 @@ body     { pointer-events: none; }
 .impress-on-SponsorsOverview #sponsors3 {
 	opacity: 1;
 }
+
+#activiOverview {
+	z-index: 0;
+	opacity: 1 !important;
+}
+
+#activi2 {
+	z-index: 1000;
+	opacity: 1 !important;
+}
+
+.impress-on-bbqsubscribe #activiOverview {
+	display:none;
+}

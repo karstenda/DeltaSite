@@ -200,6 +200,11 @@ body     { pointer-events: none; }
 	opacity: 1;
 }
 
+.impress-on-SponsorsOverview a {
+	pointer-events: auto !important;
+	cursor: pointer !important;
+}
+
 .impress-on-bbqsubscribe #activiOverview {
 	display:none;
 }

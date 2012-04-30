@@ -14,8 +14,8 @@
     <meta name="author" content="Karsten Daemen" />
     
     <meta property="og:title" content="Delta" />
-<meta property="og:description" content="Kiesploeg Delta VTK" />
-<meta property="og:image" content="./images/thumbnail.jpg" />
+    <meta property="og:description" content="Kiesploeg Delta VTK" />
+    <meta property="og:image" content="./images/thumbnail.jpg" />
 
     <!-- Loading the stylesheets.       -->
     <link type="text/css" rel="stylesheet" href="css/custom.css"/>

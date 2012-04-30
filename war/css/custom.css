@@ -230,9 +230,9 @@ h1 {
 }
 
 #sponsors1 {
-	width: 831px !important;
+	width: 669px !important;
 	padding: 10px !important;
-	height: 560px !important;
+	height: 458px !important;
 }
 
 #sponsors2 {
@@ -250,7 +250,8 @@ h1 {
 #sponsors4 {
 	width: 820px !important;
 	padding: 10px !important;
-	height: 258px !important;
+	height: 312px !important;
+	background-color: #243d51;
 }
 
 #sponsors5 {
@@ -259,6 +260,12 @@ h1 {
 	height: 258px !important;
 }
 
+#sponsors6 {
+	width: 820px !important;
+	padding: 10px !important;
+	height: 458px !important;
+	background-color: black;
+}
 
 .ploegslide {
 	width: 820px !important;

@@ -8,46 +8,39 @@
     position: relative;
     z-index: 1000;
     text-align: center;
+    min-width: 1075px;
 }
 
 /* The button container */
 .menubutton-container {
 	display: inline-block;
 	margin:auto;
+	min-width: 1075px;
 }
-
-
-.clusterTitle {
-    font-weight: bold;
-    text-align: center;
-    font-size: 6em;
-    line-height: 1;
-    color: white;
-}
-
 
 .cubeFace {
-        margin-top: 60px !important;
-        padding-top: 0px !important;
+		padding-top: 0px !important;
         display: block;
         background-color: white;
         width: 700px !important;
         height: 700px !important;
 }
 
+.cubeFace:not(.active) {
+	opacity: 1 !important;
+}
+
 .fontclass {
 	    font-family: 'Open Sans', Arial, sans-serif;
 	
 	    color: rgb(102, 102, 102);
-	    text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+/* 	    text-shadow: 0 2px 2px rgba(0, 0, 0, .1); */
 	
 	    font-size: 30px;
 	    line-height: 36px;
 	
 	    letter-spacing: -1px;
 }
-
-
 
 /* Activiteiten Overzicht */
 
@@ -143,14 +136,14 @@ td.ActiOverviewInschr {
 /* The buttons themselves */
 .menubutton-container a {
 	background: none;
-	padding: 0px;
+	padding: 0 1px;
+	margin: 0 1px;
 }
 
 /* The buttons when hovered */
 .menubutton-container a:HOVER {
 	background: none;
 }
-
 
 .memberdetail {
 	width: 700px !important;
@@ -193,36 +186,6 @@ td.ActiOverviewInschr {
 	padding: 0;
 }
 
-/* Give opacity 1 to all of the member details when on the overview */
-.impress-on-memberoverview .step {
-	cursor: pointer;
-	opacity:1 !important;
-}
-
-.impress-on-memberoverview .memberinfo {
-    display:none;
-}
-
-.impress-on-memberoverview .memberquestions {
-    display:none;
-}
-
-.impress-on-memberoverview .membername {
-    font-size: 40pt;
-}
-
-.impress-on-memberoverview .memberleft {
-	width: 400px;
-}
-
-.impress-on-memberoverview .memberright {
-	width: 250px;
-}
-
-.impress-on-memberoverview .memberimage {
-	width: 250px;
-	height: 250px;
-}
 
 h1 {
 	font-size: 40pt;
@@ -245,43 +208,19 @@ h1 {
 
 .movieslide {
 	width: 660px !important;
-	height: 500px !important;
+	height: 380px !important;
     position: relative !important;
 	padding: 0px !important;
 	text-align: center;
 }
 
 #moviecontainer {
-	display: none;
 	margin: 10px;
-}
-
-#moviespoofer {
-	display: inline-block;
-	margin: 10px;
-}
-
-.present #moviecontainer {
-	display: inline-block;
-}
-
-.present #moviespoofer {
-	display: none;
 }
 
 .standpuntoverzichtslide {
 	height: 600px !important;
 	width: 900px !important;
-}
-
-#impress a {
-	pointer-events: none;
-	cursor: default;
-}
-
-#impress .present a {
-	pointer-events: auto;
-	cursor: auto;
 }
 
 .standpuntslide {
@@ -290,17 +229,42 @@ h1 {
 	padding: 10px !important;
 }
 
-.sponsorslide1 {
-	width: 820px !important;
+#sponsors1 {
+	width: 669px !important;
 	padding: 10px !important;
-	height: 560px !important;
+	height: 458px !important;
 }
 
-
-.sponsorslide2 {
+#sponsors2 {
 	width: 820px !important;
 	padding: 10px !important;
 	height: 244px !important;
+}
+
+#sponsors3 {
+	width: 820px !important;
+	padding: 10px !important;
+	height: 258px !important;
+}
+
+#sponsors4 {
+	width: 820px !important;
+	padding: 10px !important;
+	height: 258px !important;
+	background-color: #243d51;
+}
+
+#sponsors5 {
+	width: 820px !important;
+	padding: 10px !important;
+	height: 258px !important;
+}
+
+#sponsors6 {
+	width: 820px !important;
+	padding: 10px !important;
+	height: 458px !important;
+	background-color: black;
 }
 
 .ploegslide {
@@ -310,6 +274,9 @@ h1 {
 	text-align: center;
 }
 
+.step {
+	position: relative;
+}
 
 .slideleftfooter {
 	position: absolute;
@@ -326,7 +293,7 @@ h1 {
 }
 
 .button {
-    background: #8d5cad;
+    background: #aeaeae;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
@@ -402,19 +369,14 @@ h1 {
 	font-size: 18pt;
 }
 
-.activi-content {
-	display:none;
-	margin: 0 auto;
-	text-align: center;
-}
-
 .activi-content h1 {
 	text-align: left;
-	margin-left: 63px;
+	margin-left: 38px;
 }
 
 .activi-content img {
 	display:inline-block;
+	margin-left: 20px;
 	margin-right: 30px;
 }
 
@@ -439,109 +401,12 @@ h1 {
 	display:inline-block;
 	vertical-align: top;
 	text-align: left;
+	width: 270px;
 }
 
 .activi-content a {
 	pointer-events: auto !important;
 	cursor: auto !important;
-}
-
-.impress-on-receptie #receptie-content {
-	display: inline;
-}
-.impress-on-fakfeestje #fakfeestje-content {
-	display: inline;
-}
-.impress-on-ontbijt #ontbijt-content {
-	display: inline;
-}
-.impress-on-bbq #bbq-content {
-	display: inline;
-}
-.impress-on-bbq2 #bbq2-content {
-	display: inline;
-}
-.impress-on-randanimatie #randanimatie-content {
-	display: inline;
-}
-.impress-on-kiestd #kiestd-content {
-	display: inline;
-}
-.impress-on-jamsessie #jamsessie-content {
-	display: inline;
-}
-.impress-on-optredens #optredens-content {
-	display: inline;
-}
-.impress-on-attracties #attracties-content {
-	display: inline;
-}
-.impress-on-chill #chill-content {
-	display: inline;
-}
-.impress-on-kebab #kebab-content {
-	display: inline;
-}
-.impress-on-kebab2 #kebab2-content {
-	display: inline;
-}
-.impress-on-pannenkoek #pannenkoek-content {
-	display: inline;
-}
-.impress-on-quiz #quiz-content {
-	display: inline;
-}
-.impress-on-laser #laser-content {
-	display: inline;
-}
-
-.impress-on-quiz .step {
-	opacity:1 !important;
-}
-.impress-on-laser .step {
-	opacity:1 !important;
-}
-.impress-on-receptie .step {
-	opacity:1 !important;
-}
-.impress-on-fakfeestje .step {
-	opacity:1 !important;
-}
-.impress-on-ontbijt .step {
-	opacity:1 !important;
-}
-.impress-on-bbq .step {
-	opacity:1 !important;
-}
-.impress-on-bbq2 .step {
-	opacity:1 !important;
-}
-.impress-on-randanimatie .step {
-	opacity:1 !important;
-}
-.impress-on-kiestd .step {
-	opacity:1 !important;
-}
-.impress-on-jamsessie .step {
-	opacity:1 !important;
-}
-.impress-on-optredens .step {
-	opacity:1 !important;
-}
-.impress-on-attracties .step {
-	opacity:1 !important;
-}
-.impress-on-chill .step {
-	opacity:1 !important;
-}
-.impress-on-kebab .step {
-	opacity:1 !important;
-}
-.impress-on-kebab2 .step {
-	opacity:1 !important;
-}
-.impress-on-pannenkoek .step {
-	opacity:1 !important;
 }
 
 input {
@@ -587,66 +452,26 @@ input {
 }
 
 .backbutton {
-	
+	float:left;
 }
 
 .submitbutton {
 	margin-left: 180px;
-	padding-top: 5px;
-	height: 38px;
-}
-
-.impress-on-bbqsubscribe .step {
-	opacity:1 !important;
-}
-
-.impress-on-bbq2subscribe .step {
-	opacity:1 !important;
-}
-
-.impress-on-kebabsubscribe .step {
-	opacity:1 !important;
-}
-
-.impress-on-kebab2subscribe .step {
-	opacity:1 !important;
-}
-
-
-.reservation-content {
-	display: none;
-}
-
-.reservation-content a {
-	pointer-events: auto !important;
-	cursor: auto !important;
-}
-
-.reservation-content button {
-	pointer-events: auto !important;
-	cursor: pointer !important;
-}
-
-.impress-on-bbqsubscribe #bbqsubscribe-content {
-	display: block;
-}
-
-.impress-on-bbq2subscribe #bbq2subscribe-content {
-	display: block;
-}
-
-.impress-on-kebabsubscribe #kebabsubscribe-content {
-	display: block;
-}
-
-.impress-on-kebab2subscribe #kebab2subscribe-content {
-	display: block;
 }
 
 .activi-smaller .activi-bottom {
 	font-size: 12pt;
 }
 
+.activi-smallerer .activi-bottom {
+	font-size: 11pt;
+}
+
 #concert-schedule {
 	margin-left: 200px;
+}
+
+.backupbutton {
+	position: absolute;
+	right: 0px;
 }

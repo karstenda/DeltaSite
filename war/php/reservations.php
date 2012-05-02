@@ -119,11 +119,12 @@ switch($_GET['action']) {
 				$fileHandler->writeArray(array());
 			}*/
 			
+			$momentDay = 'Dinsdag';
 			$momentHour = $laserstart;
 			$momentMinutes = 0;
 			while($momentHour < $laserend) {
 				
-				$momentString = $momentHour . ":" . (0 == $momentMinutes ? '00' : $momentMinutes);
+				$momentString = $momentDay . " - " . $momentHour . ":" . (0 == $momentMinutes ? '00' : $momentMinutes);
 				
 				$remaining = $max_count['laser'] - $fileHandler->getEntryCountFor($momentString);
 				
@@ -143,6 +144,7 @@ switch($_GET['action']) {
 					$momentHour++;
 				}
 			}
+			
 		echo json_encode($returnArray);
 		} else {
 			echo 'wrong_event';

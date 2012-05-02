@@ -51,6 +51,29 @@ switch($_GET['action']) {
 				
 				echo $fileHandler->writeString($eventReservations);
 			break;
+			case 'quiz':
+				if('' == $formData['firstname']) {
+					echo 'empty_firstname';
+					break 2;
+				}
+				
+				if('' == $formData['lastname']) {
+					echo 'empty_lastname';
+					break 2;
+				}
+				
+				if('' == $formData['email']) {
+					echo 'empty_email';
+					break 2;
+				}
+				
+				$eventReservations = $eventReservations . $formData['firstname'] . "," . $formData['lastname'] . "," . $formData['email'] . "," . $formData['joker'];
+
+				$eventReservations = $eventReservations . "\n";
+				
+				echo $fileHandler->writeString($eventReservations);
+				
+			break;
 			default:
 				echo false;
 			break;

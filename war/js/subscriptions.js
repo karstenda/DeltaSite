@@ -39,9 +39,16 @@ $.get('php/reservations.php?action=isVolzet&event=kebab2', function(data) {
 });
 
 $.getJSON('php/reservations.php?action=getFreeMoments&event=laser&', function(data) {
+	
 	$.each(data, function(i, item){
 		$('#laserformmoment').append('<option value="' + item.value + '">' + item.text + '</option>');	
 	});
+
+	if (data.length == 0) {
+		$('#lasersubmitbutton')
+	} else {
+		$('#lasersubmitbutton').html('<button id="lasersubmitbuttonbutton" type="submit" class="submitbutton button">Inschrijven</button>');
+	}
 });
 
 $('#bbqform').submit(function() {

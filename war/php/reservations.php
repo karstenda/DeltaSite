@@ -119,11 +119,12 @@ switch($_GET['action']) {
 				$fileHandler->writeArray(array());
 			}*/
 			
+			$momentDay = 'Maandag';
 			$momentHour = $laserstart;
 			$momentMinutes = 0;
 			while($momentHour < $laserend) {
 				
-				$momentString = $momentHour . ":" . (0 == $momentMinutes ? '00' : $momentMinutes);
+				$momentString = $momentDay . " - " . $momentHour . ":" . (0 == $momentMinutes ? '00' : $momentMinutes);
 				
 				$remaining = $max_count['laser'] - $fileHandler->getEntryCountFor($momentString);
 				
@@ -143,6 +144,33 @@ switch($_GET['action']) {
 					$momentHour++;
 				}
 			}
+			
+			$momentDay = 'Dinsdag';
+			$momentHour = $laserstart;
+			$momentMinutes = 0;
+			while($momentHour < $laserend) {
+				
+				$momentString = $momentDay . " - " . $momentHour . ":" . (0 == $momentMinutes ? '00' : $momentMinutes);
+				
+				$remaining = $max_count['laser'] - $fileHandler->getEntryCountFor($momentString);
+				
+				if ($remaining > 0) {
+					// Append an item to the array
+					
+					$returnArray[] = array(
+						'value' => $momentString,
+						'text' => $momentString . ' (Nog ' . $remaining . ' over)'
+					);
+				}
+				
+				$momentMinutes += 20;
+				
+				if (60 == $momentMinutes) {
+					$momentMinutes = 0;
+					$momentHour++;
+				}
+			}
+			
 		echo json_encode($returnArray);
 		} else {
 			echo 'wrong_event';

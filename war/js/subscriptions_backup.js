@@ -3,7 +3,7 @@ $.get('../php/reservations.php?action=isVolzet&event=bbq', function(data) {
 	if (true == data) {
 		$('#bbqsubmitbutton').html('<span style="margin-right:-250px;">Volzet</span>');
 	} else {
-		$('#bbqsubmitbutton').html('<button type="submit" class="submitbutton button">Inschrijven</button>');
+		$('#bbqsubmitbutton').html('<button id="bbqsubmitbuttonbutton" type="submit" class="submitbutton button">Inschrijven</button>');
 	}
 	
 });
@@ -13,7 +13,7 @@ $.get('../php/reservations.php?action=isVolzet&event=bbq2', function(data) {
 	if (true == data) {
 		$('#bbq2submitbutton').html('<span style="margin-right:-250px;">Volzet</span>');
 	} else {
-		$('#bbq2submitbutton').html('<button type="submit" class="submitbutton button">Inschrijven</button>');
+		$('#bbq2submitbutton').html('<button id="bbqsubmitbuttonbutton" type="submit" class="submitbutton button">Inschrijven</button>');
 	}
 	
 });
@@ -23,7 +23,7 @@ $.get('../php/reservations.php?action=isVolzet&event=kebab', function(data) {
 	if (true == data) {
 		$('#kebabsubmitbutton').html('<span style="margin-right:-250px;">Volzet</span>');
 	} else {
-		$('#kebabsubmitbutton').html('<button type="submit" class="submitbutton button">Inschrijven</button>');
+		$('#kebabsubmitbutton').html('<button id="kebabsubmitbuttonbutton" type="submit" class="submitbutton button">Inschrijven</button>');
 	}
 	
 });
@@ -33,16 +33,19 @@ $.get('../php/reservations.php?action=isVolzet&event=kebab2', function(data) {
 	if (true == data) {
 		$('#kebab2submitbutton').html('<span style="margin-right:-250px;">Volzet</span>');
 	} else {
-		$('#kebab2submitbutton').html('<button type="submit" class="submitbutton button">Inschrijven</button>');
+		$('#kebab2submitbutton').html('<button id="kebab2submitbuttonbutton" type="submit" class="submitbutton button">Inschrijven</button>');
 	}
 	
 });
 
 $('#bbqform').submit(function() {
 
+	$("#bbqsubmitbuttonbutton").attr("disabled", "disabled");
+	
 	$.post('../php/reservations.php?action=makeReservation&event=bbq', {formData: $('#bbqform').serialize()}, function(data) {
 		if(true == data){
 			$('#bbqfeedback').html('Ingeschreven');
+			$('#bbqsubmitbutton').html('');
 		}
 		else if(false == data) {
 			$('#bbqfeedback').html('Er liep iets mis tijdens je inschrijving. Probeer het later nog eens.');
@@ -61,15 +64,19 @@ $('#bbqform').submit(function() {
 		} else {
 			$('#bbqfeedback').html(data);
 		}
+		$('#bbqsubmitbuttonbutton').removeAttr("disabled");
 	});
 	return false;
 });
 
 $('#bbq2form').submit(function() {
 
+	$("#bbq2submitbuttonbutton").attr("disabled", "disabled");
+	
 	$.post('../php/reservations.php?action=makeReservation&event=bbq2', {formData: $('#bbq2form').serialize()}, function(data) {
 		if(true == data){
 			$('#bbq2feedback').html('Ingeschreven');
+			$('#bbq2submitbutton').html('');
 		}
 		else if(false == data) {
 			$('#bbq2feedback').html('Er liep iets mis tijdens je inschrijving. Probeer het later nog eens.');
@@ -88,15 +95,19 @@ $('#bbq2form').submit(function() {
 		} else {
 			$('#bbq2feedback').html(data);
 		}
+		$('#bbq2submitbuttonbutton').removeAttr("disabled");
 	});
 	return false;
 });
 
 $('#kebabform').submit(function() {
 
+	$("#kebabsubmitbuttonbutton").attr("disabled", "disabled");
+	
 	$.post('../php/reservations.php?action=makeReservation&event=kebab', {formData: $('#kebabform').serialize()}, function(data) {
 		if(true == data){
 			$('#kebabfeedback').html('Ingeschreven');
+//			$('#kebabsubmitbutton').html('');
 		}
 		else if(false == data) {
 			$('#kebabfeedback').html('Er liep iets mis tijdens je inschrijving. Probeer het later nog eens.');
@@ -115,15 +126,19 @@ $('#kebabform').submit(function() {
 		} else {
 			$('#kebabfeedback').html(data);
 		}
+		$('#kebabsubmitbuttonbutton').removeAttr("disabled");
 	});
 	return false;
 });
 
 $('#kebab2form').submit(function() {
 
+	$("#kebab2submitbuttonbutton").attr("disabled", "disabled");
+	
 	$.post('../php/reservations.php?action=makeReservation&event=kebab2', {formData: $('#kebab2form').serialize()}, function(data) {
 		if(true == data){
 			$('#kebab2feedback').html('Ingeschreven');
+			$('#kebab2submitbutton').html('');
 		}
 		else if(false == data) {
 			$('#kebab2feedback').html('Er liep iets mis tijdens je inschrijving. Probeer het later nog eens.');
@@ -142,6 +157,7 @@ $('#kebab2form').submit(function() {
 		} else {
 			$('#kebab2feedback').html(data);
 		}
+		$('#kebab2submitbuttonbutton').removeAttr("disabled");
 	});
 	return false;
 });

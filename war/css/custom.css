@@ -510,16 +510,26 @@ form input[type="checkbox"] {
 	background-repeat:no-repeat;
 	background-position:center;
 	vertical-align: bottom !important;
+	position: relative;
+}
+
+
+.thumbCellDiv:HOVER .nameContainer {
+	background-color: #878787;
 }
 
 .nameContainer {
+	position: absolute;
+	bottom: 0px;
 	width: 128px;
-	background-image: url('../images/transbgblue.png');
+	line-height: 1.2;
+	background-color: #B0B0B0;
 	background-repeat: repeat;
 	text-align: center;
 	font-size: 12pt;
 	color: white;
 }
+
 
 .memberOverviewSlide {
 	width: 800px !important;

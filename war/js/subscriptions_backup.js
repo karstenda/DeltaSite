@@ -38,6 +38,19 @@ $.get('../php/reservations.php?action=isVolzet&event=kebab2', function(data) {
 	
 });
 
+$.getJSON('../php/reservations.php?action=getFreeMoments&event=laser&', function(data) {
+	
+	$.each(data, function(i, item){
+		$('#laserformmoment').append('<option value="' + item.value + '">' + item.text + '</option>');	
+	});
+
+	if (data.length == 0) {
+		$('#lasersubmitbutton').html('Volzet');
+	} else {
+		$('#lasersubmitbutton').html('<button id="lasersubmitbuttonbutton" type="submit" class="submitbutton button">Inschrijven</button>');
+	}
+});
+
 $('#bbqform').submit(function() {
 
 	$("#bbqsubmitbuttonbutton").attr("disabled", "disabled");
@@ -158,6 +171,65 @@ $('#kebab2form').submit(function() {
 			$('#kebab2feedback').html(data);
 		}
 		$('#kebab2submitbuttonbutton').removeAttr("disabled");
+	});
+	return false;
+});
+
+$('#quizform').submit(function() {
+
+	$("#quizsubmitbuttonbutton").attr("disabled", "disabled");
+	
+	$.post('../php/reservations.php?action=makeReservation&event=quiz', {formData: $('#quizform').serialize()}, function(data) {
+		if(true == data){
+			$('#quizfeedback').html('Ingeschreven');
+			$('#quizsubmitbutton').html('');
+		}
+		else if(false == data) {
+			$('#quizfeedback').html('Er liep iets mis tijdens je inschrijving. Probeer het later nog eens.');
+		}
+		else if('empty_firstname' == data) {
+			$('#quizfeedback').html('Je bent vergeten om je voornaam op te geven.');
+		}
+		else if('empty_lastname' == data) {
+			$('#quizfeedback').html('Je bent vergeten om je achternaam op te geven.');
+		}
+		else if('empty_email' == data) {
+			$('#quizfeedback').html('Je bent vergeten om je email op te geven.');
+		} else {
+			$('#quizfeedback').html(data);
+		}
+		$('#quizsubmitbuttonbutton').removeAttr("disabled");
+	});
+	return false;
+});
+
+$('#laserform').submit(function() {
+
+	$("#lasersubmitbuttonbutton").attr("disabled", "disabled");
+	
+	$.post('../php/reservations.php?action=makeReservation&event=laser', {formData: $('#laserform').serialize()}, function(data) {
+		if(true == data){
+			$('#laserfeedback').html('Ingeschreven');
+			$('#lasersubmitbutton').html('');
+		}
+		else if(false == data) {
+			$('#laserfeedback').html('Er liep iets mis tijdens je inschrijving. Probeer het later nog eens.');
+		}
+		else if('empty_firstname' == data) {
+			$('#laserfeedback').html('Je bent vergeten om je voornaam op te geven.');
+		}
+		else if('empty_lastname' == data) {
+			$('#laserfeedback').html('Je bent vergeten om je achternaam op te geven.');
+		}
+		else if('empty_email' == data) {
+			$('#laserfeedback').html('Je bent vergeten om je email op te geven.');
+		}
+		else if('event_full' == data) {
+			$('#laserfeedback').html('Het moment waarvoor je je wilde inschrijven, is reeds volzet.');
+		} else {
+			$('#laserfeedback').html(data);
+		}
+		$('#lasersubmitbuttonbutton').removeAttr("disabled");
 	});
 	return false;
 });

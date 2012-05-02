@@ -140,6 +140,13 @@
 	display: block;
 }
 
+.impress-on-quizsubscribe #quizsubscribe-content {
+	display: block;
+}
+
+.impress-on-lasersubscribe #lasersubscribe-content {
+	display: block;
+}
 
 /* enable clicking on elements 'hiding' behind body in 3D */
 body     { pointer-events: none; }
@@ -206,5 +213,25 @@ body     { pointer-events: none; }
 }
 
 .impress-on-bbqsubscribe #activiOverview {
+	display:none;
+}
+
+.impress-on-bbq2subscribe #activiOverview {
+	display:none;
+}
+
+.impress-on-kebabsubscribe #activiOverview {
+	display:none;
+}
+
+.impress-on-kebab2subscribe #activiOverview {
+	display:none;
+}
+
+.impress-on-quizsubscribe #activiOverview {
+	display:none;
+}
+
+.impress-on-lasersubscribe #activiOverview {
 	display:none;
 }

@@ -1,7 +1,6 @@
 <!doctype html>
 
 <html lang="en">
-
 <head>
 
 <!-- Meta data.                     -->
@@ -22,23 +21,8 @@
 <!-- Icons ...                      -->
 <link rel="shortcut icon" href="favicon.png" />
 <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+<script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
 
-<script type="text/javascript">
-	var _gaq = _gaq || [];
-	_gaq.push([ '_setAccount', 'UA-31283977-1' ]);
-	_gaq.push([ '_trackPageview' ]);
-
-	(function() {
-		var ga = document.createElement('script');
-		ga.type = 'text/javascript';
-		ga.async = true;
-		ga.src = ('https:' == document.location.protocol ? 'https://ssl'
-				: 'http://www')
-				+ '.google-analytics.com/ga.js';
-		var s = document.getElementsByTagName('script')[0];
-		s.parentNode.insertBefore(ga, s);
-	})();
-</script>
 
 </head>
 
@@ -80,43 +64,38 @@
 	</div>
 
 	<div class="backupcontent">
+
 		<div id="activiteitenCentral" class="step">
 			<div class="clusterTitle">Activiteiten</div>
 		</div>
-		<div id="activi3" class="step cubeFace fontclass">
-
-			<div id="randanimatie-content" class="activi-content activi-smaller">
-				<h1>Randanimatie</h1>
-				<div class="activi-top">
-					<img src="../images/activiteiten/randanimatie.jpg" width="250"
-						height="250" />
-
-					<div class="activi-summary">
-						<b>Wat?</b><br /> Randanimatie<br /> <b>Waar?</b><br /> Plein
-						voor Alma 3<br /> <b>Wanneer?</b><br /> Maandag en Dinsdag<br />
+		<div id="activi4" class="step cubeFace fontclass">
+		
+		<div id="kebabsubscribe-content" class="reservation-content">
+			<h1>Inschrijven Quiz</h1>
+			
+			<div class="reservationform">
+				<form id="quizform">
+					<div class="reservationforminput">
+						Voornaam<input type="text" name="firstname" tabindex=1 />
+						Achternaam<input type="text" name="lastname" tabindex=2 />
+						Email adres<input type="text" name="email" tabindex=3 />
+						<input type="checkbox" name="joker" />Joker mag mijn gegevens gebruiken voor promotie.<br/>
 					</div>
-				</div>
-
-				<div class="activi-bottom">Naast alle toffe activiteiten
-					zullen er ook allerlei randanimaties aanwezig zijn op maandag en
-					dinsdag waaronder de Velcro Wall, Bierpul Schuifbaan en de
-					hilarische Bumperball! Wie meedoet aan de randanimaties krijgt
-					telkens een tombola ticket en kan daarmee enkele vette prijzen
-					winnen. Deze prijzen zullen op de lounge avond worden uitgereikt.
-					Je moet hier aanwezig zijn om je prijs te ontvangen. De lasershoot
-					kun je reserveren via deze link. Mensen die reserveren krijgen
-					voorrang maar je moet wel op tijd je lasergeweren komen halen.</div>
-				<div class="slideleftfooter button">
-					<a href="activioverview.html">Overzicht</a>
-				</div>
-				<div class="sliderightfooter button">
-					<a href="lasersubscribe.html">Inschrijven</a>
-<!-- 					Binnenkort inschrijven -->
-				</div>
-			</div>
-
-
+					<div class="buttonbar">
+						<button type="button" onclick="document.location = 'quiz.html'" class="backbutton button">Back</button>
+						<div id="quizsubmitbutton">
+							<button id="quizsubmitbuttonbutton" type="submit" class="submitbutton button">Inschrijven</button>
+						</div>
+					</div>
+		 		</form>
+		 		<div id="quizfeedback" class="feedbackmessage">
+		 		</div>
+	 		</div>
+ 		</div>	
 		</div>
 
 	</div>
+	
+<script type="text/javascript" src="../js/subscriptions_backup.js"></script>
+
 </body>

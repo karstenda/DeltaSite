@@ -16,7 +16,7 @@ class FileHandler {
 	}
 
 	public function writeArray(array $data) {
-		return $this->_writeData(serialize($data));
+		return $this->writeString(serialize($data));
 	}
 
 	public function readString() {
@@ -26,10 +26,30 @@ class FileHandler {
 	}
 
 	public function readArray() {
-		return unserialize($this->_readData());
+		return unserialize($this->readData());
 	}
 	
 	public function getEntryCount() {
 		return count(file($this->_fileName));
+	}
+	
+	public function getEntryCountFor($firstcol) {
+	
+		$count = 0;
+	
+		$file = fopen($this->_fileName, 'r');
+		// Skip first line
+		$line = fgets($file);
+		// Read line by line
+		while(!feof($file))
+		{
+			$line = fgets($file);
+			$lineArray = explode(',', $line);
+			if ($lineArray[0] == $firstcol)
+				$count++;
+		}
+		fclose($file);	
+		
+		return $count;
 	}
 }

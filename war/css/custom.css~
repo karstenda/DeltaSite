@@ -137,7 +137,7 @@ td.ActiOverviewInschr {
 .menubutton-container a {
 	background: none;
 	padding: 0 1px;
-	margin: 0 1px;
+	margin: 0 -4px;
 }
 
 /* The buttons when hovered */
@@ -250,7 +250,7 @@ h1 {
 #sponsors4 {
 	width: 820px !important;
 	padding: 10px !important;
-	height: 258px !important;
+	height: 312px !important;
 	background-color: #243d51;
 }
 
@@ -436,7 +436,7 @@ input {
     -moz-border-radius: 5px;
     border-radius: 5px;
     text-align: center;
-    margin-top: 80px;
+    margin-top: 0px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -474,4 +474,54 @@ input {
 .backupbutton {
 	position: absolute;
 	right: 0px;
+}
+
+form input[type="checkbox"] {
+	margin-left: 0px;
+/* 	margin-right: -180px; */
+	width: 20px;
+	height: 20px;
+	display: inline;
+}
+
+.feedbackmessage {
+	color: red;
+	margin-top: 5px;
+	margin-bottom:-20px;
+}
+
+.obvilink {
+	color: blue;
+}
+
+.memberOverviewTable {
+	border-spacing: 10px;
+}
+
+.thumbCell {
+	padding: 10px;
+	vertical-align: bottom !important;
+}
+
+.thumbCellDiv {
+	width: 128px;
+	height: 128px;
+	cursor: pointer;
+	background-repeat:no-repeat;
+	background-position:center;
+	vertical-align: bottom !important;
+}
+
+.nameContainer {
+	width: 128px;
+	background-image: url('../images/transbgblue.png');
+	background-repeat: repeat;
+	text-align: center;
+	font-size: 12pt;
+	color: white;
+}
+
+.memberOverviewSlide {
+	width: 800px !important;
+	height: 600px !important;
 }

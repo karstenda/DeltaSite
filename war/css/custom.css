@@ -493,3 +493,35 @@ form input[type="checkbox"] {
 .obvilink {
 	color: blue;
 }
+
+.memberOverviewTable {
+	border-spacing: 10px;
+}
+
+.thumbCell {
+	padding: 10px;
+	vertical-align: bottom !important;
+}
+
+.thumbCellDiv {
+	width: 128px;
+	height: 128px;
+	cursor: pointer;
+	background-repeat:no-repeat;
+	background-position:center;
+	vertical-align: bottom !important;
+}
+
+.nameContainer {
+	width: 128px;
+	background-image: url('../images/transbgblue.png');
+	background-repeat: repeat;
+	text-align: center;
+	font-size: 12pt;
+	color: white;
+}
+
+.memberOverviewSlide {
+	width: 800px !important;
+	height: 600px !important;
+}

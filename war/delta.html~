@@ -36,7 +36,7 @@
 <!--     be added before this line.                -->
 		                                   
 <!--     <script type="text/javascript" language="javascript" src="deltasite/deltasite.nocache.js"></script> -->
-
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
 
 
 <script type="text/javascript">
@@ -199,8 +199,8 @@
 					<td class="ActiOverviewLoc">@Alma3</td>
 					<td class="ActiOverviewInschr">-</td>
 				</tr>
-<!-- 				<tr class="ActiOverviewAlt" onclick="document.location = '#/randanimatie'"> -->
-				<tr class="ActiOverviewAltNoPointer">
+				<tr class="ActiOverviewAlt" onclick="document.location = '#/randanimatie'">
+<!-- 				<tr class="ActiOverviewAltNoPointer"> -->
 					<td class="ActiOverviewHour">11:00 - 21:00</td>
 					<td class="ActiOverviewAct">Randanimatie</td>
 					<td class="ActiOverviewLoc">@Alma3</td>
@@ -267,8 +267,8 @@
 			<td class="ActiWrapperDay">Dinsdag</td>
 			<td class="ActiWrapperSchedule">
 				<table>
-<!-- 				<tr class="ActiOverview" onclick="document.location = '#/randanimatie'"> -->
-				<tr class="ActiOverviewAltNoPointer">
+				<tr class="ActiOverviewAlt" onclick="document.location = '#/randanimatie'">
+<!-- 				<tr class="ActiOverviewAltNoPointer"> -->
 					<td class="ActiOverviewHour">10:00 - 19:00</td>
 					<td class="ActiOverviewAct">Randanimatie</td>
 					<td class="ActiOverviewLoc">@Alma3</td>
@@ -330,7 +330,7 @@
 				<table>
 				<tr class="ActiOverviewAltNoPointer">
 					<td class="ActiOverviewHour">12:00 - 18:00</td>
-					<td class="ActiOverviewAct">Lol ploegen namidag</td>
+					<td class="ActiOverviewAct">Lol ploegen namiddag</td>
 					<td class="ActiOverviewLoc">@Alma3</td>
 					<td class="ActiOverviewInschr">-</td>
 				</tr>
@@ -464,9 +464,9 @@
 			<div class="slideleftfooter button">
 				<a href="#activiOverview">Overzicht</a>
 			</div>
-			<div class="sliderightfooter">
-<!-- 				<a href="#bbqsubscribe" class="button">Inschrijven</a> -->
-				Binnenkort inschrijven
+			<div class="sliderightfooter button">
+				<a href="#bbqsubscribe">Inschrijven</a>
+<!-- 				Binnenkort inschrijven -->
 			</div>
 		</div>
 		
@@ -494,13 +494,13 @@
 			<div class="slideleftfooter button">
 				<a href="#activiOverview">Overzicht</a>
 			</div>
-			<div class="sliderightfooter">
-<!-- 				<a href="#bbq2subscribe" class="button">Inschrijven</a> -->
-				Binnenkort inschrijven
+			<div class="sliderightfooter button">
+				<a href="#bbq2subscribe">Inschrijven</a>
+<!-- 				Binnenkort inschrijven -->
 			</div>
 		</div>
 		
-		<div id="randanimatie-content" class="activi-content">
+		<div id="randanimatie-content" class="activi-content activi-smaller">
 			<h1>
 				Randanimatie
 			</h1>
@@ -518,10 +518,23 @@
 			</div>
 			
 			<div class="activi-bottom">
-				Naast alle toffe activiteiten zullen er ook allerlei randanimaties aanwezig zijn op maandag en dinsdag waaronder de hilarische bumperball! Wie meedoet aan de randanimaties krijgt telkens een tombola ticket en kan daarmee enkel vette prijzen winnen. Deze prijzen zullen op de lounge avond worden uitgereikt.
+				Naast alle toffe activiteiten
+					zullen er ook allerlei randanimaties aanwezig zijn op maandag en
+					dinsdag waaronder de Velcro Wall, Bierpul Schuifbaan en de
+					hilarische Bumperball! Wie meedoet aan de randanimaties krijgt
+					telkens een tombola ticket en kan daarmee enkele vette prijzen
+					winnen. Deze prijzen zullen op de lounge avond worden uitgereikt.
+					Je moet hier aanwezig zijn om je prijs te ontvangen. De lasershoot
+					kun je reserveren via deze link. Mensen die reserveren krijgen
+					voorrang maar je moet wel op tijd je lasergeweren komen halen.
 			</div>
 			<div class="slideleftfooter button">
 				<a href="#activiOverview">Overzicht</a>
+			</div>
+			<div class="sliderightfooter">
+<!-- 			<div class="sliderightfooter button"> -->
+<!-- 				<a href="#lasersubscribe">Inschrijven</a> -->
+				Binnenkort inschrijven
 			</div>
 		</div>
 		
@@ -543,7 +556,7 @@
 			</div>
 			
 			<div class="activi-bottom">
-				Delta presents: De delta-kies-TD!! Het wordt een heuse schuimparty met niemand minder dan Panta Lunto, Elekick, DJ Thirteen en Gekke Gijs! Voor niet meer dan 2€ voor leden en 3€ voor niet-leden mag je de waaiberg betreden waar bovenop de consumpties aan 1€, er ook nog heel wat free stuff en een gratis vaten op je zullen wachten. Op de TD zullen ook de winnaars van de 24uren quiz worden aangekondigd. Allen daarheen dus!!
+				Delta presents: De delta-kies-TD!! Het wordt een heuse schuimparty met niemand minder dan Panta Lunto, Elekick en Gekke Gijs! Voor niet meer dan 2€ voor leden en 3€ voor niet-leden mag je de waaiberg betreden waar bovenop de consumpties aan 1€, er ook nog heel wat free stuff en een gratis vaten op je zullen wachten. Op de TD zullen ook de winnaars van de 24uren quiz worden aangekondigd. Allen daarheen dus!!
 			</div>
 			<div class="slideleftfooter button">
 				<a href="#activiOverview">Overzicht</a>
@@ -658,9 +671,9 @@
 			<div class="slideleftfooter button">
 				<a href="#activiOverview">Overzicht</a>
 			</div>
-			<div class="sliderightfooter">
-<!-- 				<a href="#kebabsubscribe" class="button">Inschrijven</a> -->
-				Binnenkort inschrijven
+			<div class="sliderightfooter button">
+				<a href="#kebabsubscribe">Inschrijven</a>
+<!-- 				Binnenkort inschrijven -->
 			</div>
 		</div>
 		
@@ -688,9 +701,9 @@
 			<div class="slideleftfooter button">
 				<a href="#activiOverview">Overzicht</a>
 			</div>
-			<div class="sliderightfooter">
-<!-- 				<a href="#kebab2subscribe" class="button">Inschrijven</a> -->
-				Binnenkort inschrijven
+			<div class="sliderightfooter button">
+				<a href="#kebab2subscribe">Inschrijven</a>
+<!-- 				Binnenkort inschrijven -->
 			</div>
 		</div>
 		
@@ -762,7 +775,7 @@
 			</div>
 			
 			<div class="activi-bottom">
-				Wil je een reiswaardebon van <a href="http://www.joker.be/">Joker</a> winnen ter waarde van €500 en een hele hoop goodies? Dan moet je meedoen aan de 24uren quiz! Dit kan je doen door je hier online in te schrijven of naar de tent @Alma 3 te komen. Inschrijven kun je doen vanaf zondag 6 mei om 22u en je kunt op eender welk moment instappen in het spel. Eens je ingeschreven bent, moet je enkel de uitleg van de vragen bekijken om te weten hoe je moet antwoorden. Elke uur zal er een nieuwe vraag worden gepost op de facebookpagina van Delta waarbij de laatste vraag gepost zal worden op maandag 7 mei om 23u00. De winnaars van de hoofd- en troostprijzen van de quiz zal tijdens de schuim-TD worden bekendgemaakt in ’t ElixIr.
+				Wil je een reiswaardebon van <a href="http://www.joker.be/">Joker</a> winnen ter waarde van €500 en een hele hoop goodies? Dan moet je meedoen aan de 24uren quiz! Dit kan je doen door je hier online in te schrijven of naar de tent @Alma 3 te komen. Inschrijven kun je doen vanaf zondag 6 mei om 22u en je kunt op eender welk moment instappen in het spel. Eens je ingeschreven bent, moet je enkel de uitleg van de vragen bekijken om te weten hoe je moet antwoorden. Elke uur zal er een nieuwe vraag worden gepost op de <a href="https://www.facebook.com/ploegdelta" class="obvilink">facebookpagina</a> van Delta waarbij de laatste vraag gepost zal worden op maandag 7 mei om 23u00. De winnaars van de hoofd- en troostprijzen van de quiz zal tijdens de schuim-TD worden bekendgemaakt in ’t ElixIr.
 			</div>
 			<div class="slideleftfooter button">
 				<a href="#activiOverview">Overzicht</a>
@@ -873,92 +886,122 @@
 
 
 	<div id="activi2" class="step cubeFace fontclass noclick-step" data-x="-1700" data-y="-805" data-z="0" data-rotate-x="-45">
-<!-- 		<div id="bbqsubscribe-content" class="reservation-content"> -->
-<!-- 			<h1>Inschrijven BBQ 18u</h1> -->
+		<div id="bbqsubscribe-content" class="reservation-content">
+			<h1>Inschrijven BBQ 18u</h1>
 
-<!-- 			<div class="reservationform"> -->
-<!-- 				<form id="bbqform"> -->
-<!-- 					<div class="reservationforminput"> -->
-<!-- 						Voornaam<input type="text" name="firstname" tabindex=1 /> -->
-<!-- 						Achternaam<input type="text" name="lastname" tabindex=2 /> -->
-<!-- 						Email adres<input type="text" name="email" tabindex=3 /> -->
-<!-- 					</div> -->
-<!-- 					<div class="buttonbar"> -->
-<!-- 						<button type="button" onclick="document.location = '#/bbq'" class="backbutton button">Back</button> -->
-<!-- 						<button type="submit" class="submitbutton button">Inschrijven</button> -->
-<!-- 					</div> -->
-<!-- 		 		</form> -->
-<!-- 	 		</div> -->
-<!--  		</div> -->
+			<div class="reservationform">
+				<form id="bbqform">
+					<div class="reservationforminput">
+						Voornaam<input type="text" name="firstname" tabindex=1 />
+						Achternaam<input type="text" name="lastname" tabindex=2 />
+						Email adres<input type="text" name="email" tabindex=3 />
+						<input type="checkbox" name="vegi" />Vegetarisch<br/>
+						Aantal stuks:
+						<select name="number">
+						   <option>2 stuks</option>
+						   <option>3 stuks</option>
+						</select>
+					</div>
+					<div class="buttonbar">
+						<button type="button" onclick="document.location = '#/bbq'" class="backbutton button">Back</button>
+						<div id="bbqsubmitbutton">
+
+						</div>
+					</div>
+		 		</form>
+		 		<div id="bbqfeedback" class="feedbackmessage">
+		 		</div>
+	 		</div>
+ 		</div>
  		
-<!-- 		<div id="bbq2subscribe-content" class="reservation-content"> -->
-<!-- 			<h1>Inschrijven BBQ 19u</h1> -->
+		<div id="bbq2subscribe-content" class="reservation-content">
+			<h1>Inschrijven BBQ 19u</h1>
 			
-<!-- 			<div class="reservationform"> -->
-<!-- 				<form id="bbq2form"> -->
-<!-- 					<div class="reservationforminput"> -->
-<!-- 						Voornaam<input type="text" name="firstname" tabindex=1 /> -->
-<!-- 						Achternaam<input type="text" name="lastname" tabindex=2 /> -->
-<!-- 						Email adres<input type="text" name="email" tabindex=3 /> -->
-<!-- 					</div> -->
-<!-- 					<div class="buttonbar"> -->
-<!-- 						<button type="button" onclick="document.location = '#/bbq2'" class="backbutton button">Back</button> -->
-<!-- 						<button type="submit" class="submitbutton button">Inschrijven</button> -->
-<!-- 					</div> -->
-<!-- 		 		</form> -->
-<!-- 	 		</div> -->
-<!--  		</div> -->
+			<div class="reservationform">
+				<form id="bbq2form">
+					<div class="reservationforminput">
+						Voornaam<input type="text" name="firstname" tabindex=1 />
+						Achternaam<input type="text" name="lastname" tabindex=2 />
+						Email adres<input type="text" name="email" tabindex=3 />
+						<input type="checkbox" name="vegi" />Vegetarisch<br/>
+						Aantal stuks:
+						<select name="number">
+						   <option>2 stuks</option>
+						   <option>3 stuks</option>
+						</select>
+					</div>
+					<div class="buttonbar">
+						<button type="button" onclick="document.location = '#/bbq2'" class="backbutton button">Back</button>
+						<div id="bbq2submitbutton">
+
+						</div>
+					</div>
+		 		</form>
+		 		<div id="bbq2feedback" class="feedbackmessage">
+		 		</div>
+	 		</div>
+ 		</div>
  		
-<!-- 		<div id="kebabsubscribe-content" class="reservation-content"> -->
-<!-- 			<h1>Inschrijven Kebab 18u</h1> -->
+		<div id="kebabsubscribe-content" class="reservation-content">
+			<h1>Inschrijven Kebab 18u</h1>
 			
-<!-- 			<div class="reservationform"> -->
-<!-- 				<form id="kebabform"> -->
-<!-- 					<div class="reservationforminput"> -->
-<!-- 						Voornaam<input type="text" name="firstname" tabindex=1 /> -->
-<!-- 						Achternaam<input type="text" name="lastname" tabindex=2 /> -->
-<!-- 						Email adres<input type="text" name="email" tabindex=3 /> -->
-<!-- 					</div> -->
-<!-- 					<div class="buttonbar"> -->
-<!-- 						<button type="button" onclick="document.location = '#/kebab'" class="backbutton button">Back</button> -->
-<!-- 						<button type="submit" class="submitbutton button">Inschrijven</button> -->
-<!-- 					</div> -->
-<!-- 		 		</form> -->
-<!-- 	 		</div> -->
-<!--  		</div> -->
+			<div class="reservationform">
+				<form id="kebabform">
+					<div class="reservationforminput">
+						Voornaam<input type="text" name="firstname" tabindex=1 />
+						Achternaam<input type="text" name="lastname" tabindex=2 />
+						Email adres<input type="text" name="email" tabindex=3 />
+						<input type="checkbox" name="vegi" />Vegetarisch<br/>
+					</div>
+					<div class="buttonbar">
+						<button type="button" onclick="document.location = '#/kebab'" class="backbutton button">Back</button>
+						<div id="kebabsubmitbutton">
+
+						</div>
+					</div>
+		 		</form>
+		 		<div id="kebabfeedback" class="feedbackmessage">
+		 		</div>
+	 		</div>
+ 		</div>
  		
-<!-- 		<div id="kebab2subscribe-content" class="reservation-content"> -->
-<!-- 			<h1>Inschrijven Kebab 19u</h1> -->
+		<div id="kebab2subscribe-content" class="reservation-content">
+			<h1>Inschrijven Kebab 19u</h1>
 			
-<!-- 			<div class="reservationform"> -->
-<!-- 				<form id="kebabform2"> -->
-<!-- 					<div class="reservationforminput"> -->
-<!-- 						Voornaam<input type="text" name="firstname" tabindex=1 /> -->
-<!-- 						Achternaam<input type="text" name="lastname" tabindex=2 /> -->
-<!-- 						Email adres<input type="text" name="email" tabindex=3 /> -->
-<!-- 					</div> -->
-<!-- 					<div class="buttonbar"> -->
-<!-- 						<button type="button" onclick="document.location = '#/kebab2'" class="backbutton button">Back</button> -->
-<!-- 						<button type="submit" class="submitbutton button">Inschrijven</button> -->
-<!-- 					</div> -->
-<!-- 		 		</form> -->
-<!-- 	 		</div> -->
-<!--  		</div> -->
+			<div class="reservationform">
+				<form id="kebab2form">
+					<div class="reservationforminput">
+						Voornaam<input type="text" name="firstname" tabindex=1 />
+						Achternaam<input type="text" name="lastname" tabindex=2 />
+						Email adres<input type="text" name="email" tabindex=3 />
+						<input type="checkbox" name="vegi" />Vegetarisch<br/>
+					</div>
+					<div class="buttonbar">
+						<button type="button" onclick="document.location = '#/kebab2'" class="backbutton button">Back</button>
+						<div id="kebab2submitbutton">
+
+						</div>
+					</div>
+		 		</form>
+		 		<div id="kebab2feedback" class="feedbackmessage">
+		 		</div>
+	 		</div>
+ 		</div>
 	</div>
 	
-<!-- 	<div id="bbqsubscribe" class="noclick-step step" data-x="-1700" data-y="-805" data-z="0" data-rotate-x="-45"> -->
-<!-- 	</div> -->
+	<div id="bbqsubscribe" class="noclick-step step" data-x="-1700" data-y="-805" data-z="0" data-rotate-x="-45">
+	</div>
 	
-<!-- 	<div id="bbq2subscribe" class="noclick-step step" data-x="-1700" data-y="-805" data-z="0" data-rotate-x="-45"> -->
-<!-- 	</div> -->
+	<div id="bbq2subscribe" class="noclick-step step" data-x="-1700" data-y="-805" data-z="0" data-rotate-x="-45">
+	</div>
 	
-<!-- 	<div id="kebabsubscribe" class="noclick-step step" data-x="-1700" data-y="-805" data-z="0" data-rotate-x="-45"> -->
-<!-- 	</div> -->
+	<div id="kebabsubscribe" class="noclick-step step" data-x="-1700" data-y="-805" data-z="0" data-rotate-x="-45">
+	</div>
 	
-<!-- 	<div id="kebab2subscribe" class="noclick-step step" data-x="-1700" data-y="-805" data-z="0" data-rotate-x="-45"> -->
-<!-- 	</div>	 -->
+	<div id="kebab2subscribe" class="noclick-step step" data-x="-1700" data-y="-805" data-z="0" data-rotate-x="-45">
+	</div>	
 	
-        <div id="standpuntenCentral" class="step titlestep" data-x="1300" data-y="-1300" data-z="0" data-rotate="90">
+        <div id="standpuntenCentral" class="step titlestep noclick-step" data-x="1300" data-y="-1300" data-z="0" data-rotate="90">
             <span class="clusterTitle">Standpunten</span>
         </div>	
 
@@ -1083,45 +1126,110 @@
 
 
 
-    <div id="SponsorsCentral" class="step titlestep" data-x="1100" data-y="1300" data-z="0" data-rotate="-50">
+    <div id="SponsorsCentral" class="step titlestep noclick-step" data-x="1100" data-y="1300" data-z="0" data-rotate="-50">
     	<span class="clusterTitle">Sponsors</span>
     </div>
 
     <div id="SponsorsOverview" class="step" data-x="1800" data-y="1450" data-z="1200" data-rotate="40">
     </div>
 
-    <div id="sponsors2" class="step slide sponsorslide" data-x="1700" data-y="1100" data-z="0" data-rotate="-50">
+    <div id="sponsors2" class="step slide sponsorslide noclick-step" data-x="1700" data-y="1100" data-z="0" data-rotate="-50">
 	<div><a href="http://www.asml.com/asml/show.do?ctx=427"><img src="./images/sponsors2.png"></img></a></div>
     </div>
 
-    <div id="sponsors1" class="step slide sponsorslide" data-x="1429" data-y="1751" data-z="0" data-rotate="40">
+    <div id="sponsors1" class="step slide sponsorslide noclick-step" data-x="1429" data-y="1751" data-z="0" data-rotate="40">
 	<div><a href="http://www.stella-artois.be/"><img src="./images/sponsors1.png"></a></img></div>
     </div>    
 
-    <div id="sponsors3" class="step slide sponsorslide" data-x="1920" data-y="1282" data-z="0" data-rotate="-50">
+    <div id="sponsors3" class="step slide sponsorslide noclick-step" data-x="1920" data-y="1282" data-z="0" data-rotate="-50">
 	<div><a href="http://www.vanhout.be/Home.aspx"><img src="./images/sponsors3.png"></img></a></div>
     </div>
 
-    <div id="sponsors4" class="step slide sponsorslide" data-x="2395" data-y="1675" data-z="0" data-rotate="-50">
+    <div id="sponsors4" class="step slide sponsorslide noclick-step" data-x="2395" data-y="1675" data-z="0" data-rotate="-50">
 	<div><a href="http://www.esko.com/?gclid=CKSD2-Wu3K8CFe8htAodxTFMBg"><img src="./images/sponsors4.jpg" width="800"></img></a></div>
     </div> 
     
-    <div id="sponsors5" class="step slide sponsorslide" data-x="2145" data-y="1468" data-z="0" data-rotate="-50">
+    <div id="sponsors5" class="step slide sponsorslide noclick-step" data-x="2145" data-y="1468" data-z="0" data-rotate="-50">
 	<div><img src="./images/sponsors5.jpg" width="800"></img></div>
     </div>
     
-    <div id="sponsors6" class="step slide sponsorslide" data-x="2030" data-y="2255" data-z="0" data-rotate="40">
-	<div><img src="./images/sponsors6.jpg"></img></div>
+    <div id="sponsors6" class="step slide sponsorslide noclick-step" data-x="2030" data-y="2255" data-z="0" data-rotate="40">
+	<div><a href="http://www.chaosleuven.be/chaosinfo/"><img src="./images/sponsors6.jpg"></a></img></div>
     </div> 
 
-    <div id="MemnberCentral" class="step titlestep" data-x="-1250" data-y="1200" data-z="0" data-rotate="40">
+    <div id="MemnberCentral" class="step titlestep noclick-step" data-x="-1250" data-y="1200" data-z="0" data-rotate="40">
     	<span class="clusterTitle">Ploeg</span>
     </div>
 
 
-    <div id="memberoverview" class="step slide ploegslide" data-x="-1700" data-y="1650" data-z="0" data-rotate="-50">
-	<div><img src="./images/ploeg2.png"></img></div>
+    <div id="memberoverview" class="step slide memberOverviewSlide" data-x="-1700" data-y="1650" data-z="0" data-rotate="-50">
 	
+	
+	<div style="height:550px; margin-top:20px; overflow-x: auto; overflow-y:scroll;">
+	
+	<table>
+	<tr>
+		<td class="thumbCell">
+			<div class="thumbCellDiv" onclick="document.location = 'members.html#/memberdetail11'" style="background-image: url('./images/ploeg/karsten_daemen.png');">
+				<div class="nameContainer">Karsten Daemen</div>
+			</div>
+		</td>
+		
+		<td class="thumbCell">
+			<div class="thumbCellDiv" style="background-image: url('./images/ploeg/karsten_daemen.png');">
+				<div class="nameContainer">Karsten Daemen</div>
+			</div>
+		</td>
+		
+		<td class="thumbCell">
+			<div class="thumbCellDiv" style="background-image: url('./images/ploeg/karsten_daemen.png');">
+				<div class="nameContainer">Karsten Daemen</div>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td class="thumbCell">
+			<div class="thumbCellDiv" style="background-image: url('./images/ploeg/karsten_daemen.png');">
+				<div class="nameContainer">Karsten Daemen</div>
+			</div>
+		</td>
+		
+		<td class="thumbCell">
+			<div class="thumbCellDiv" style="background-image: url('./images/ploeg/karsten_daemen.png');">
+				<div class="nameContainer">Karsten Daemen</div>
+			</div>
+		</td>
+		
+		<td class="thumbCell">
+			<div class="thumbCellDiv" style="background-image: url('./images/ploeg/karsten_daemen.png');">
+				<div class="nameContainer">Karsten Daemen</div>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td class="thumbCell">
+			<div class="thumbCellDiv" style="background-image: url('./images/ploeg/karsten_daemen.png');">
+				<div class="nameContainer">Karsten Daemen</div>
+			</div>
+		</td>
+		
+		<td class="thumbCell">
+			<div class="thumbCellDiv" style="background-image: url('./images/ploeg/karsten_daemen.png');">
+				<div class="nameContainer">Karsten Daemen</div>
+			</div>
+		</td>
+		
+		<td class="thumbCell">
+			<div class="thumbCellDiv" style="background-image: url('./images/ploeg/karsten_daemen.png');">
+				<div class="nameContainer">Karsten Daemen</div>
+			</div>
+		</td>
+	</tr>
+	</table>
+	
+	</div>
+	
+
 	<!--  Pieter Willemsen - Nero Pieters - Pieter Maene - Katja Huis - Nils Charels - Jeroen Van Hemelen - Jorn Hendrickx - Dieter Maes - Jef Mannaerts - Manu something - Wout Van der Veken - Kristof Dens - Marvin Claes - Sam Verbueken (de persoon die er voor zit weet ik niet..) - Niels Avonds - Sven Dewilde - Karsten Daemen - Nicolas Butzen - Den Boets - Heleen Van Den Noortgate
 	?? - Lauren De Meyer
 	
@@ -1142,6 +1250,7 @@
 <!-- Embed the impress library -->
 <script src="js/impress.js"></script>
 <script>impress().init();</script>
+<script type="text/javascript" src="js/subscriptions.js"></script>
 
 </body>
 </html>

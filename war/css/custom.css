@@ -137,7 +137,7 @@ td.ActiOverviewInschr {
 .menubutton-container a {
 	background: none;
 	padding: 0 1px;
-	margin: 0 1px;
+	margin: 0 -4px;
 }
 
 /* The buttons when hovered */
@@ -436,7 +436,7 @@ input {
     -moz-border-radius: 5px;
     border-radius: 5px;
     text-align: center;
-    margin-top: 80px;
+    margin-top: 0px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -474,4 +474,20 @@ input {
 .backupbutton {
 	position: absolute;
 	right: 0px;
+}
+
+form input[type="checkbox"] {
+	margin-left: -185px;
+	margin-right: -180px;
+	display: inline;
+}
+
+.feedbackmessage {
+	color: red;
+	margin-top: 5px;
+	margin-bottom:-20px;
+}
+
+.obvilink {
+	color: blue;
 }

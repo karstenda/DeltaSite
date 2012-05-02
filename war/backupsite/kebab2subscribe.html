@@ -22,6 +22,8 @@
 <link rel="shortcut icon" href="favicon.png" />
 <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 
+<script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
+
 </head>
 
 <body>
@@ -68,25 +70,31 @@
 		</div>
 		<div id="activi4" class="step cubeFace fontclass">
 
-			<div id="bbqsubscribe-content" class="reservation-content">
-				<h1>Inschrijven BBQ 18u</h1>
+		<div id="kebab2subscribe-content" class="reservation-content">
+			<h1>Inschrijven Kebab 19u</h1>
+			
+			<div class="reservationform">
+				<form id="kebab2form">
+					<div class="reservationforminput">
+						Voornaam<input type="text" name="firstname" tabindex=1 />
+						Achternaam<input type="text" name="lastname" tabindex=2 />
+						Email adres<input type="text" name="email" tabindex=3 />
+						<input type="checkbox" name="vegi" />Vegetarisch<br/>
+					</div>
+					<div class="buttonbar">
+						<button type="button" onclick="document.location = 'kebab2.html'" class="backbutton button">Back</button>
+						<div id="kebab2submitbutton">
 
-				<div class="reservationform">
-					<form id="bbqform">
-						<div class="reservationforminput">
-							Voornaam<input type="text" name="firstname" tabindex=1 />
-							Achternaam<input type="text" name="lastname" tabindex=2 /> Email
-							adres<input type="text" name="email" tabindex=3 />
 						</div>
-						<div class="buttonbar">
-							<button type="button" onclick="document.location = 'bbq.html'" class="backbutton button">Back</button>
-							<button type="submit" class="submitbutton button">Inschrijven</button>
-						</div>
-					</form>
-				</div>
-			</div>
-
+					</div>
+		 		</form>
+		 		<div id="kebab2feedback" class="feedbackmessage">
+		 		</div>
+	 		</div>
+ 		</div>
 		</div>
 
 	</div>
+
+<script type="text/javascript" src="../js/subscriptions_backup.js"></script>
 </body>

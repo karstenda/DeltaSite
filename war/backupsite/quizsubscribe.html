@@ -1,7 +1,6 @@
 <!doctype html>
 
 <html lang="en">
-
 <head>
 
 <!-- Meta data.                     -->
@@ -22,20 +21,8 @@
 <!-- Icons ...                      -->
 <link rel="shortcut icon" href="favicon.png" />
 <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+<script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
 
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-31283977-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
 
 </head>
 
@@ -77,46 +64,38 @@
 	</div>
 
 	<div class="backupcontent">
+
 		<div id="activiteitenCentral" class="step">
 			<div class="clusterTitle">Activiteiten</div>
 		</div>
-		<div id="activi3" class="step cubeFace fontclass">
-
-
-			<div id="quiz-content" class="activi-content activi-smallerer">
-				<h1>24 uren quiz</h1>
-				<div class="activi-top">
-					<img
-						src="../images/activiteiten/24urenquiz.jpg"
-						width="250" height="250" />
-
-					<div class="activi-summary">
-						<b>Wat?</b><br /> 24u online quiz<br /> <b>Waar?</b><br />
-						Overal<br /> <b>Wanneer?</b><br /> Zondag, 23u<br />
+		<div id="activi4" class="step cubeFace fontclass">
+		
+		<div id="kebabsubscribe-content" class="reservation-content">
+			<h1>Inschrijven Quiz</h1>
+			
+			<div class="reservationform">
+				<form id="quizform">
+					<div class="reservationforminput">
+						Voornaam<input type="text" name="firstname" tabindex=1 />
+						Achternaam<input type="text" name="lastname" tabindex=2 />
+						Email adres<input type="text" name="email" tabindex=3 />
+						<input type="checkbox" name="joker" />Joker mag mijn gegevens gebruiken voor promotie.<br/>
 					</div>
-				</div>
-
-				<div class="activi-bottom">
-					Wil je een reiswaardebon van <a href="http://www.joker.be/">Joker</a>
-					winnen ter waarde van €500 en een hele hoop goodies? Dan moet je
-					meedoen aan de 24uren quiz! Dit kan je doen door je hier online in
-					te schrijven of naar de tent @Alma 3 te komen. Inschrijven kun je
-					doen vanaf zondag 6 mei om 22u en je kunt op eender welk moment
-					instappen in het spel. Eens je ingeschreven bent, moet je enkel de
-					uitleg van de vragen bekijken om te weten hoe je moet antwoorden.
-					Elke uur zal er een nieuwe vraag worden gepost op de <a href="https://www.facebook.com/ploegdelta" class="obvilink">facebookpagina</a>
-					van Delta waarbij de laatste vraag gepost zal worden op maandag 7
-					mei om 23u00. De winnaars van de hoofd- en troostprijzen van de
-					quiz zal tijdens de schuim-TD worden bekendgemaakt in ’t ElixIr.
-				</div>
-				<div class="slideleftfooter button">
-					<a href="activioverview.html">Overzicht</a>
-				</div>
-			</div>
-			<div class="sliderightfooter button">
-				<a href="quizsubscribe.html">Inschrijven</a>
-			</div>
+					<div class="buttonbar">
+						<button type="button" onclick="document.location = 'quiz.html'" class="backbutton button">Back</button>
+						<div id="quizsubmitbutton">
+							<button id="quizsubmitbuttonbutton" type="submit" class="submitbutton button">Inschrijven</button>
+						</div>
+					</div>
+		 		</form>
+		 		<div id="quizfeedback" class="feedbackmessage">
+		 		</div>
+	 		</div>
+ 		</div>	
 		</div>
 
 	</div>
+	
+<script type="text/javascript" src="../js/subscriptions_backup.js"></script>
+
 </body>

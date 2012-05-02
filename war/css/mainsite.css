@@ -144,6 +144,10 @@
 	display: block;
 }
 
+.impress-on-lasersubscribe #lasersubscribe-content {
+	display: block;
+}
+
 /* enable clicking on elements 'hiding' behind body in 3D */
 body     { pointer-events: none; }
 #impress { pointer-events: auto; }
@@ -225,5 +229,9 @@ body     { pointer-events: none; }
 }
 
 .impress-on-quizsubscribe #activiOverview {
+	display:none;
+}
+
+.impress-on-lasersubscribe #activiOverview {
 	display:none;
 }

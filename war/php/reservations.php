@@ -8,8 +8,12 @@ $max_count = array(
 	'bbq' => 60,
 	'bbq2' => 60,
 	'kebab' => 90,
-	'kebab2' => 60
+	'kebab2' => 60,
+	'laser' => 24
 );
+
+$laserstart = 13;
+$laserend = 22;
 
 switch($_GET['action']) {
 	case 'makeReservation':
@@ -74,6 +78,31 @@ switch($_GET['action']) {
 				echo $fileHandler->writeString($eventReservations);
 				
 			break;
+			case 'laser':
+				if('' == $formData['firstname']) {
+					echo 'empty_firstname';
+					break 2;
+				}
+				
+				if('' == $formData['lastname']) {
+					echo 'empty_lastname';
+					break 2;
+				}
+				
+				if('' == $formData['email']) {
+					echo 'empty_email';
+					break 2;
+				}
+				
+				if($fileHandler->getEntryCountFor($formData['moment']) >= $max_count[$_GET['event']] + 1) {
+					echo 'event_full';
+					break 2;
+				}
+				
+				$eventReservations = $eventReservations . $formData['moment'] . "," . $formData['firstname'] . "," . $formData['lastname'] . "," . $formData['email'];
+				$eventReservations = $eventReservations . "\n";
+				
+				echo $fileHandler->writeString($eventReservations);
 			default:
 				echo false;
 			break;
@@ -82,70 +111,41 @@ switch($_GET['action']) {
 	case 'isVolzet':
 		echo ($fileHandler->getEntryCount() >= $max_count[$_GET['event']] + 1);
 	break;
-	case 'getTotal':
-		if('lasershoot' != $_GET['event']) {
-			if(!file_exists($fileName)) {
-				$fileHandler->writeArray(array(
-					'momentOne' => array(),
-					'momentTwo' => array()
-				));
-			}
-			$eventReservations = $fileHandler->readArray();
-			echo json_encode(array(
-				'momentOne' => ('pasta' == $_GET['event'] ? 100 : 125) - count($eventReservations['momentOne']),
-				'momentTwo' => ('pasta' == $_GET['event'] ? 100 : 125) - count($eventReservations['momentTwo'])
-			));	 
-		}
-	break;
 	case 'getFreeMoments':
 		$returnArray = array();
-		$eventReservations = $fileHandler->readArray();
-		if('lasershoot' == $_GET['event']) {
-			if(!file_exists($fileName)) {
+
+		if('laser' == $_GET['event']) {
+		/*	if(!file_exists($fileName)) {
 				$fileHandler->writeArray(array());
-			}
+			}*/
 			
-			$momentHour = 13;
+			$momentHour = $laserstart;
 			$momentMinutes = 0;
-			for($i = 0; $i < 36; $i++) {
-				if(50 == $momentMinutes) {
-					$momentHour++;
-					$momentMinutes = 0;
-				}
-				else {
-					if($i != 0)
-						$momentMinutes += 10;
-				}
+			while($momentHour < $laserend) {
 				
-				if(!isset($eventReservations[$i]) || count($eventReservations[$i]) < 2) {
+				$momentString = $momentHour . ":" . (0 == $momentMinutes ? '00' : $momentMinutes);
+				
+				$remaining = $max_count['laser'] - $fileHandler->getEntryCountFor($momentString);
+				
+				if ($remaining > 0) {
+					// Append an item to the array
+					
 					$returnArray[] = array(
-						'momentNumber' => $i,
-						'momentTime' => $momentHour . ':' . (0 == $momentMinutes ? '00' : $momentMinutes) . ' (Plaats voor ' . (count($eventReservations[$i]) == 0 ? 2 : 1) . ' Team' . (count($eventReservations[$i]) == 0 ? 's' : '').')'
+						'value' => $momentString,
+						'text' => $momentString . ' (Nog ' . $remaining . ' over)'
 					);
 				}
+				
+				$momentMinutes += 20;
+				
+				if (60 == $momentMinutes) {
+					$momentMinutes = 0;
+					$momentHour++;
+				}
 			}
-		}
-		else {
-			if(!file_exists($fileName)) {
-				$fileHandler->writeArray(array(
-					'momentOne' => array(),
-					'momentTwo' => array()
-				));
-			}
-			
-			if('pasta' == $_GET['event']) {
-				if(count($eventReservations['momentOne']) <= 100)
-					$returnArray[] = '18:00';
-				if(count($eventReservations['momentTwo']) <= 100)
-					$returnArray[] = '19:30';
-			}
-			else if('wraps' == $_GET['event']) {
-				if(count($eventReservations['momentOne']) <= 125)
-					$returnArray[] = '18:00';
-				if(count($eventReservations['momentTwo']) <= 125)
-					$returnArray[] = '19:30';
-			}
-		}
 		echo json_encode($returnArray);
+		} else {
+			echo 'wrong_event';
+		}
 	break;
 }

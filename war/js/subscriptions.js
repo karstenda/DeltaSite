@@ -38,6 +38,12 @@ $.get('php/reservations.php?action=isVolzet&event=kebab2', function(data) {
 	
 });
 
+$.getJSON('php/reservations.php?action=getFreeMoments&event=laser&', function(data) {
+	$.each(data, function(i, item){
+		$('#laserformmoment').append('<option value="' + item.value + '">' + item.text + '</option>');	
+	});
+});
+
 $('#bbqform').submit(function() {
 
 	$("#bbqsubmitbuttonbutton").attr("disabled", "disabled");
@@ -107,7 +113,7 @@ $('#kebabform').submit(function() {
 	$.post('php/reservations.php?action=makeReservation&event=kebab', {formData: $('#kebabform').serialize()}, function(data) {
 		if(true == data){
 			$('#kebabfeedback').html('Ingeschreven');
-//			$('#kebabsubmitbutton').html('');
+// $('#kebabsubmitbutton').html('');
 		}
 		else if(false == data) {
 			$('#kebabfeedback').html('Er liep iets mis tijdens je inschrijving. Probeer het later nog eens.');
@@ -186,6 +192,37 @@ $('#quizform').submit(function() {
 			$('#quizfeedback').html(data);
 		}
 		$('#quizsubmitbuttonbutton').removeAttr("disabled");
+	});
+	return false;
+});
+
+$('#laserform').submit(function() {
+
+	$("#lasersubmitbuttonbutton").attr("disabled", "disabled");
+	
+	$.post('php/reservations.php?action=makeReservation&event=laser', {formData: $('#laserform').serialize()}, function(data) {
+		if(true == data){
+			$('#laserfeedback').html('Ingeschreven');
+			$('#lasersubmitbutton').html('');
+		}
+		else if(false == data) {
+			$('#laserfeedback').html('Er liep iets mis tijdens je inschrijving. Probeer het later nog eens.');
+		}
+		else if('empty_firstname' == data) {
+			$('#laserfeedback').html('Je bent vergeten om je voornaam op te geven.');
+		}
+		else if('empty_lastname' == data) {
+			$('#laserfeedback').html('Je bent vergeten om je achternaam op te geven.');
+		}
+		else if('empty_email' == data) {
+			$('#laserfeedback').html('Je bent vergeten om je email op te geven.');
+		}
+		else if('event_full' == data) {
+			$('#laserfeedback').html('Het moment waarvoor je je wilde inschrijven, is reeds volzet.');
+		} else {
+			$('#laserfeedback').html(data);
+		}
+		$('#lasersubmitbuttonbutton').removeAttr("disabled");
 	});
 	return false;
 });

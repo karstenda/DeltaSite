@@ -531,10 +531,8 @@
 			<div class="slideleftfooter button">
 				<a href="#activiOverview">Overzicht</a>
 			</div>
-			<div class="sliderightfooter">
-<!-- 			<div class="sliderightfooter button"> -->
-<!-- 				<a href="#lasersubscribe">Inschrijven</a> -->
-				Binnenkort inschrijven
+			<div class="sliderightfooter button">
+				<a href="#lasersubscribe">Inschrijven</a>
 			</div>
 		</div>
 		
@@ -732,31 +730,6 @@
 			</div>
 		</div>
 		
-		<div id="laser-content" class="activi-content">
-			<h1>
-				Lasergames
-			</h1>
-			<div class="activi-top">
-				<img src="http://nssdc.gsfc.nasa.gov/image/planetary/venus/gal_venus_37218.jpg" width="250" height="250" />
-	
-				<div class="activi-summary">
-					<b>Wat?</b><br/>
-					Lasershooten<br/>
-					<b>Waar?</b><br/>
-					Plein voor Alma 3<br/>
-					<b>Wanneer?</b><br/>
-					Dinsdag, 12u<br/>
-				</div>
-			</div>
-			
-			<div class="activi-bottom">
-				Dinsdag kun je van 12u00-22u00 komen lasershooten. Er zijn 32 lasergeweren beschikbaar die je voor een periode van maximaal 30 minuten kunt reserveren. Het reserveren van de lasershoot kun je doen via de site.
-			</div>
-			<div class="slideleftfooter button">
-				<a href="#activiOverview">Overzicht</a>
-			</div>
-		</div>
-		
 		<div id="quiz-content" class="activi-content activi-smallerer">
 			<h1>
 				24 uren quiz
@@ -873,9 +846,6 @@
 	</div>
 	
 	<div id="pannenkoek" class="noclick-step step" data-x="-1350" data-y="-1053" data-z="-247" data-rotate-x="45" data-rotate-y="90">		
-	</div>
-	
-	<div id="laser" class="noclick-step step" data-x="-1350" data-y="-1053" data-z="-247" data-rotate-x="45" data-rotate-y="90">		
 	</div>
 	
 	<div id="quiz" class="noclick-step step" data-x="-1350" data-y="-1053" data-z="-247" data-rotate-x="45" data-rotate-y="90">		
@@ -1013,6 +983,33 @@
 		 		</div>
 	 		</div>
  		</div>
+ 		
+		<div id="lasersubscribe-content" class="reservation-content">
+			<h1>Inschrijven Lasershooten</h1>
+			
+			<div class="reservationform">
+				<form id="laserform">
+					<div class="reservationforminput">
+						Voornaam<input type="text" name="firstname" tabindex=1 />
+						Achternaam<input type="text" name="lastname" tabindex=2 />
+						Email adres<input type="text" name="email" tabindex=3 />
+						Moment:
+						<select name="moment" id="laserformmoment">
+							
+						</select>
+					</div>
+					<div class="buttonbar">
+						<button type="button" onclick="document.location = '#/randanimatie'" class="backbutton button">Back</button>
+						<div id="lasersubmitbutton">
+							<button id="lasersubmitbuttonbutton" type="submit" class="submitbutton button">Inschrijven</button>
+						</div>
+					</div>
+		 		</form>
+		 		<div id="laserfeedback" class="feedbackmessage">
+		 		</div>
+		 		
+	 		</div>
+ 		</div>
 	</div>
 	
 	<div id="bbqsubscribe" class="noclick-step step" data-x="-1700" data-y="-805" data-z="0" data-rotate-x="-45">
@@ -1025,6 +1022,9 @@
 	</div>
 	
 	<div id="kebab2subscribe" class="noclick-step step" data-x="-1700" data-y="-805" data-z="0" data-rotate-x="-45">
+	</div>
+	
+	<div id="lasersubscribe" class="noclick-step step" data-x="-1700" data-y="-805" data-z="0" data-rotate-x="-45">
 	</div>
 	
 	<div id="quizsubscribe" class="noclick-step step" data-x="-1700" data-y="-805" data-z="0" data-rotate-x="-45">

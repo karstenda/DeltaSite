@@ -247,3 +247,7 @@ body     { pointer-events: none; }
 .thumbCellDiv {
 	cursor: pointer !important;
 }
+
+.subscribestep {
+	pointer-events: none;
+}

@@ -515,15 +515,30 @@ form input[type="checkbox"] {
 
 
 .thumbCellDiv:HOVER .nameContainer {
-	background-color: #757575;
+	background-color: #878787;
 }
 
+.thumbCellDiv:HOVER .nameContainerPloeg5 {
+	background-color: #FFD65C;
+}
 .nameContainer {
 	position: absolute;
 	bottom: 0px;
 	width: 128px;
 	line-height: 1.2;
 	background-color: #B0B0B0;
+	background-repeat: repeat;
+	text-align: center;
+	font-size: 12pt;
+	color: white;
+}
+
+.nameContainerPloeg5 {
+	position: absolute;
+	bottom: 0px;
+	width: 128px;
+	line-height: 1.2;
+	background-color: #FFE699;
 	background-repeat: repeat;
 	text-align: center;
 	font-size: 12pt;

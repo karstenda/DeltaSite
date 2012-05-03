@@ -235,3 +235,15 @@ body     { pointer-events: none; }
 .impress-on-lasersubscribe #activiOverview {
 	display:none;
 }
+
+.thumbCellDiv:HOVER .nameContainer {
+	background-color: #878787;
+}
+
+.thumbCellDiv:HOVER .nameContainerPloeg5 {
+	background-color: #FFCA2B;
+}
+
+.thumbCellDiv {
+	cursor: pointer !important;
+}

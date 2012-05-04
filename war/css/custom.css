@@ -266,6 +266,12 @@ h1 {
 	background-color: black;
 }
 
+#sponsors7 {
+	width: 820px !important;
+	padding: 10px !important;
+	height: 258px !important;
+}
+
 .ploegslide {
 	width: 820px !important;
 	height: 545px !important;

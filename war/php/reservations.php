@@ -7,8 +7,8 @@ $fileHandler = new FileHandler($fileName);
 $max_count = array(
 	'bbq' => 60,
 	'bbq2' => 60,
-	'kebab' => 90,
-	'kebab2' => 60,
+	'kebab' => 75,
+	'kebab2' => 75,
 	'laser' => 24
 );
 
